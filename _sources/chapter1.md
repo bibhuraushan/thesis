@@ -238,7 +238,7 @@ $$\gamma = \gamma_0\cos{\theta}$$(eq1.2)
 where, $\gamma_0$ is a constant and called amplitude of Joy's law.
 
 ```{figure} images/chapter_1_9.png
-:scale: 20 %
+:scale: 80 %
 :align: center
 :alt: The Sun
 :name: fig1.9
