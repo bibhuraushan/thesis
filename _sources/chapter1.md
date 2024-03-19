@@ -220,9 +220,38 @@ Lower density inside the flux tube will make it buoyant {cite:p}`Parker1955a`, a
 :align: center
 :alt: The Sun
 :name: fig1.18
-The rise of flux tube due to magnetic buoyancy  which leads to the formation of magnetic bipolar magnetic region (BMR)..
+The rise of flux tube due to magnetic buoyancy  which leads to the formation of magnetic bipolar magnetic region (BMR).
+```
+:::
+
+
+:::{dropdown} Tilt of Bipolar Magnetic Region
+:animate: fade-in-slide-down
+
+<div style="text-align: justify">
+
+ A careful examination of the BMRs (or sunspot group) show that the line joining the centre of leading and following polarity, is tilted with respect the solar East--West direction, as shown in cartoon diagram ({numref}`fig1.9`a) and in magnetogram data ({numref}`fig1.9`b).  This is called tilt ($\gamma$) of BMR, and it systematically increases with the latitude of the BMR in both hemispheres {cite:p}`Hale1919`. The relation between tilt ($\gamma$) and co-latitude ($\theta$) is called Joy`s law and given as:
+
+ </div>
+
+$$\gamma = \gamma_0\cos{\theta}$$(eq1.2)
+where, $\gamma_0$ is a constant and called amplitude of Joy's law.
+
+```{figure} images/chapter_1_9.png
+:scale: 20 %
+:align: center
+:alt: The Sun
+:name: fig1.9
+(a) Cartoon diagram, (b) magnetogram image (taken from {cite:t}`Li2018`) , showing the position of leading and following polarity of BMR with respect to solar equator.
 ```
 
 
-:::
+<div style="text-align: justify">
+
+The tilt of BMR is induced by the effect of Coriolis force acting during the rise of flux tube due to the rotation of the Sun. The Coriolis force acting on the rising loop apexes has opposite direction and will try to twist it, bringing one polarity closer to the equator and the other away from it {cite:p}`DSilva1993`. The systematic tilt observed in BMRs give rise to net dipole moment, which have a significant impact on the flux transport dynamo models (going to be discussed in the upcoming section), particularly in Babcock-Leighton type dynamo models {cite:p}`Babcock1961, Leighton1964, Charbonneau2010`.
+
+The theoretical work of {cite:t}`DSilva1993` which explain the observed tilt in the BMRs and its dependency on the latitude, hence unfold the physics behind Joy's Law. In their work, {cite:t}`DSilva1993` have also elaborated the role of the strength of the magnetic field, flux for the observed tilt of BMRs.
+
+</div>
+
 
