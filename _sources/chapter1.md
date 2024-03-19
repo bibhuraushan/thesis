@@ -163,5 +163,66 @@ $$a_{\rm max} = W\tau$$ (eq1)
  where $a_0$ and $\tau$ are the maximum areas and lifetime of the sunspot and, $W$ is proportionality constant having value $10~\mu$Hem/day $\mu$Hem is millionth of the solar hemisphere. Equation {eq}`eq1` The value of $W$ has been further updated to $W=10.89\pm0.18~\mu$Hem/day {cite:p}`Petrovay1997`.
 
 </div>
+
+:::
+
+:::{dropdown} Bipolar Magnetic Region
+:animate: fade-in-slide-down
+
+<div style="text-align: justify">
+
+Hale's discovery of magnetic field in the sunspots {cite:p}`Hale1908` also reveals that a group of sunspots are actually the regions of opposite magnetic polarities residing very close to each other (see {numref}`fig1.6`). Due to this reason, they are called Bipolar Magnetic Region (BMR), which is a more general feature of sunspots. The two polarities if these BMRs are named as leading and following polarities based on their movement on the visible disk. Since the Sun is rotating from East to West, it appears that one polarity of BMR is following the other. Hence, the polarity (spot) towards the West is leading, and the one towards the East is following polarity. 
+
+</div>
+
+```{figure} images/chapter_1_6.png
+:scale: 80 %
+:align: center
+:alt: The Sun
+:name: fig1.6
+(a) Intensity continuum (white light) image and (b) Line of Sight Magnetogram as observed from SDO/HMI on 2013-02-05. The boxes represent two same BMR regions in both images (_Image courtesy: SDO/HMI_).
+```
+
+
+<div style="text-align: justify">
+
+ The careful observation of these BMRs reveals that all BMRs in one hemisphere have the same orientation (with few exceptions), and this orientation is opposite in another hemisphere {cite:p}`Hale1919`. This interesting characteristic of BMRs is called 
+ "Hale's Polarity Law" after {cite:t}`Hale1919`. Furthermore, he also discovered that the leading and the following spots reverse their sign in each cycle as shown in ({numref}`fig1.8`). But sometimes, we also notice that a few BMRs do not obey the Hale's polarity law and are hence called "Anti Hale Sunspots". Even though such BMRs are very few, they play a crucial role in our understanding of the Sun and solar cycle models {cite:p}`Karak2017, Karak2018` to be discussed later.
+
+</div>
+
+ ```{figure} images/chapter_1_7.png
+:scale: 100 %
+:align: center
+:alt: The Sun
+:name: fig1.8
+The magnetogram for Cycle-22 (left) and Cycle-23 (right), with yellow and blue representing positive and negative polarity, respectively. In Cycle-22, the leading and following polarity show the opposite sign in the northern and southern hemispheres, and they flip their signs in the next cycle, Cycle-23 (Image Credit: {cite:t}`Hathaway2015`).
+```
+
+<div style="text-align: justify">
+
+Now, the question arises, how are these BMRs or sunspots formed? To understand that, let us consider a bundle of magnetic field lines which constitute a flux-tube. Now, due to the presence of a magnetic field in the flux tube, there will be an additional pressure inside called magnetic pressure ($P_{\rm mag}$) along with gas pressure ($P_{\rm gas}$), which must be balanced by only gas pressure ($P_{\rm gas}$) outside. Hence, in equilibrium,
+
+</div>
+
+
+$$P^{\rm out}=& P^{\rm in} \nonumber\\
+    P_{\rm gas}^{\rm out}=&P_{\rm gas}^{\rm in}+P_{\rm mag}^{\rm in}, ~~~\because~~P_{\rm mag}^{\rm in}=\frac{B^2}{8\pi}\nonumber\\
+    \therefore~~P_{\rm gas}^{\rm out} > &P_{\rm gas}^{\rm in};$$ (eq2)
+which is not always but usually leads to,
+
+$$\rho^{\rm in}<\rho^{\rm out}.$$ (eq3)
+
+Lower density inside the flux tube will make it buoyant {cite:p}`Parker1955a`, and hence it will come out of the photosphere and appear as a BMR (shown in {numref}`fig1.18`).
+
+```{figure} images/chapter_1_22.png
+:scale: 20 %
+:align: center
+:alt: The Sun
+:name: fig1.18
+The rise of flux tube due to magnetic buoyancy  which leads to the formation of magnetic bipolar magnetic region (BMR)..
+```
+
+
 :::
 
