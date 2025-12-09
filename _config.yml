@@ -19,7 +19,7 @@ latex:
 
 # Add a bibtex file so that we can create citations
 bibtex_bibfiles:
-  - references.bib
+  - allcitation.bib
 
 # Information about where the book exists on the web
 repository:
@@ -31,10 +31,26 @@ repository:
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
   use_issues_button: true
-  use_repository_button: true
+  use_repository_button: false
 
 sphinx:
   config:
     html_theme: sphinx_rtd_theme
+    bibtex_reference_style: author_year
+    navigation_depth: 4
   extra_extensions:
     - sphinx_inline_tabs
+  mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extensions:
+- sphinxcontrib.bibtex
+
+parse:
+  myst_substitutions:
+    Rsun: $~{\rm R}_\odot$
+    AA: $~\mathring{{\rm A}}$
+
+myst:
+  enable_extensions: ["colon_fence"]
+
+

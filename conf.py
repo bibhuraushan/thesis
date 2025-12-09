@@ -4,7 +4,8 @@
 # re-generate this one.
 ###############################################################################
 author = 'Bibhuti Kumar Jha'
-bibtex_bibfiles = ['references.bib']
+bibtex_bibfiles = ['allcitation.bib']
+bibtex_reference_style = 'author_year'
 comments_config = {'hypothesis': False, 'utterances': False}
 copyright = '2023, Bibhuti'
 exclude_patterns = ['**.ipynb_checkpoints', '.DS_Store', 'Thumbs.db', '_build']
@@ -16,11 +17,13 @@ html_favicon = ''
 html_logo = ''
 html_sourcelink_suffix = ''
 html_theme = 'sphinx_rtd_theme'
-html_theme_options = {'search_bar_text': 'Search this book...', 'launch_buttons': {'notebook_interface': 'classic', 'binderhub_url': '', 'jupyterhub_url': '', 'thebe': False, 'colab_url': ''}, 'path_to_docs': 'docs', 'repository_url': 'https://github.com/executablebooks/jupyter-book', 'repository_branch': 'master', 'extra_footer': '', 'home_page_in_toc': True, 'announcement': '', 'analytics': {'google_analytics_id': ''}, 'use_repository_button': True, 'use_edit_page_button': False, 'use_issues_button': True}
+html_theme_options = {'search_bar_text': 'Search this book...', 'launch_buttons': {'notebook_interface': 'classic', 'binderhub_url': '', 'jupyterhub_url': '', 'thebe': False, 'colab_url': ''}, 'path_to_docs': 'docs', 'repository_url': 'https://github.com/executablebooks/jupyter-book', 'repository_branch': 'master', 'extra_footer': '', 'home_page_in_toc': True, 'announcement': '', 'analytics': {'google_analytics_id': ''}, 'use_repository_button': False, 'use_edit_page_button': False, 'use_issues_button': True}
 html_title = 'Long-term Study of the Sun'
 latex_engine = 'pdflatex'
 myst_enable_extensions = ['colon_fence', 'dollarmath', 'linkify', 'substitution', 'tasklist']
+myst_substitutions = {'Rsun': '$~{\\rm R}_\\odot$', 'AA': '$~\\mathring{{\\rm A}}$'}
 myst_url_schemes = ['mailto', 'http', 'https']
+navigation_depth = 4
 nb_execution_allow_errors = False
 nb_execution_cache_path = ''
 nb_execution_excludepatterns = []
