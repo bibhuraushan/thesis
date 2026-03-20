@@ -1,217 +1,196 @@
-/* Ultra-Modern Academic Web Aesthetics */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+/* Classic "Bookish" Academic Web Aesthetics */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400&display=swap');
 
 :root {
-  --primary: #3b82f6;          /* Vibrant Blue */
-  --primary-light: #93c5fd;    /* Soft Blue */
-  --bg-color: #fcfcfd;         /* Ultra Soft White */
-  --text-main: #334155;        /* Deep Slate */
-  --text-muted: #64748b;       /* Cool Slate */
-  --math-bg: #f1f5f9;          /* Slightly darker background for math */
-  --glass-bg: rgba(255, 255, 255, 0.85);
-  --glass-border: rgba(0, 0, 0, 0.04);
-  --code-bg: #f8fafc;
-  --accent-color: #ec4899;     /* Soft Pink accent */
-  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
-  --shadow-md: 0 10px 25px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
-  --shadow-hover: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  /* Classic Oxford Blue and Crimson */
+  --primary: #002147;          /* Oxford Blue */
+  --primary-light: #4A6B8C;
+  --bg-color: #faf8f5;         /* Warm Ivory Paper */
+  --text-main: #2c2c2a;        /* Soft Black Ink */
+  --text-muted: #5c5c59;       /* Muted Ink */
+  --math-bg: #f5f3f0;          /* Slightly muted paper for math */
+  --glass-bg: rgba(250, 248, 245, 0.9);
+  --glass-border: rgba(0, 0, 0, 0.05);
+  --code-bg: #f5f3f0;
+  --accent-color: #8B0000;     /* Deep Crimson accent */
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.03), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+  --shadow-hover: 0 15px 30px -5px rgba(0, 33, 71, 0.1);
 }
 
 body.quarto-dark {
-  --primary: #60a5fa;
-  --primary-light: #bfdbfe;
-  --bg-color: #0f172a;         /* Deep Navy */
-  --text-main: #f1f5f9;
-  --text-muted: #94a3b8;
-  --math-bg: #1e293b;          /* Dark Slate for math */
-  --glass-bg: rgba(15, 23, 42, 0.85);
+  --primary: #a3c1e0;
+  --primary-light: #cddeef;
+  --bg-color: #1a1a18;         /* Deep Charcoal */
+  --text-main: #e6e6e4;
+  --text-muted: #a1a19f;
+  --math-bg: #242422;
+  --glass-bg: rgba(26, 26, 24, 0.9);
   --glass-border: rgba(255, 255, 255, 0.05);
-  --code-bg: #1e293b;
+  --code-bg: #242422;
+  --accent-color: #d66464;
 }
 
 html, body {
-  /* Sans-serif for UI, Serif for body reading */
-  font-family: 'Merriweather', serif; 
+  /* Classic, elegant serif for the body text */
+  font-family: 'EB Garamond', serif; 
   background-color: var(--bg-color);
   color: var(--text-main);
   scroll-behavior: smooth;
-  line-height: 1.85;
-  font-size: 16px;             /* Default base font size */
+  line-height: 1.8;
+  font-size: 19px; /* EB Garamond runs a bit small, 19px is perfect for reading */
 }
 
-/* Optimal Reading Width (UX Research implies 65-75 characters per line is optimal) */
 main {
-  max-width: 75ch !important;
+  /* Optimal Reading Width with Book Justification */
+  max-width: 70ch !important;
   margin-left: auto !important;
   margin-right: auto !important;
+  text-align: justify;
+  hyphens: auto; /* Enable auto hyphenation for perfect justification blocks */
 }
 
-/* Headings: UI font for clean structure */
-h1, h2, h3, h4, h5, h6, .sidebar, .nav-page, figcaption {
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  color: var(--text-main);
+/* Headings: Elegant Serif for Headers */
+h1, h2, h3, h4, h5, h6, figcaption {
+  font-family: 'Playfair Display', serif;
+  color: var(--primary);
+  font-weight: 600;
+  letter-spacing: -0.01em;
 }
 
 h1, h2, h3 {
-  font-weight: 700;
-  letter-spacing: -0.03em;
   margin-top: 3.5rem;
   margin-bottom: 1.5rem;
-  line-height: 1.3;
+  line-height: 1.25;
 }
 
 h1.title {
-  background: linear-gradient(135deg, var(--primary), var(--accent-color));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--primary);
+  /* Removed linear-gradient to feel more like classic ink printing */
+  background: none;
+  -webkit-text-fill-color: var(--primary);
   font-weight: 800;
-  font-size: clamp(2rem, 4vw, 3rem); /* Fluid typography */
+  font-size: clamp(2.5rem, 4vw, 3.5rem); 
   line-height: 1.15;
   margin-bottom: 2rem;
-  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--accent-color); /* Crimson underline for title */
+  padding-bottom: 1rem;
+}
+
+.sidebar, .nav-page {
+  font-family: 'EB Garamond', serif; /* Keep sidebar classic */
+  font-size: 1.05rem;
 }
 
 /* Sidebar Glassmorphism */
 #quarto-sidebar, .sidebar {
   background: var(--glass-bg) !important;
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border-right: 1px solid var(--glass-border);
-  box-shadow: 2px 0 20px rgba(0,0,0,0.02);
   padding-top: 1.5rem;
 }
 
 .sidebar a {
   color: var(--text-muted);
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  font-weight: 500;
-  border-radius: 8px;
-  padding: 0.5rem 1rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+  font-weight: 400;
+  padding: 0.4rem 1rem;
 }
 
 .sidebar a:hover, 
 .sidebar a.active {
-  color: var(--primary);
-  transform: translateX(6px);
-  background: rgba(59, 130, 246, 0.08);
+  color: var(--accent-color);
+  transform: translateX(4px);
 }
 
-/* Enhancing Figure Captions */
+/* Enhancing Figure Captions to look like book plates */
 figcaption {
   text-align: center;
-  font-size: 0.85rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
+  font-size: 0.95rem;
+  font-family: 'EB Garamond', serif;
+  font-style: italic;
   color: var(--text-muted);
-  margin-top: 1.5rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid var(--glass-border);
+  margin-top: 1.2rem;
+  padding-bottom: 1.5rem;
 }
 
-/* Images Constraint and Soft Elevation */
+/* Images Constraint */
 img, figure img, .quarto-figure img {
   max-width: 100% !important;
   height: auto !important;
-  border-radius: 16px;
+  border-radius: 4px; /* Slight rounding for elegant framing */
   box-shadow: var(--shadow-sm);
-  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.5s ease;
-  margin: 2.5rem auto 1.5rem auto;
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
+  margin: 2.5rem auto 1rem auto;
   display: block;
 }
 
 img:hover, .quarto-figure img:hover {
-  transform: translateY(-4px) scale(1.01);
-  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06); /* Soft lift, not tech-app bouncy */
 }
 
-/* Advanced Blockquote with large quote mark */
+/* Academic Blockquote Styling */
 blockquote {
-  position: relative;
-  background: linear-gradient(to right, rgba(59, 130, 246, 0.08), transparent);
-  border-left: 4px solid var(--primary);
-  padding: 2rem 2.5rem;
-  margin: 3rem 0;
-  border-radius: 0 16px 16px 0;
+  border-left: none; /* Remove harsh modern border */
+  border-top: 1px solid var(--glass-border);
+  border-bottom: 1px solid var(--glass-border);
+  padding: 1.5rem 2.5rem;
+  margin: 3rem auto;
   font-style: italic;
-  font-size: 1rem;
-  color: var(--text-muted);
-}
-
-blockquote::before {
-  content: "“";
-  position: absolute;
-  top: -10px;
-  left: 10px;
-  font-size: 5rem;
-  font-family: serif;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.15rem;
   color: var(--primary);
-  opacity: 0.15;
-  line-height: 1;
+  text-align: center;
+  max-width: 85%;
 }
 
 /* Elegant Math Blocks */
 .math.display {
   background-color: var(--math-bg);
-  border-radius: 12px;
+  border-radius: 4px;
   padding: 1.5rem;
   margin: 2rem 0;
   overflow-x: auto;
   overflow-y: hidden;
-  box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
-  border: 1px solid var(--glass-border);
+  border-left: 3px solid var(--primary-light);
 }
 
 /* Inline Code */
 code {
-  font-family: 'Plus Jakarta Sans', monospace;
+  font-family: 'Courier New', Courier, monospace; /* Classic Typewriter vibe */
   background-color: var(--code-bg);
-  padding: 0.2em 0.4em;
-  border-radius: 6px;
-  font-size: 0.85em;
+  padding: 0.15em 0.3em;
+  border-radius: 3px;
+  font-size: 0.9em;
   color: var(--accent-color);
 }
 
-/* Smooth Links */
+/* Soft, classical links */
 p a, li a {
-  color: var(--primary);
+  color: var(--accent-color);
   text-decoration: none;
-  border-bottom: 2px solid rgba(59, 130, 246, 0.2);
-  transition: all 0.2s ease;
-  padding-bottom: 1px;
+  border-bottom: 1px dotted var(--accent-color);
+  transition: color 0.2s ease;
 }
 
 p a:hover, li a:hover {
-  border-bottom-color: var(--primary);
-  background-color: rgba(59, 130, 246, 0.05);
+  color: var(--primary);
+  border-bottom: 1px solid var(--primary);
 }
 
-/* Lead Paragraph Style (Usually for Preface) */
-.lead {
-  font-size: 1.25rem;
-  font-weight: 300;
-  line-height: 1.6;
-  color: var(--text-muted);
-  margin-bottom: 2rem;
-}
-
-/* Custom Scrollbar for Webkit */
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
 }
-
 ::-webkit-scrollbar-track {
   background: var(--bg-color); 
 }
- 
 ::-webkit-scrollbar-thumb {
-  background: rgba(100, 116, 139, 0.3); 
-  border-radius: 5px;
-  border: 2px solid var(--bg-color);
+  background: #d4d0cb; 
+  border-radius: 4px;
 }
-
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(100, 116, 139, 0.5); 
+body.quarto-dark ::-webkit-scrollbar-thumb {
+  background: #3d3d3a; 
 }
