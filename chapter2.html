@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>2&nbsp; Data – Long-term solar observations: probing the solar interior and magnetic fields</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./chapter3.html" rel="next">
+<link href="./chapter1.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-27c261d06b905028a18691de25d09dde.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-234501a227967ac462f24af7be37efa8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-27c261d06b905028a18691de25d09dde.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter2.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Long-term solar observations: probing the solar interior and magnetic fields</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter2.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Study of Sunspot Penumbra to Umbra Area Ratio using Kodaikanal White-light Digitized Data</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Measurements of Solar Differential Rotation Using the Century Long Kodaikanal Sunspot Data</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">A Theoretical Model of the Near–Surface Shear Layer of the Sun</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Magnetic field dependence of bipolar magnetic region tilts on the Sun: Indication of tilt quenching</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">The Conclusion</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#ch1-koso" id="toc-ch1-koso" class="nav-link active" data-scroll-target="#ch1-koso"><span class="header-section-number">2.1</span> The KoSO Digital Archive</a>
+  <ul class="collapse">
+  <li><a href="#ch2-tele" id="toc-ch2-tele" class="nav-link" data-scroll-target="#ch2-tele"><span class="header-section-number">2.1.1</span> The Telescope</a></li>
+  <li><a href="#ch2-digi" id="toc-ch2-digi" class="nav-link" data-scroll-target="#ch2-digi"><span class="header-section-number">2.1.2</span> The Digitizer Unit</a></li>
+  </ul></li>
+  <li><a href="#ch2-wl" id="toc-ch2-wl" class="nav-link" data-scroll-target="#ch2-wl"><span class="header-section-number">2.2</span> White-light Data</a>
+  <ul class="collapse">
+  <li><a href="#ch2-upwl" id="toc-ch2-upwl" class="nav-link" data-scroll-target="#ch2-upwl"><span class="header-section-number">2.2.1</span> Updated Sunspots Area Time Series</a></li>
+  </ul></li>
+  <li><a href="#ch2-cak" id="toc-ch2-cak" class="nav-link" data-scroll-target="#ch2-cak"><span class="header-section-number">2.3</span> Ca-K Data</a>
+  <ul class="collapse">
+  <li><a href="#ch2-pole" id="toc-ch2-pole" class="nav-link" data-scroll-target="#ch2-pole"><span class="header-section-number">2.3.1</span> Pole Angle Calculation</a></li>
+  <li><a href="#issues-with-timestamps" id="toc-issues-with-timestamps" class="nav-link" data-scroll-target="#issues-with-timestamps"><span class="header-section-number">2.3.2</span> Issues with Timestamps</a></li>
+  <li><a href="#identification-and-correction" id="toc-identification-and-correction" class="nav-link" data-scroll-target="#identification-and-correction"><span class="header-section-number">2.3.3</span> Identification and Correction</a></li>
+  </ul></li>
+  <li><a href="#ch2-mdi" id="toc-ch2-mdi" class="nav-link" data-scroll-target="#ch2-mdi"><span class="header-section-number">2.4</span> The Michelson Doppler Imager</a></li>
+  <li><a href="#ch2-hmi" id="toc-ch2-hmi" class="nav-link" data-scroll-target="#ch2-hmi"><span class="header-section-number">2.5</span> The Helioseismic and Magnetic Imager</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="Chap2" class="quarto-section-identifier"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="epigraph">
+<p><em>“The goal is to turn data into information, and information into insight.”</em></p>
+<p>–Carly Fiorina</p>
+</div>
+<p>The importance of historical archival data is immeasurable for the long–term study of the Sun. The significance of these data was not out of the site, and hence observatories around the globe started preserving them. Most of these data were taken on photographic plates or films, which are now either digitized or in the process of digitization. Among all the observatories, the Royal Observatory of Greenwich has one of the most extended data series from 1874 to 1976, collected and compiled from its different observing stations. Apart from RGO, Kodaikanal Solar Observatory, Kodaikanal (1906 onward), Debrecen Photographic Data (1974–2018), Pulkovo (1932–1991) etc., have systematic sunspot observation.</p>
+<figure id="fig2.1" data-latex-placement="!htbp" class="figure">
+<embed src="Figures/Chapter2/koso.png" style="width:80.0%">
+<figcaption>
+A fish eyes view of Kodaikanal Solar Observatory (<span><em>Image courtesy: KoSO</em></span>).
+</figcaption>
+</figure>
+<section id="ch1-koso" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="ch1-koso"><span class="header-section-number">2.1</span> The KoSO Digital Archive</h2>
+<p>Kodaikanal Solar Observatory (KoSO), established in 1899, is one of the oldest observatories in the world observing the Sun in multi-wavelengths (white-light, H-alpha, Ca-K) from the beginning of the 20th century <span class="citation" data-cites="Hasan2010">(<a href="#ref-Hasan2010" role="doc-biblioref">Hasan et al. 2010</a>)</span>. Earlier, these observations were taken on photographic plates or films and preserved in the humidity controlled environment at Kodaikanal. Recently these data have been digitized using a digitizer unit and made public for the scientific community<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. The statistics of the digitized data is shown in <a href="#fig2.2" data-reference-type="ref+label" data-reference="fig2.2">1.2</a>. First, I will briefly discuss the telescope used to acquire these observations and the digitizer unit used to make it digital before I get into the details the data products.</p>
+<figure id="fig2.2" data-latex-placement="!t" class="figure">
+<img src="Figures/Chapter2/chapter_2_1.png" style="width:95.0%" class="figure-img">
+<figcaption>
+No of observation at KoSO (red) white-light and (blue) Ca-K.
+</figcaption>
+</figure>
+<section id="ch2-tele" class="level3" data-number="2.1.1">
+<h3 data-number="2.1.1" class="anchored" data-anchor-id="ch2-tele"><span class="header-section-number">2.1.1</span> The Telescope</h3>
+<p>The white light observation at Kodaikanal has been performed using an equatorially mounted 10&nbsp;cm, f/15 telescope from the begging of 1904. With the help of additional optics, this telescope produces a solar image of a diameter of 20.4&nbsp;cm, which is acquired on a photographic plate or film. In 1918 this 10&nbsp;cm lens was replaced by a 15&nbsp;cm achromatic lens, and then onward, the same setup is used for the observation <span class="citation" data-cites="Sivaraman1993">(<a href="#ref-Sivaraman1993" role="doc-biblioref">Sivaraman, Gupta, and Howard 1993</a>)</span>.</p>
+<p>The Ca-K (393.37&nbsp;nm) and H-alpha (656.28&nbsp;nm) observations were taken using a spectroheliograph. To fed the reflected sunlight to the spectrograph, an 18&nbsp;inches single mirror siderostat is used along with the additional optics. The siderostat also take care of the Earth’s rotation and reflect the sunlight in a fixed direction which is fed to the spectroheliograph. In the spectrograph a two prisms/mirrors along with CA-K/H-alpha filter are used to observe the Sun in these two wavelengths.</p>
+</section>
+<section id="ch2-digi" class="level3" data-number="2.1.2">
+<h3 data-number="2.1.2" class="anchored" data-anchor-id="ch2-digi"><span class="header-section-number">2.1.2</span> The Digitizer Unit</h3>
+<p>The digitizer unit available at KoSO is used to digitize the observation taken on plates/films into 4k<span class="math inline">\(\times\)</span><!-- -->4k resolution. This unit consists a 1&nbsp;m diameter spherical uniform light source with a small opening at the top where plates/films are placed in a holder for digitization. Light coming from the sphere passes through the plate/film and is captured by a cryogenic cooled (-100<span class="math inline">\(^\circ\)</span>&nbsp;C) CCD camera to reduce the dark noise. This camera takes the image with resolution of 4k<span class="math inline">\(\times\)</span><!-- -->4k and with a bit depth of 32-bit and stores it in Flexible Image Transport System (FITS) format for the use of scientific community <span class="citation" data-cites="Ravindra2013">(for further details about the digitization see <a href="#ref-Ravindra2013" role="doc-biblioref">Ravindra et al. 2013</a>)</span>. This digitizer unit has been extensively used for digitizing all the photographic plates and films.</p>
+</section>
+</section>
+<section id="ch2-wl" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="ch2-wl"><span class="header-section-number">2.2</span> White-light Data</h2>
+<p>The white–light photographic data for the period 1906–2011 has been digitized recently using the digitizer discussed in . Barring the period 1906–1920, the white–light data for 1921–2011 has been calibrated and reported in <span class="citation" data-cites="Ravindra2013">Ravindra et al. (<a href="#ref-Ravindra2013" role="doc-biblioref">2013</a>)</span>. These calibration steps include (i) correction for flat field, (ii) disk identification using Hough transform, (iii) conversion of intensity to relative plate density and (iv) addition of proper header information as per FITS standard. After that, a semi–automated sunspot detection technique was developed based on the already existing sunspot detection algorithm such as STARA <span class="citation" data-cites="Watson2009">(<a href="#ref-Watson2009" role="doc-biblioref">Watson et al. 2009</a>)</span> to identify the sunspots from these images and these informations are stored in the form of binary images. The sunspots area time series extracted from these data have been reported in <span class="citation" data-cites="Ravindra2013">Ravindra et al. (<a href="#ref-Ravindra2013" role="doc-biblioref">2013</a>)</span> and <span class="citation" data-cites="Mandal2017a">S. Mandal et al. (<a href="#ref-Mandal2017a" role="doc-biblioref">2017</a>)</span>. The stored binary mask keeping the information about sunspots are used in <a href="chapter3.html" data-reference-type="ref+label" data-reference="Chap3">[Chap3]</a> <span class="citation" data-cites="Jha2018 Jha2019">(<a href="#ref-Jha2018" role="doc-biblioref">Jha, Mandal, and Banerjee 2018</a>, <a href="#ref-Jha2019" role="doc-biblioref">2019</a>)</span> and <a href="chapter4.html" data-reference-type="ref+label" data-reference="Chap4">[Chap4]</a><span class="citation" data-cites="Jha2021">(<a href="#ref-Jha2021" role="doc-biblioref">Jha et al. 2021</a>)</span> and could be further used for subsequent studies.</p>
+<section id="ch2-upwl" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="ch2-upwl"><span class="header-section-number">2.2.1</span> Updated Sunspots Area Time Series</h3>
+<p>The white-light observation at KoSO started in 1904, but due to difficulties in calibration for the period 1904, the sunspot area series has been only reported for the period 1921 <span class="citation" data-cites="Ravindra2013 Mandal2017a">(<a href="#ref-Ravindra2013" role="doc-biblioref">Ravindra et al. 2013</a>; <a href="#ref-Mandal2017a" role="doc-biblioref">S. Mandal et al. 2017</a>)</span>. The initial two years of data (1904 and 1905) have difficulty identifying reference lines that could be used to get the correct orientation of the images, as they do not contain any. Therefore, barring the initial two years here, I will briefly discuss the updated area series, which includes the data for the period 1906 and extends the series till 2018. The detail report on the update is under preparation and will be presented in <span class="citation" data-cites="Jha2022">Jha et al. (<a href="#ref-Jha2022" role="doc-biblioref">2022</a>, in preparation)</span>.</p>
+<figure id="fig2.3" data-latex-placement="!htbp" class="figure">
+<img src="Figures/Chapter2/chapter_2_comp.png" class="figure-img">
+<figcaption>
+Top: Monthly averaged sunspot area from KoSO with recently cross-calibrated area series <span class="citation" data-cites="Mandal2020"></span> and bottom: the latitude time diagram, for the two different epochs.
+</figcaption>
+</figure>
+<p>It has been already pointed out by <span class="citation" data-cites="Ravindra2013">Ravindra et al. (<a href="#ref-Ravindra2013" role="doc-biblioref">2013</a>)</span> that the configuration of the telescope has been changed several times before 1918. These changes result in the varying image quality and disk size on the photographic plates of films. Along with the East-West line, which is used to orient the images correctly, these observations contain an additional North-South line. Due to the presence of two lines, it is not clear which of these lines correspond to North-South and East-West, and hence, the older version of codes was unable to deal with these observations. Now, a semi-automated method is used use manually verify the orientation of the images based on the movement of features on the surface. The steps of calibration and sunspot detection is the same as discussed and also reported in <span class="citation" data-cites="Ravindra2013">Ravindra et al. (<a href="#ref-Ravindra2013" role="doc-biblioref">2013</a>)</span>. Furthermore, here I also present the extended area series from the recent period 2011, which are also extracted in the similar way as discussed in <span class="citation" data-cites="Ravindra2013">Ravindra et al. (<a href="#ref-Ravindra2013" role="doc-biblioref">2013</a>)</span> and <span class="citation" data-cites="Mandal2017a">S. Mandal et al. (<a href="#ref-Mandal2017a" role="doc-biblioref">2017</a>)</span>.</p>
+<p>After the detection of sunspots the position of these spots are extracted. Top panel of <a href="#fig2.3" data-reference-type="ref+label" data-reference="fig2.3">1.3</a> shows the monthly averaged sunspot area for the two different periods (1906 &amp; 2011). The comparison of these monthly averaged area show a good agreement with the recently cros-calibrated area series <span class="citation" data-cites="Mandal2020">(<a href="#ref-Mandal2020" role="doc-biblioref">Sudip Mandal et al. 2020</a>)</span>. The bottom panel of <a href="#fig2.3" data-reference-type="ref+label" data-reference="fig2.3">1.3</a> also show the comparison of the position of the detected spots which also in accordance with <span class="citation" data-cites="Mandal2020">Sudip Mandal et al. (<a href="#ref-Mandal2020" role="doc-biblioref">2020</a>)</span>. <a href="#fig2.4" data-reference-type="ref+label" data-reference="fig2.4">1.4</a> shows the (top) updated area series from the KoSO along with the cross-calibrated yearly averaged area from <span class="citation" data-cites="Mandal2020">Sudip Mandal et al. (<a href="#ref-Mandal2020" role="doc-biblioref">2020</a>)</span>, and (bottom) location of sunspots on the surface in form of latitude time diagram.</p>
+<figure id="fig2.4" data-latex-placement="!t" class="figure">
+<img src="Figures/Chapter2/chapter_2_all.png" class="figure-img">
+<figcaption>
+The updated area time series from the KoSO digital archive along with the location of sunspots shown in the form of butterfly diagram.
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="ch2-cak" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="ch2-cak"><span class="header-section-number">2.3</span> Ca-K Data</h2>
+<p>The Ca-K observation captures the chromosphere and carries an important information about the magnetic nature of the Sun. Ca-K data is used as an important proxy for the magnetic field measurement. Moreover, this data also plays a crucial role in the historical reconstruction of solar irradiance. Therefore, analogous to white light, the Ca-K data has also been digitized for the period 1904–2007 and calibrated by following the similar steps as mentioned in . These data have been taken with the help of siderostat, a single mirror system, and suffers from rotation of the field of view (FOV). It is important to correctly locate the solar north in the image for the scientific use of the data. Therefore, after the observations, the position of solar North/South has been marked by double/single dot based on the tabulated value of rotation calculated from observation time <span class="citation" data-cites="Priyal2014b">(<a href="#ref-Priyal2014b" role="doc-biblioref">Priyal et al. 2014</a>)</span>. It has been recently discovered that there are a few issues with this marking, and it will be addressed in the next section.</p>
+<section id="ch2-pole" class="level3" data-number="2.3.1">
+<h3 data-number="2.3.1" class="anchored" data-anchor-id="ch2-pole"><span class="header-section-number">2.3.1</span> Pole Angle Calculation</h3>
+<p>As mentioned already the siderostat cause the rotation of FOV and hence the position of solar north rotates 360<span class="math inline">\(^\circ\)</span> in one complete day. Now, instead of tabulated value I suggest to use the mathematical formula to calculate the rotation caused by siderostat (<span class="math inline">\(\Theta\)</span>), which is given by <span class="math display">\[\begin{equation}
+    \Theta = 2\tan^{-1}{\left[ K\tan{\left( \frac{{\rm HA}}{2}\right)}\right]};
+    \label{eq2.1}
+\end{equation}\]</span> where, <span class="math display">\[\begin{equation*}
+    K \equiv \frac{\sin{\left( \frac{L-\delta}{2}\right)}}{\sin{\left( \frac{L+\delta}{2}\right)}},
+\end{equation*}\]</span></p>
+<p>HA is the hour angle<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> of the Sun at the time of observation, <span class="math inline">\(L\)</span> (10.23<span class="math inline">\(^\circ\)</span>N for KoSO) is the latitude of the observatory and, <span class="math inline">\(\delta\)</span> (<span class="math inline">\(=90^o - {\rm declination~of~Sun}\)</span>) is the pole angle of the Sun <span class="citation" data-cites="Cornu1900">(<a href="#ref-Cornu1900" role="doc-biblioref">Cornu 1900</a>)</span>. The mathematical relation given in <a href="#eq2.1" data-reference-type="ref+label" data-reference="eq2.1">[eq2.1]</a> depends on HA, which need a correct time of observation ().</p>
+</section>
+<section id="issues-with-timestamps" class="level3" data-number="2.3.2">
+<h3 data-number="2.3.2" class="anchored" data-anchor-id="issues-with-timestamps"><span class="header-section-number">2.3.2</span> Issues with Timestamps</h3>
+<p>The &nbsp;are usually written on plates/films, envelops containing the plate and in the logbook. During the digitization of these observations, the file name<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> is given as par the . To use the digitized images and get the correct position of solar North, we need this time from the filenames and here come the problems. There are a few issues with the timestamp in the filename, which are following.</p>
+<ol type="1">
+<li><p>A major change in time zone from IST (+05:30 GMT) to UTC (00:00 GMT) in February 1964 (see <a href="#fig2.5" data-reference-type="ref+label" data-reference="fig2.5">1.5</a>) is noticed and it can straightly corrected.</p></li>
+<li><p>During Sep 1, 1942 to Oct 15, 1945 there is a systematic shift of a hour daylight saving time<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> (DST; +06:30 UTC) observed in India. It is also very easy to be taken care once known.</p></li>
+<li><p>A careful look at the &nbsp;in Jan 1908 (for a small period) suggests that the &nbsp;is in UTC, which is again easy to compensate.</p></li>
+<li><p>Scatters from 1964 to 1970 is mainly due to mixing time zones (IST and UTC) during digitization and renaming the files even though the &nbsp;on plates are in UTC. Because of its randomness it is little tricky to correct.</p></li>
+<li><p>Scatters seen beyond the usual observation time (06:30 to 17:00 IST) is primarily due to the mistake in the name of files during digitization.</p></li>
+</ol>
+<p>The points raised in 1, 2 and 3 are straight forward to bring to either IST or GMT, whatever one may prefer. The scatter and the mistakes in renaming the file are really difficult to correct because of its random nature. It was unknown that how much data is effected by such mistakes and it becomes important to first identify that fraction of data and then try to correct them if possible.</p>
+<figure id="fig2.5" data-latex-placement="!t" class="figure">
+<img src="Figures/Chapter2/time_obs.png" class="figure-img">
+<figcaption>
+Time of observation of the day as extracted from the filename with .
+</figcaption>
+</figure>
+</section>
+<section id="identification-and-correction" class="level3" data-number="2.3.3">
+<h3 data-number="2.3.3" class="anchored" data-anchor-id="identification-and-correction"><span class="header-section-number">2.3.3</span> Identification and Correction</h3>
+<p>To identify the in-correct timestamp in the filenames (observations) these steps have been followed.</p>
+<ol type="1">
+<li><p>Three consecutive observations (images) have been selected and rotated based on the &nbsp;as extracted from filename and using <a href="#eq2.1" data-reference-type="ref+label" data-reference="eq2.1">[eq2.1]</a>.</p></li>
+<li><p>The preceding/following observations are differentially forward/back rotated to match with the &nbsp;of central observation.</p></li>
+<li><p>Using a fixed threshold, the contours (represents the chromospheric feature) of differentially forward/back rotated preceding/following observation are overlapped and compared manually with central observation.</p></li>
+<li><p>If either of the contours shows correct overlap, the central observation is marked as correct timestamp or &nbsp;and if non of them are overlapping it is marked as in-correct.</p></li>
+<li><p>Observation marked in-correct are again compared with the two correctly marked near-time observations and marked again as Step-4.</p></li>
+</ol>
+<p>I have gone through all the observations, and based on the method briefed above, the summary is presented in <a href="#tab2.1" data-reference-type="ref+label" data-reference="tab2.1">1.1</a></p>
+<div id="tab2.1">
+<table class="caption-top table">
+<caption>A brief statistics of the number of images with correct and in-correct timestamps.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Number of Observations</th>
+<th></th>
+<th style="text-align: center;">Number</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Total (1907)</td>
+<td>:</td>
+<td style="text-align: center;">47935</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Correct timestamp (IST)</td>
+<td>:</td>
+<td style="text-align: center;">31911 (66.6%)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Correct timestamp (UTC)</td>
+<td>:</td>
+<td style="text-align: center;">11654 (24.3%)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">In-Correct timestamp</td>
+<td>:</td>
+<td style="text-align: center;">04370 (09.1%)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>To correct all those observations identified as in-correct timestamps, we check the plates and logbooks for the . After noting down &nbsp;for all the observations, I again check for their correctness using a similar approach explained earlier. Hence, the final statistics for the observation with correct and in-correct &nbsp;is as in <a href="#tab2.2" data-reference-type="ref+label" data-reference="tab2.2">1.2</a>. Apart from these, there are around 720 observations during the period 1904, in which no &nbsp;information is available, and I am currently exploring the possiblity to get the &nbsp;in those observations. This complete work will be submitted soon to the Journal of Solar Physics as Jha et al.&nbsp;(2022).</p>
+<div id="tab2.2">
+<table class="caption-top table">
+<caption>A brief statistics of the number of final images with correct and in-correct .</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Number of Observations</th>
+<th></th>
+<th style="text-align: center;">Number</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Total (1907)</td>
+<td>:</td>
+<td style="text-align: center;">47935</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Correct</td>
+<td>:</td>
+<td style="text-align: center;">44977 (93.8%)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">In-Correct</td>
+<td>:</td>
+<td style="text-align: center;">01607 (03.4%)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Bad Quality (visually) Images</td>
+<td>:</td>
+<td style="text-align: center;">01150 (02.4%)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Unknown</td>
+<td>:</td>
+<td style="text-align: center;">00207 (00.4%)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="ch2-mdi" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="ch2-mdi"><span class="header-section-number">2.4</span> The Michelson Doppler Imager</h2>
+<p>The Michelson Doppler Imager [MDI; <span class="citation" data-cites="Scherrer1995">Scherrer et al. (<a href="#ref-Scherrer1995" role="doc-biblioref">1995</a>)</span>] is a space-based instrument onboard Solar and Heliospheric Observatory (SOHO, shown in <a href="#fig2.6" data-reference-type="ref+label" data-reference="fig2.6">1.6</a>) launched in December 1995, which is a project of international collaboration between The National Aeronautics and Space Administration (NASA) and European Space Agency (ESA). MDI observes the Sun in visible light (6768&nbsp;Å; white-light or intensity continuum) with a cadence of 6&nbsp;hr and resolution of 4” on 1k<span class="math inline">\(\times\)</span><!-- -->1k CCD. This provides the photospheric observation of the Sun, which is helpful for the study of sunspots and other photospheric activity. MDI also measures the line of sight (LOS) magnetic field component using Zeeman splitting of magnetically sensitive Ni I 6768&nbsp;Åline. These LOS magnetograms are available with the cadence of 96&nbsp;m and have the exact resolution as white-light. In this thesis work, the intensity continuum and magnetogram data have been used for 1996.</p>
+<figure id="fig2.6" data-latex-placement="!htbp" class="figure">
+<img src="Figures/Chapter2/soho.png" style="width:50.0%" class="figure-img">
+<figcaption>
+Image of SOHO (<span><em>Image Courtesy: ESA &amp; NASA</em></span>).
+</figcaption>
+</figure>
+</section>
+<section id="ch2-hmi" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="ch2-hmi"><span class="header-section-number">2.5</span> The Helioseismic and Magnetic Imager</h2>
+<p>The Helioseismic and Magnetic Imager [HMI; <span class="citation" data-cites="Schou2012">Schou et al. (<a href="#ref-Schou2012" role="doc-biblioref">2012</a>)</span>] onboard Solar Dynamic Observatory (SDO) is a succesor of MDI with better resolution and cadence. It has two 4k<span class="math inline">\(\times\)</span><!-- -->4k CCD cameras which observe the Sun with 45&nbsp;sec and 720&nbsp;sec cadence. HMI provides the full disk LOS and vector magnetic filed measurementsa and it also provides the full disk intensity continuum with the resolution of 1”. In this thesis the intensity continum and magnetogram data for the period 2010 has been used.</p>
+<figure id="fig2.7" data-latex-placement="!htbp" class="figure">
+<img src="Figures/Chapter2/sdo.jpg" style="width:70.0%" class="figure-img">
+<figcaption>
+SDO (<span><em>Image Courtesy: NASA)</em></span>)
+</figcaption>
+</figure>
+
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Cornu1900" class="csl-entry" role="listitem">
+Cornu, M. A. 1900. <span>“<span class="nocase">On the Law of Diurnal Rotation of the Optical Field of the Siderostat and Heliostat</span>”</span> 11 (March): 148. <a href="https://doi.org/10.1086/140677">https://doi.org/10.1086/140677</a>.
+</div>
+<div id="ref-Hasan2010" class="csl-entry" role="listitem">
+Hasan, S. S., D. C. V. Mallik, S. P. Bagare, and S. P. Rajaguru. 2010. <span>“<span class="nocase">Solar Physics at the Kodaikanal Observatory: A Historical Perspective</span>.”</span> In <em>Magnetic Coupling Between the Interior and Atmosphere of the Sun</em>, 19:12–36. Astrophysics and Space Science Proceedings. <a href="https://doi.org/10.1007/978-3-642-02859-5\_3">https://doi.org/10.1007/978-3-642-02859-5\_3</a>.
+</div>
+<div id="ref-Jha2022" class="csl-entry" role="listitem">
+Jha, Bibhuti Kumar, Manjunath Hegde, Aditya Priyadarshi, Sudip Mandal, B Ravindra, and Dipankar Banerjee. 2022. <span>“<span class="nocase">Extending the Sunspot Area Series from Kodaikanal Solar Observatory</span>.”</span> <em>arXiv e-Prints</em>, October, arXiv:2210.06922. <a href="https://arxiv.org/abs/2210.06922">https://arxiv.org/abs/2210.06922</a>.
+</div>
+<div id="ref-Jha2018" class="csl-entry" role="listitem">
+Jha, Bibhuti Kumar, Sudip Mandal, and Dipankar Banerjee. 2018. <span>“Long-Term Variation of Sunspot Penumbra to Umbra Area Ratio: A Study Using Kodaikanal White-Light Digitized Data.”</span> <em>Proceedings of the International Astronomical Union</em> 13 (S340): 185–86. <a href="https://doi.org/10.1017/S1743921318001989">https://doi.org/10.1017/S1743921318001989</a>.
+</div>
+<div id="ref-Jha2019" class="csl-entry" role="listitem">
+———. 2019. <span>“<span class="nocase">Study of Sunspot Penumbra to Umbra Area Ratio Using Kodaikanal White-light Digitised Data</span>”</span> 294 (6): 72. <a href="https://doi.org/10.1007/s11207-019-1462-2">https://doi.org/10.1007/s11207-019-1462-2</a>.
+</div>
+<div id="ref-Jha2021" class="csl-entry" role="listitem">
+Jha, Bibhuti Kumar, Aditya Priyadarshi, Sudip Mandal, Subhamoy Chatterjee, and Dipankar Banerjee. 2021. <span>“<span class="nocase">Measurements of Solar Differential Rotation Using the Century Long Kodaikanal Sunspot Data</span>”</span> 296 (1): 25. <a href="https://doi.org/10.1007/s11207-021-01767-8">https://doi.org/10.1007/s11207-021-01767-8</a>.
+</div>
+<div id="ref-Mandal2017a" class="csl-entry" role="listitem">
+Mandal, S., M. Hegde, T. Samanta, G. Hazra, D. Banerjee, and B. Ravindra. 2017. <span>“<span class="nocase">Kodaikanal digitized white-light data archive (1921-2011): Analysis of various solar cycle features</span>”</span> 601 (May): A106. <a href="https://doi.org/10.1051/0004-6361/201628651">https://doi.org/10.1051/0004-6361/201628651</a>.
+</div>
+<div id="ref-Mandal2020" class="csl-entry" role="listitem">
+Mandal, Sudip, Natalie A. Krivova, Sami K. Solanki, Nimesh Sinha, and Dipankar Banerjee. 2020. <span>“<span class="nocase">Sunspot area catalog revisited: Daily cross-calibrated areas since 1874</span>”</span> 640 (August): A78. <a href="https://doi.org/10.1051/0004-6361/202037547">https://doi.org/10.1051/0004-6361/202037547</a>.
+</div>
+<div id="ref-Priyal2014b" class="csl-entry" role="listitem">
+Priyal, Muthu, Jagdev Singh, B. Ravindra, T. G. Priya, and K. Amareswari. 2014. <span>“<span class="nocase">Long Term Variations in Chromospheric Features from Ca-K Images at Kodaikanal</span>”</span> 289 (1): 137–52. <a href="https://doi.org/10.1007/s11207-013-0315-7">https://doi.org/10.1007/s11207-013-0315-7</a>.
+</div>
+<div id="ref-Ravindra2013" class="csl-entry" role="listitem">
+Ravindra, B., T. G. Priya, K. Amareswari, M. Priyal, A. A. Nazia, and D. Banerjee. 2013. <span>“<span class="nocase">Digitized archive of the Kodaikanal images: Representative results of solar cycle variation from sunspot area determination</span>”</span> 550 (February): A19. <a href="https://doi.org/10.1051/0004-6361/201220416">https://doi.org/10.1051/0004-6361/201220416</a>.
+</div>
+<div id="ref-Scherrer1995" class="csl-entry" role="listitem">
+Scherrer, P. H., R. S. Bogart, R. I. Bush, J. T. Hoeksema, A. G. Kosovichev, J. Schou, W. Rosenberg, et al. 1995. <span>“<span>The Solar Oscillations Investigation - Michelson Doppler Imager</span>”</span> 162 (December): 129–88. <a href="https://doi.org/10.1007/BF00733429">https://doi.org/10.1007/BF00733429</a>.
+</div>
+<div id="ref-Schou2012" class="csl-entry" role="listitem">
+Schou, J., P. H. Scherrer, R. I. Bush, R. Wachter, S. Couvidat, M. C. Rabello-Soares, R. S. Bogart, et al. 2012. <span>“<span class="nocase">Design and Ground Calibration of the Helioseismic and Magnetic Imager (HMI) Instrument on the Solar Dynamics Observatory (SDO)</span>”</span> 275 (January): 229–59. <a href="https://doi.org/10.1007/s11207-011-9842-2">https://doi.org/10.1007/s11207-011-9842-2</a>.
+</div>
+<div id="ref-Sivaraman1993" class="csl-entry" role="listitem">
+Sivaraman, K. R., S. S. Gupta, and Robert F. Howard. 1993. <span>“<span class="nocase">Measurement of Kodiakanal White-Light Images - Part One</span>”</span> 146 (1): 27–47. <a href="https://doi.org/10.1007/BF00662168">https://doi.org/10.1007/BF00662168</a>.
+</div>
+<div id="ref-Watson2009" class="csl-entry" role="listitem">
+Watson, F., L. Fletcher, S. Dalla, and S. Marshall. 2009. <span>“Modelling the Longitudinal Asymmetry in Sunspot Emergence: The Role of the Wilson Depression.”</span> <em>Solar Physics</em> 260 (1): 5–19. <a href="https://doi.org/10.1007/s11207-009-9420-z">https://doi.org/10.1007/s11207-009-9420-z</a>.
+</div>
+</div>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p><a href="https://kso.iiap.res.in/new/data" class="uri">https://kso.iiap.res.in/new/data</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>To calculate hour angle of the sun we have used a IDL routine in SolaSoftWare (SSW) <em>sunpos.pro</em> and <em>eq2hor.pro</em> along with the Longitude of the Observatory as 77.46<span class="math inline">\(^\circ\)</span>E.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>filename is given as CAK_19100114T084400_Q1L0a.fits.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p><a href="https://www.timeanddate.com/time/zone/india/kolkata" class="uri">https://www.timeanddate.com/time/zone/india/kolkata</a><a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./chapter1.html" class="pagination-link" aria-label="Introduction">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./chapter3.html" class="pagination-link" aria-label="Study of Sunspot Penumbra to Umbra Area Ratio using Kodaikanal White-light Digitized Data">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Study of Sunspot Penumbra to Umbra Area Ratio using Kodaikanal White-light Digitized Data</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

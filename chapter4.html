@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>4&nbsp; Measurements of Solar Differential Rotation Using the Century Long Kodaikanal Sunspot Data – Long-term solar observations: probing the solar interior and magnetic fields</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./chapter5.html" rel="next">
+<link href="./chapter3.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-27c261d06b905028a18691de25d09dde.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-234501a227967ac462f24af7be37efa8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-27c261d06b905028a18691de25d09dde.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter4.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Measurements of Solar Differential Rotation Using the Century Long Kodaikanal Sunspot Data</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Long-term solar observations: probing the solar interior and magnetic fields</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Study of Sunspot Penumbra to Umbra Area Ratio using Kodaikanal White-light Digitized Data</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter4.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Measurements of Solar Differential Rotation Using the Century Long Kodaikanal Sunspot Data</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">A Theoretical Model of the Near–Surface Shear Layer of the Sun</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Magnetic field dependence of bipolar magnetic region tilts on the Sun: Indication of tilt quenching</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">The Conclusion</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#ch4-intro" id="toc-ch4-intro" class="nav-link active" data-scroll-target="#ch4-intro"><span class="header-section-number">4.1</span> Introduction</a></li>
+  <li><a href="#ch4-method" id="toc-ch4-method" class="nav-link" data-scroll-target="#ch4-method"><span class="header-section-number">4.2</span> Data and Method</a></li>
+  <li><a href="#s-results" id="toc-s-results" class="nav-link" data-scroll-target="#s-results"><span class="header-section-number">4.3</span> Results</a>
+  <ul class="collapse">
+  <li><a href="#the-average-rotation-profile" id="toc-the-average-rotation-profile" class="nav-link" data-scroll-target="#the-average-rotation-profile"><span class="header-section-number">4.3.1</span> The Average Rotation Profile</a></li>
+  <li><a href="#variations-in-rotational-profile" id="toc-variations-in-rotational-profile" class="nav-link" data-scroll-target="#variations-in-rotational-profile"><span class="header-section-number">4.3.2</span> Variations in Rotational Profile</a></li>
+  </ul></li>
+  <li><a href="#cross-validation-of-our-method-using-space-based-data" id="toc-cross-validation-of-our-method-using-space-based-data" class="nav-link" data-scroll-target="#cross-validation-of-our-method-using-space-based-data"><span class="header-section-number">4.4</span> Cross-Validation of Our Method Using Space Based Data</a></li>
+  <li><a href="#ch4-con" id="toc-ch4-con" class="nav-link" data-scroll-target="#ch4-con"><span class="header-section-number">4.5</span> Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="Chap4" class="quarto-section-identifier"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Measurements of Solar Differential Rotation Using the Century Long Kodaikanal Sunspot Data</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="ch4-intro" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="ch4-intro"><span class="header-section-number">4.1</span> Introduction</h2>
+<p>A sunspot, a dark photospheric feature, is widely considered to be a suitable proxy of solar surface magnetism and its long-term variability. As we now understand, a dynamo which operates beneath the photospheric layer, is responsible for generating the magnetic field which we observe on the surface <span class="citation" data-cites="Parker1955a">(<a href="#ref-Parker1955a" role="doc-biblioref">Parker 1955</a>)</span>. Within this framework, a sufficiently strong and buoyant flux tube rises through the convection zone and forms a bipolar magnetic patch which often manifests itself as a spot pair on the visible solar surface <span class="citation" data-cites="Parker1955a Solanki2003">(<a href="#ref-Parker1955a" role="doc-biblioref">Parker 1955</a>; <a href="#ref-Solanki2003" role="doc-biblioref">Solanki 2003</a>)</span>. Thus, analysis of spot properties on the surface, presents a unique opportunity to sneak peek the sub-surface physical processes which are otherwise hidden from us.</p>
+<p>One of the key solar parameters that can be measured using sunspots, is the differential rotation profile of the Sun. In fact, it is this differential rotation in the solar dynamo theory which stretches the poloidal field and converts it into the spot-generating toroidal field <span class="citation" data-cites="Charbonneau2010">(<a href="#ref-Charbonneau2010" role="doc-biblioref">Charbonneau 2010</a>)</span>. Therefore, precise and long-term measurements of solar rotation rates are required to further help and improve the current dynamo models <span class="citation" data-cites="Badalyan2017">(<a href="#ref-Badalyan2017" role="doc-biblioref">Badalyan and Obridko 2017</a>)</span>. Modern day space-borne high-resolution data from the Solar and Heliospheric Observatory <span class="citation" data-cites="Domingo1995">(SOHO: <a href="#ref-Domingo1995" role="doc-biblioref">Domingo, Fleck, and Poland 1995</a>)</span> and the Solar Dynamic Observatory <span class="citation" data-cites="Pesnell2012">(SDO: <a href="#ref-Pesnell2012" role="doc-biblioref">Pesnell, Thompson, and Chamberlin 2012</a>)</span> offer significant improvements in measuring the rotation profile. However, such data are only limited to the last two solar cycles (1996 onward). On the other hand, regular sunspots measurements from a number of ground based observatories are available for a significantly longer time (more than a century) and can be used to determine the differential rotation profile of the past.</p>
+<p>Being one of the oldest recorded solar parameters, sunspots have already been utilised many times in the past to derive the rotation profile. Earliest of such measurements were reported by Christoph Scheiner in 1630 and almost after 200 years, by <span class="citation" data-cites="Carrington1863">Carrington (<a href="#ref-Carrington1863" role="doc-biblioref">1863</a>)</span>. These authors followed spots as they moved across the solar disc and reported a differential rotation profile in which the equator rotates faster than the poles. Later, as more sunspot data from different observatories became available, several follow-up studies on this subject were conducted. These include analyses using sunspot data from the Royal Greenwich Observatory <span class="citation" data-cites="Newton1951 Ward1966 Balthasar1986 Javaraiah2005a">(<a href="#ref-Newton1951" role="doc-biblioref">Newton and Nunn 1951</a>; <a href="#ref-Ward1966" role="doc-biblioref">Ward 1966</a>; <a href="#ref-Balthasar1986" role="doc-biblioref">Balthasar, Vazquez, and Woehl 1986</a>; <a href="#ref-Javaraiah2005a" role="doc-biblioref">Javaraiah, Bertello, and Ulrich 2005</a> etc)</span>, Kenzelhöhe Observatory <span class="citation" data-cites="Lustig1983">(<a href="#ref-Lustig1983" role="doc-biblioref">Lustig 1983</a>)</span>, Mt. Wilson Observatory <span class="citation" data-cites="Howard1984 Gilman1984 Gilman1985">(<a href="#ref-Howard1984" role="doc-biblioref">R. Howard, Gilman, and Gilman 1984</a>; <a href="#ref-Gilman1984" role="doc-biblioref">Gilman and Howard 1984</a>; <a href="#ref-Gilman1985" role="doc-biblioref">Gilman and Howard 1985</a> etc.)</span>, Meudon Observatory <span class="citation" data-cites="Ribes1993">(<a href="#ref-Ribes1993" role="doc-biblioref">Ribes and Nesme-Ribes 1993</a>)</span>, Catania Observatory <span class="citation" data-cites="Ternullo1981">(<a href="#ref-Ternullo1981" role="doc-biblioref">Ternullo, Zappala, and Zuccarello 1981</a>)</span>, Kodaikanal Solar Observatory <span class="citation" data-cites="Howard1999 Gupta1999">(KoSO: <a href="#ref-Howard1999" role="doc-biblioref">R. F. Howard, Gupta, and Sivaraman 1999</a>; <a href="#ref-Gupta1999" role="doc-biblioref">Gupta, Sivaraman, and Howard 1999</a>)</span>, etc. Overall, the observed rotation profile (<span class="math inline">\(\Omega\)</span>) can be expressed by the following mathematical formula <span class="citation" data-cites="Newton1951 Howard1984">(<a href="#ref-Newton1951" role="doc-biblioref">Newton and Nunn 1951</a>; <a href="#ref-Howard1984" role="doc-biblioref">R. Howard, Gilman, and Gilman 1984</a>)</span>: <span class="math display">\[\begin{equation}
+    \Omega~=~A~+~B\sin^2 {\theta}~+~C\sin^4{\theta}.
+    \label{eq1}
+\end{equation}\]</span> Since sunspots are mostly restricted within <span class="math inline">\(\pm40 ^{\circ}\)</span> latitudes, one can drop the <span class="math inline">\(C\)</span> term <span class="citation" data-cites="Newton1951 Howard1984 Woehl2010">(<a href="#ref-Newton1951" role="doc-biblioref">Newton and Nunn 1951</a>; <a href="#ref-Howard1984" role="doc-biblioref">R. Howard, Gilman, and Gilman 1984</a>; <a href="#ref-Woehl2010" role="doc-biblioref">Wöhl et al. 2010</a>)</span> and rewrite the equation as: <span class="math display">\[\begin{equation}
+    \Omega=A+B\sin^2{\theta},
+    \label{ch4:eq2}
+\end{equation}\]</span> where <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> represent the equatorial rotation rate and the latitudinal rotation gradient, respectively. Here, <span class="math inline">\(\theta\)</span> is the heliographic latitude of the spot.</p>
+<p>Despite the considerable amount of independent studies on this subject, there still remain certain systematic differences in the rotation rates derived from different sunspot catalogues (see Table&nbsp;<a href="#ch4:table1" data-reference-type="ref" data-reference="ch4:table1">1.1</a>). This is partly due to the use of different spot tracing methods <span class="citation" data-cites="Newton1951 Howard1984 PoljancicBeljan2017">(<a href="#ref-Newton1951" role="doc-biblioref">Newton and Nunn 1951</a>; <a href="#ref-Howard1984" role="doc-biblioref">R. Howard, Gilman, and Gilman 1984</a>; <a href="#ref-PoljancicBeljan2017" role="doc-biblioref">Poljančić Beljan et al. 2017</a>)</span>, different trace subjects within the spot (such as only the umbra vs.&nbsp;the whole spot; <span class="citation" data-cites="Howard1999 Gupta1999">(<a href="#ref-Howard1999" role="doc-biblioref">R. F. Howard, Gupta, and Sivaraman 1999</a>; <a href="#ref-Gupta1999" role="doc-biblioref">Gupta, Sivaraman, and Howard 1999</a>)</span>) etc. In fact, in most of the older publications, authors had used manual inspections to identify the spots <span class="citation" data-cites="Newton1951 Gupta1999">(<a href="#ref-Newton1951" role="doc-biblioref">Newton and Nunn 1951</a>; <a href="#ref-Gupta1999" role="doc-biblioref">Gupta, Sivaraman, and Howard 1999</a>)</span>. This, in turn, has introduced human errors and biases.</p>
+<p>In this context, we present here the long-term measurements (1923 – 2011) of solar rotation rates using the newly digitised, high resolution KoSO sunspot observations. A fully automated sunspot tracing algorithm has been implemented to eliminate any detection bias and robustness of the method is also demonstrated by applying it on modern data from the Michelson Doppler Imager <span class="citation" data-cites="Scherrer1995">(MDI: <a href="#ref-Scherrer1995" role="doc-biblioref">Scherrer et al. 1995</a>)</span> onboard SOHO.</p>
+</section>
+<section id="ch4-method" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="ch4-method"><span class="header-section-number">4.2</span> Data and Method</h2>
+<p>Kodaikanal Solar Observatory (KoSO) is recording regular white-light sunspot data since 1904. This data, originally stored in photographic plates and films, have now been digitised into high resolution images of 4k<span class="math inline">\(\times\)</span><!-- -->4k size (for more information about this digitisation, see <span class="citation" data-cites="Ravindra2013">(<a href="#ref-Ravindra2013" role="doc-biblioref">Ravindra et al. 2013</a>)</span>). Barring the initial 15 years (1904 – 1920), calibration as well as sunspot detection on the rest of the data (1921 – 2011) have also been completed recently <span class="citation" data-cites="Ravindra2013 Mandal2017a">(<a href="#ref-Ravindra2013" role="doc-biblioref">Ravindra et al. 2013</a>; <a href="#ref-Mandal2017a" role="doc-biblioref">Mandal et al. 2017</a>)</span>. KoSO sunspot area catalogue<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> provides area values (i.e umbra+penumbra) of individual spots<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> along with their heliographic positions (longitude and latitude).</p>
+<p>For the purpose of this work, we utilise the binary, full-disc images of detected sunspots as generated by <span class="citation" data-cites="Mandal2017a">Mandal et al. (<a href="#ref-Mandal2017a" role="doc-biblioref">2017</a>)</span> (see Section&nbsp;4 of <span class="citation" data-cites="Mandal2017a">Mandal et al. (<a href="#ref-Mandal2017a" role="doc-biblioref">2017</a>)</span> for more details). In this work, we implement a fully automated algorithm to track the spots in successive sunspot images. The whole procedure can be summarised as follows.</p>
+<figure id="ch4:fig1" data-latex-placement="!htbp" class="figure">
+<embed src="Figures/Chapter4/image_4_1.png" style="width:75.0%">
+<figcaption>
+Representative examples of our sunspot tracking algorithm. (a), (b): Show two consecutive observations which are one day apart. Blue shaded regions near the solar limb highlight areas beyond <span class="math inline"><span class="math inline">\(\vert 70\vert^{\circ}\)</span></span> longitudes. (c) Shows a selected spot from Day-1 and (d) shows a back rotated image from Day-2. (e) Depicts a zoomed in view of the overlapped region of Image1 (with the selected spot) on to the differentially back rotated image of Day-2.
+</figcaption>
+</figure>
+<p>To follow the same sunspot in two consecutive observations, we first choose two images, Image1 and Image2, which are (preferably) taken on consecutive days. <a href="#ch4:fig1" data-reference-type="ref+label" data-reference="ch4:fig1">1.1</a>a-b, show one such pair of observations. To incorporate the occasional ‘missing data’ scenario, we also allow the time difference between Image1 and Image2 to be a maximum of up to three days. Additionally, to minimise the projection errors, we restrict our analysis to spots whose absolute heliographic longitude are <span class="math inline">\(&lt;\vert 70\vert^{\circ}\)</span>. In order to identify a selected spot of Image1 (e.g.&nbsp;<a href="#ch4:fig1" data-reference-type="ref+label" data-reference="ch4:fig1">1.1</a>c) in a subsequent observation, we first differentially back rotate Image2 (using the IDL routine drot_map.pro<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>) to the time of observation of Image1 (<a href="#ch4:fig1" data-reference-type="ref+label" data-reference="ch4:fig1">1.1</a>d). In this context, it is also worth noting that the opposite sense of image rotation, i.e.&nbsp;forward-rotating Image1 to match the time of Image2 and repeat the same process also produces the same result. Next, the selected spot from Image1 is overlapped onto the back rotated Image2 for the final step of the procedure (<a href="#ch4:fig1" data-reference-type="ref+label" data-reference="ch4:fig1">1.1</a>e). Basically, an overlap here is an indication of a potential match. However, group evolution makes this process somewhat complicated. To eliminate any false detection, we employ a two step verification method. Firstly, the overlap (by pixel count) has to be more than 20%. This accounts for the uncertainties that are introduced during the back rotation of Image2. The example shown in <a href="#ch4:fig1" data-reference-type="ref+label" data-reference="ch4:fig1">1.1</a>d has an overlap of 52%. Next, there are situations when spots appear significantly different on Day 2 due to their rapid evolution (which are mostly mergers or bifurcations). To handle these cases, we invoke a cut-off on the fractional change in area as <span class="math inline">\(\frac{|~a_2-a_1~|}{a_2+a_1} &lt; 0.7\)</span>, where <span class="math inline">\(a_1\)</span> and <span class="math inline">\(a_2\)</span> are the areas of a spot in Image1 and Image2. This limit (of 0.7) has been decided after manually inspecting several randomly chosen image sequences. An Image1 spot which passes both these tests, is then flagged as the ‘same spot’. This whole procedure is repeated for all the spots in Image1 and for all images in our archive. In <a href="#flow_chart" data-reference-type="ref+label" data-reference="flow_chart">1.2</a>, we present a summary of our spot tracking algorithm in the form of a flow chart.</p>
+<figure id="flow_chart" data-latex-placement="!htbp" class="figure">
+<embed src="Figures/Chapter4/flow_chart.png" style="height:90.0%">
+<figcaption>
+A flow chart describing the different steps of our spot tracking algorithm.
+</figcaption>
+</figure>
+<p>If <span class="math inline">\(\phi _1\)</span> and <span class="math inline">\(\phi _2\)</span> represent the heliographic longitudes of a spot at times <span class="math inline">\(t_1\)</span> and <span class="math inline">\(t_2\)</span>, then the synodic rotation rate (<span class="math inline">\(\Omega _{\rm synodic}\)</span>) is calculated as <span class="math display">\[\begin{equation}
+     \Omega _{\rm synodic}~=~\frac{\phi _2 - \phi _1}{t_2 - t_1},
+\end{equation}\]</span> to convert the synodic values into sidereal rotation rate, we use the following relation <span class="citation" data-cites="Rosa1995 Wittmann1996 Skokic2014">(<a href="#ref-Rosa1995" role="doc-biblioref">Roša et al. 1995</a>; <a href="#ref-Wittmann1996" role="doc-biblioref">Wittmann 1996</a>; <a href="#ref-Skokic2014" role="doc-biblioref">Skokić et al. 2014</a>)</span>: <span class="math display">\[\begin{equation}
+    \Omega _{\rm sidereal}~=~\Omega _{\rm synodic}+ \frac{0.9856}{r^2}\left(\frac{\cos^2{\psi}}{\cos{i}}\right),
+\end{equation}\]</span> where <span class="math inline">\(i\)</span> is the inclination of the solar equator to the ecliptic, <span class="math inline">\(\psi\)</span> is the angle between the pole of the ecliptic and the solar rotation axis orthographically projected on the solar disk and <span class="math inline">\(r\)</span> is the Sun-Earth distance in astronomical units <span class="citation" data-cites="Lamb2017">(<a href="#ref-Lamb2017" role="doc-biblioref">Lamb 2017</a>)</span>. We apply the above mentioned procedure on all the sunspots present in our data and calculated <span class="math inline">\(\Omega _{\rm sidereal}\)</span> (hereafter <span class="math inline">\(\Omega\)</span>) values.</p>
+</section>
+<section id="s-results" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="s-results"><span class="header-section-number">4.3</span> Results</h2>
+<section id="the-average-rotation-profile" class="level3" data-number="4.3.1">
+<h3 data-number="4.3.1" class="anchored" data-anchor-id="the-average-rotation-profile"><span class="header-section-number">4.3.1</span> The Average Rotation Profile</h3>
+<p>To study the latitudinal dependency of solar rotation rate, we first organise the spots according to their latitudes (<span class="math inline">\(\theta\)</span>) in <span class="math inline">\(5^{\circ}\)</span> bins and calculate the mean <span class="math inline">\(\Omega\)</span> in each of those bins. In <a href="#ch4:fig2" data-reference-type="ref+label" data-reference="ch4:fig2">1.3</a>, these mean <span class="math inline">\(\Omega\)</span> values (indicated by filled red circles) are plotted as a function of <span class="math inline">\(\sin^2\theta\)</span>. The error bars shown in the plot are the standard errors calculated for each bin. As seen from the figure, <span class="math inline">\(\Omega\)</span> seems to have a linear relation with <span class="math inline">\(\sin^2\theta\)</span> <span class="citation" data-cites="Howard1999">(<a href="#ref-Howard1999" role="doc-biblioref">R. F. Howard, Gupta, and Sivaraman 1999</a>)</span>. To measure the equatorial rotation rate (<span class="math inline">\(A\)</span>) and the latitudinal gradient of rotation (<span class="math inline">\(B\)</span>), we fit <a href="#ch4:eq2" data-reference-type="ref+label" data-reference="ch4:eq2">[ch4:eq2]</a> onto our data by using the Levenberg-Marquardt least squares (LMLS) method<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> <span class="citation" data-cites="Markwardt2009">(<a href="#ref-Markwardt2009" role="doc-biblioref">Markwardt 2009</a>)</span> and, the obtained best fit is shown by the solid red line in <a href="#ch4:fig2" data-reference-type="ref+label" data-reference="ch4:fig2">1.3</a>. The <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> values, returned from the fit, are <span class="math inline">\(14.381\pm0.004\)</span>&nbsp;deg/day and <span class="math inline">\(-2.72\pm0.04\)</span>&nbsp;deg/day respectively, and they compare well with the existing literature as shown in <a href="#ch4:table1" data-reference-type="ref+label" data-reference="ch4:table1">1.1</a>. We directly compare our results with the values from <span class="citation" data-cites="Gupta1999">Gupta, Sivaraman, and Howard (<a href="#ref-Gupta1999" role="doc-biblioref">1999</a>)</span> (shown by the blue dashed line in <a href="#ch4:fig2" data-reference-type="ref+label" data-reference="ch4:fig2">1.3</a>) who had used an older low-resolution version of the Kodaikanal data, of limited period as well. Interestingly, our <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> values are slightly different from their measurements (see <a href="#ch4:table1" data-reference-type="ref+label" data-reference="ch4:table1">1.1</a>) and we attribute such differences to the following two reasons. Firstly, <span class="citation" data-cites="Gupta1999">Gupta, Sivaraman, and Howard (<a href="#ref-Gupta1999" role="doc-biblioref">1999</a>)</span> used only the umbra to measure the rotation rate as opposed to the the whole-spot area (i.e.&nbsp;umbra and penumbra) as used in our study. Secondly, the epochs covered by these two datasets are different. As we will find in later sections not only the spatial extend of the tracer (i.e.&nbsp;sunspot) affects the derived <span class="math inline">\(B\)</span> value, but both parameters, <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>, vary significantly with solar cycles. Thus, a combination of these two effects produces the observed differences.</p>
+<figure id="ch4:fig2" data-latex-placement="!htbp" class="figure">
+<embed src="Figures/Chapter4/image_4_2.png" style="width:80.0%">
+<figcaption>
+Solar rotation profile (red solid line) measured using the KoSO sunspot data for the period 1923–2011. For a comparison, we overplot (blue dashed line) the results from <span class="citation" data-cites="Gupta1999"></span>.
+</figcaption>
+</figure>
+<div id="ch4:table1">
+<table class="caption-top table">
+<caption>Differential rotation parameters measured from different observations since <span class="citation" data-cites="Carrington1863">(<a href="#ref-Carrington1863" role="doc-biblioref">1863</a>)</span>.</caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">References</td>
+<td style="text-align: center;">Period</td>
+<td style="text-align: center;"><span class="math inline">\(A \pm \Delta A\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(B \pm \Delta B\)</span></td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">(<span class="math inline">\(\deg\)</span><span class="math inline">\(/\)</span>day)</td>
+<td style="text-align: center;">(<span class="math inline">\(\deg\)</span><span class="math inline">\(/\)</span>day)</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="citation" data-cites="Howard1984">R. Howard, Gilman, and Gilman (<a href="#ref-Howard1984" role="doc-biblioref">1984</a>)</span></td>
+<td style="text-align: center;">1921–1982</td>
+<td style="text-align: center;"><span class="math inline">\(14.522  \pm 0.004\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(-2.84 \pm 0.04\)</span></td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="citation" data-cites="Howard1999">R. F. Howard, Gupta, and Sivaraman (<a href="#ref-Howard1999" role="doc-biblioref">1999</a>)</span></td>
+<td style="text-align: center;">1907–1987</td>
+<td style="text-align: center;"><span class="math inline">\(14.547\pm 0.005\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(-2.96\pm 0.05\)</span></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="citation" data-cites="Howard1999">R. F. Howard, Gupta, and Sivaraman (<a href="#ref-Howard1999" role="doc-biblioref">1999</a>)</span></td>
+<td style="text-align: center;">1917–1985</td>
+<td style="text-align: center;"><span class="math inline">\(14.459\pm 0.005\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(-2.99\pm 0.06\)</span></td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="citation" data-cites="Gupta1999">Gupta, Sivaraman, and Howard (<a href="#ref-Gupta1999" role="doc-biblioref">1999</a>)</span></td>
+<td style="text-align: center;">1906–1987</td>
+<td style="text-align: center;"><span class="math inline">\(14.456 \pm 0.002\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(-2.89 \pm 0.02\)</span></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="citation" data-cites="Ruzdjak2017">Ruždjak et al. (<a href="#ref-Ruzdjak2017" role="doc-biblioref">2017</a>)</span></td>
+<td style="text-align: center;">1874–2016</td>
+<td style="text-align: center;"><span class="math inline">\(14.483\pm 0.005\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(-2.67\pm 0.05\)</span></td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Current Work</td>
+<td style="text-align: center;">1923–2011</td>
+<td style="text-align: center;"><span class="math inline">\(14.381\pm 0.004\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(-2.72\pm0.04\)</span></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="variations-in-rotational-profile" class="level3" data-number="4.3.2">
+<h3 data-number="4.3.2" class="anchored" data-anchor-id="variations-in-rotational-profile"><span class="header-section-number">4.3.2</span> Variations in Rotational Profile</h3>
+<section id="sizes" class="level4" data-number="4.3.2.1">
+<h4 data-number="4.3.2.1" class="anchored" data-anchor-id="sizes"><span class="header-section-number">4.3.2.1</span> Sunspot Sizes</h4>
+<p>Sunspots are observed in a variety of shapes and sizes and from past observations, we know that bigger spots typically host stronger magnetic field <span class="citation" data-cites="MunozJaramillo2015">(<a href="#ref-MunozJaramillo2015" role="doc-biblioref">Muñoz-Jaramillo et al. 2015</a>)</span>. These strong fields, which are believed to be anchored deep in the convection zone, may have a possible effect on the spot rotation at the surface <span class="citation" data-cites="Ward1966 Gilman1983 Gupta1999">(<a href="#ref-Ward1966" role="doc-biblioref">Ward 1966</a>; <a href="#ref-Gilman1983" role="doc-biblioref">Gilman 1983</a>; <a href="#ref-Gupta1999" role="doc-biblioref">Gupta, Sivaraman, and Howard 1999</a>)</span>. Hence, we investigate the effect of stronger fields on the inferred solar rotation by dividing all the spots according to their areas. They are grouped into two area categories: (i) small spots with area <span class="math inline">\(&lt;200~\mu\)</span>Hem and, (ii) large spots with area <span class="math inline">\(&gt;400~\mu\)</span>Hem. <a href="#ch4:fig3" data-reference-type="ref+label" data-reference="ch4:fig3">1.4</a> shows the obtained rotation profiles for these two spot area classes.</p>
+<figure id="ch4:fig3" data-latex-placement="!htbp" class="figure">
+<embed src="Figures/Chapter4/image_4_3.png" style="width:70.0%">
+<figcaption>
+Rotation profiles of sunspots with area <span class="math inline">&lt;</span>200&nbsp;<span class="math inline"><em>μ</em></span>Hem (blue dashed line) and with area <span class="math inline">&gt;</span>400&nbsp;<span class="math inline"><em>μ</em></span>Hem (red solid line).
+</figcaption>
+</figure>
+<p>Our results show that bigger spots rotate slower than smaller ones (see the <span class="math inline">\(A\)</span> values listed in <a href="#ch4:table2" data-reference-type="ref+label" data-reference="ch4:table2">1.2</a>). This is consistent with previous reports by <span class="citation" data-cites="Ward1966 Gilman1984 Gupta1999">Ward (<a href="#ref-Ward1966" role="doc-biblioref">1966</a>; <a href="#ref-Gilman1984" role="doc-biblioref">Gilman and Howard 1984</a>; <a href="#ref-Gupta1999" role="doc-biblioref">Gupta, Sivaraman, and Howard 1999</a>)</span>; and <span class="citation" data-cites="Kutsenko2020">Kutsenko (<a href="#ref-Kutsenko2020" role="doc-biblioref">2020</a>, using magnetic field maps)</span>. At the same time, we do not observe any significant change (considering the error limits) in <span class="math inline">\(B\)</span> values between the two area categories. Physically, the slower rotation rates for bigger spots (hence, stronger magnetic fields; <span class="citation" data-cites="Livingston2006">(<a href="#ref-Livingston2006" role="doc-biblioref">Livingston et al. 2006</a>)</span>) may hint towards deeper anchoring depths of the parent flux tubes <span class="citation" data-cites="Balthasar1986">(<a href="#ref-Balthasar1986" role="doc-biblioref">Balthasar, Vazquez, and Woehl 1986</a>)</span>. Additionally, it has been pointed out that spots with larger areas experience a greater drag which further affects their rotation rates <span class="citation" data-cites="Ward1966 Gilman1984">(<a href="#ref-Ward1966" role="doc-biblioref">Ward 1966</a>; <a href="#ref-Gilman1984" role="doc-biblioref">Gilman and Howard 1984</a>)</span>.</p>
+<div id="ch4:table2">
+<table class="caption-top table">
+<caption>Differential rotation parameters measured from different sizes of spots for Kodaikanal Solar Observatory data (current work).</caption>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Area Group</th>
+<th style="text-align: center;"><span class="math inline">\(A\pm \Delta A\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(B \pm \Delta B\)</span></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Small (Area <span class="math inline">\(&lt;200~\mu\)</span>Hem)</td>
+<td style="text-align: center;"><span class="math inline">\(14.399\pm 0.004\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(-2.77 \pm 0.04\)</span></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Large (Area <span class="math inline">\(&gt;400~\mu\)</span>Hem)</td>
+<td style="text-align: center;"><span class="math inline">\(14.351\pm 0.011\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(-3.01 \pm 0.12\)</span></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="solar-activity-phase-and-cycle-strength" class="level4" data-number="4.3.2.2">
+<h4 data-number="4.3.2.2" class="anchored" data-anchor-id="solar-activity-phase-and-cycle-strength"><span class="header-section-number">4.3.2.2</span> Solar Activity Phase and Cycle Strength</h4>
+<p>Properties of sunspots such as their areas, numbers, etc. vary with solar cycle phases <span class="citation" data-cites="Hathaway2015">(<a href="#ref-Hathaway2015" role="doc-biblioref">Hathaway 2015</a>)</span>. Hence, it is reasonable to look for signatures of any such variation in the <span class="math inline">\(\Omega\)</span> profile.</p>
+<figure id="ch4:fig4" data-latex-placement="!htbp" class="figure">
+<embed src="Figures/Chapter4/image_4_4.png">
+<figcaption>
+(a): Distributions of <span class="math inline"><em>Ω</em><sup>′</sup></span>, for Cycle 19, as calculated over the three activity phases: preceding minima (red), maxima (blue), and following minima (green). See text for more details. (b): Same as in (a), but for cycle 20.
+</figcaption>
+</figure>
+<p>For every solar cycle, we first isolate the data into three activity phases: preceding minimum, cycle maximum, and following minimum. These phases (each with one year duration) are identified after performing a 13 month running average on the KoSO area data. Next, we choose a 30<span class="math inline">\(^{\circ}\)</span> latitude band centred around the solar equator. Choice of such a bandwidth ensures that we have enough statistics to work with during each of these phases. Since the average size of spots varies with the phase of the solar cycle and as shown in Subsection&nbsp;<a href="#sizes" data-reference-type="ref" data-reference="sizes">1.3.2.1</a>, spots with different sizes rotate with different rates, it is important to remove this effect from the measured <span class="math inline">\(\Omega\)</span> before we look for its temporal variation. We achieve this by dividing the calculated <span class="math inline">\(\Omega\)</span> values of every spot by the <span class="math inline">\(\Omega\)</span> derived using the rotation parameters <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> from <a href="#ch4:table2" data-reference-type="ref+label" data-reference="ch4:table2">1.2</a>. This newly normalised quantity is denoted by <span class="math inline">\(\Omega^\prime\)</span> and the distributions of <span class="math inline">\(\Omega^\prime\)</span>, for all three activity phases and for all eight solar cycles, are then examined thoroughly. <a href="#ch4:fig4" data-reference-type="ref+label" data-reference="ch4:fig4">1.5</a> shows the results for two representative cases, i.e for Cycle 19 and Cycle 20. As noted from the plot, distribution of <span class="math inline">\(\Omega^\prime\)</span> shows no change, either in shape or location, with activity phases. <a href="#ch4:table3" data-reference-type="ref+label" data-reference="ch4:table3">1.3</a> lists the statistical parameters (such as mean, skewness, etc.) of each of these distributions which further confirm our previous observation. Overall, our results are in accordance with the findings of <span class="citation" data-cites="Gilman1984">Gilman and Howard (<a href="#ref-Gilman1984" role="doc-biblioref">1984</a>)</span>, <span class="citation" data-cites="Ruzdjak2017">Ruždjak et al. (<a href="#ref-Ruzdjak2017" role="doc-biblioref">2017</a>)</span> and <span class="citation" data-cites="Javaraiah2020">Javaraiah (<a href="#ref-Javaraiah2020" role="doc-biblioref">2020</a>)</span>, who either found none or statistically insignificant correlation of sunspot rotation with the activity phase of the solar cycle.</p>
+<div id="ch4:table3">
+<table class="caption-top table">
+<caption>Statistical parameters of <span class="math inline">\(\Omega^\prime\)</span> distributions for each cycle.</caption>
+<colgroup>
+<col style="width: 10%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 14%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;"></th>
+<th colspan="3" style="text-align: right;">Maximum</th>
+<th colspan="3" style="text-align: right;">Following Minimum</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Cycle</td>
+<td style="text-align: right;">Mean</td>
+<td style="text-align: right;">Median</td>
+<td style="text-align: right;">Skewness</td>
+<td style="text-align: right;">Mean</td>
+<td style="text-align: right;">Median</td>
+<td style="text-align: right;">Skewness</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">16</td>
+<td style="text-align: right;"><span class="math inline">\(1.000\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(0.998\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(0.190\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(1.000\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(0.998\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(0.010\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">17</td>
+<td style="text-align: right;"><span class="math inline">\(1.002\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(0.999\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(0.279\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(0.993\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(0.991\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(0.521\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">18</td>
+<td style="text-align: right;"><span class="math inline">\(0.996\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(0.995\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(-0.030\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(0.991\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(0.992\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(-0.042\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">19</td>
+<td style="text-align: right;"><span class="math inline">\(1.000\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(0.998\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(0.035\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(0.993\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(0.993\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(-0.027\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">20</td>
+<td style="text-align: right;"><span class="math inline">\(0.998\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(0.996\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(0.188\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(0.997\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(0.997\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(-0.272\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">21</td>
+<td style="text-align: right;"><span class="math inline">\(1.003\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(1.000\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(0.275\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(0.995\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(0.992\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(-0.079\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">22</td>
+<td style="text-align: right;"><span class="math inline">\(0.997\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(0.996\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(-0.053\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(0.998\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(0.997\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(-0.054\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">23</td>
+<td style="text-align: right;"><span class="math inline">\(1.000\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(0.997\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(0.203\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(1.010\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(1.008\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(0.577\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<figure id="ch4:fig5" data-latex-placement="!htbp" class="figure">
+<embed src="Figures/Chapter4/image_4_5.png" style="width:80.0%">
+<figcaption>
+(a): Scatter plots between <span class="math inline"><em>A</em></span> and cycle strengths. (b): Scatter plots between <span class="math inline"><em>B</em></span> and cycle strengths. Obtained Pearson correlations (<span class="math inline"><em>r</em></span>) are printed in the respective panels.
+</figcaption>
+</figure>
+<p>Next, we explore how a rotational profile depends upon the strength of a solar cycle. We do this by analysing the rotation parameters <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> of each cycle. The peak area value within a cycle (of yearly averaged data) is assigned as the strength of that cycle. In <a href="#ch4:fig5" data-reference-type="ref+label" data-reference="ch4:fig5">1.6</a>, we show the scatter plot of <span class="math inline">\(A\)</span> vs.&nbsp;cycle strength (<a href="#ch4:fig5" data-reference-type="ref+label" data-reference="ch4:fig5">1.6</a>a), as well as the plot between <span class="math inline">\(B\)</span> vs.&nbsp;cycle strength (<a href="#ch4:fig5" data-reference-type="ref+label" data-reference="ch4:fig5">1.6</a>b). Immediately we notice that <span class="math inline">\(A\)</span>, which represents the equatorial rotation rate, decreases with increasing cycle strengths (Pearson correlation, <span class="math inline">\(r=-0.50\)</span>). Interestingly, <span class="math inline">\(B\)</span>, the latitudinal gradient of rotation, shows a positive correlation (<span class="math inline">\(r=0.44\)</span>). This implies that, during a strong cycle, the Sun not only rotates slowly at the equator but the latitudinal gradient of rotation also gets reduced <span class="citation" data-cites="Gilman1984 Obridko2001 Javaraiah2005a Obridko2016 Javaraiah2020">(<a href="#ref-Gilman1984" role="doc-biblioref">Gilman and Howard 1984</a>; <a href="#ref-Obridko2001" role="doc-biblioref">Obridko and Shelting 2001</a>, <a href="#ref-Obridko2016" role="doc-biblioref">2016</a>; <a href="#ref-Javaraiah2005a" role="doc-biblioref">Javaraiah, Bertello, and Ulrich 2005</a>; <a href="#ref-Javaraiah2020" role="doc-biblioref">Javaraiah 2020</a>)</span>. It is important to highlight here that in both panels, we notice that the values for Cycle 19 seem to lie significantly far away from the trends. At this moment, we do not know any physical process that can explain this observed anomaly.</p>
+</section>
+<section id="rotation-rates-of-northern-and-southern-hemispheres" class="level4" data-number="4.3.2.3">
+<h4 data-number="4.3.2.3" class="anchored" data-anchor-id="rotation-rates-of-northern-and-southern-hemispheres"><span class="header-section-number">4.3.2.3</span> Rotation Rates of Northern and Southern Hemispheres</h4>
+<p>Almost all sunspot indices display profound differences in their properties, in the northern and southern hemisphere <span class="citation" data-cites="Hathaway2015">(<a href="#ref-Hathaway2015" role="doc-biblioref">Hathaway 2015</a>)</span>, including sunspot rotation rates <span class="citation" data-cites="Gilman1984">(<a href="#ref-Gilman1984" role="doc-biblioref">Gilman and Howard 1984</a>)</span>. However, in the case of rotation rates, the difference, as reported by many authors in the past, differs significantly from each other. For example, <span class="citation" data-cites="Gilman1984">Gilman and Howard (<a href="#ref-Gilman1984" role="doc-biblioref">1984</a>)</span> used sunspots as tracers and noted that the variation in solar rotation is more profound in the southern hemisphere relative to the northern one. In a recent work, <span class="citation" data-cites="Xie2018">Xie, Shi, and Qu (<a href="#ref-Xie2018" role="doc-biblioref">2018</a>)</span> reported that the northern hemisphere rotates considerably faster than the southern one during Cycles 21 – 23. Similar findings, for the same period, have been also reported earlier <span class="citation" data-cites="Zhang2011 Zhang2013 Li2013a">(<a href="#ref-Zhang2011" role="doc-biblioref">Zhang et al. 2011</a>; <a href="#ref-Zhang2013" role="doc-biblioref">Zhang, Mursula, and Usoskin 2013</a>; <a href="#ref-Li2013a" role="doc-biblioref">Li et al. 2013</a>)</span>. Thus, comparing the rotation rates in both hemispheres from our KoSO sunspot data is appropriate.</p>
+<figure id="ch4:fig6" data-latex-placement="!htbp" class="figure">
+<embed src="Figures/Chapter4/image_4_6.png" style="width:80.0%">
+<figcaption>
+Relative (%) changes in <span class="math inline"><em>Ω</em></span>, separately for northern and southern hemispheres, in latitude band&nbsp;I (a) and band&nbsp;II (b). See text for more details.
+</figcaption>
+</figure>
+<p>To achieve this, the data is first separated for the two hemispheres and then each hemispheric data is divided into two separate latitude bands: band&nbsp;I, 0 – 15<span class="math inline">\(^{\circ}\)</span> and band&nbsp;II, <span class="math inline">\(\geq\)</span><!-- -->15<span class="math inline">\(^{\circ}\)</span> . In each case, we then calculate the relative change by first calculating the mean <span class="math inline">\(\Omega\)</span> in that band over the year (<span class="math inline">\(\bar{\Omega}_{\rm Year}\)</span>) and then calculate the relative change as <span class="math inline">\(\frac{\bar{\Omega}_{\rm Year}-\bar{\Omega}_{\rm All}}{\bar{\Omega}_{\rm All}}\times 100\%\)</span>, where <span class="math inline">\(\bar{\Omega}_{\rm All}\)</span> is the mean <span class="math inline">\(\Omega\)</span> calculated over the entire duration of the data (1923 – 2011) within our chosen band. <a href="#ch4:fig6" data-reference-type="ref+label" data-reference="ch4:fig6">1.7</a>a-b show these relative changes for band&nbsp;II and band&nbsp;I, respectively. In the case of band&nbsp;I, the relative change is <span class="math inline">\(&lt;\)</span><!-- -->0.5% and we do not observe any signature of solar cycle like variation. On the other hand, in the case of band&nbsp;II, there are clear signatures of cyclic changes (e.g.&nbsp;for Cycles 16, 17, 18, 21) along with a slightly larger variation (<span class="math inline">\(\approx\)</span> 1.5%) as compared to band&nbsp;I.</p>
+</section>
+</section>
+</section>
+<section id="cross-validation-of-our-method-using-space-based-data" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="cross-validation-of-our-method-using-space-based-data"><span class="header-section-number">4.4</span> Cross-Validation of Our Method Using Space Based Data</h2>
+<p>As discussed in the introduction, rotational profiles that have been derived using sunspots, depend significantly (i) on the method used, and (ii) on the quality of the data. To examine the aforementioned effects onto our measurements of rotation rates from KoSO data, we use the space based sunspot data available from MDI onboard SOHO. These data cover a period of 15 years (1996 – 2011).</p>
+<figure id="ch4:fig7" data-latex-placement="!htbp" class="figure">
+<embed src="Figures/Chapter4/image_4_7.png">
+<figcaption>
+(a): Representative MDI image after implementing our sunspot tracking algorithm. (b): Solar rotation profile measured using MDI data (blue circles) and the rotation profile derived from KoSO data for the overlapping period (red circles).
+</figcaption>
+</figure>
+<p>Sunspot masks are generated using the same methods as used in KoSO data and likewise, the method implemented to track the spots (<a href="#ch4:fig7" data-reference-type="ref+label" data-reference="ch4:fig7">1.8</a>a) and derive the rotation profile, is also the same as described in Subsection&nbsp;<a href="#ch4-method" data-reference-type="ref" data-reference="ch4-method">1.2</a>. Results from MDI are shown in <a href="#ch4:fig7" data-reference-type="ref+label" data-reference="ch4:fig7">1.8</a>b using blue circles. For easy comparisons, results from our KoSO data (corresponding to the same epoch) are also overplotted (via red circles) in both panels. As seen from the plots, the KoSO profile matches well with the values from MDI. At the same time, we also note that the error bars are substantially smaller in MDI which is mostly due to the better data availability in MDI as compared to KoSO within this period. Overall, these results not only show the effectiveness of our method on ground and space based data but also highlights the quality of the KoSO catalogue.</p>
+</section>
+<section id="ch4-con" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="ch4-con"><span class="header-section-number">4.5</span> Conclusion</h2>
+<p>A better knowledge of solar differential rotation is key towards a deeper understanding of solar dynamo theory. In this work, we have derived the solar rotation profile using the white-light digitised data from Kodaikanal Solar Observatory (KoSO). These data cover a period of <span class="math inline">\(\approx\)</span><!-- -->90 years (1923 – 2011) i.e.&nbsp;Cycle&nbsp;16 to Cycle&nbsp;24 (ascending phase only). We have implemented a correlation-based automated sunspot tracking algorithm which correctly identifies the same sunspot in two consecutive observations. This positional information is then used to calculate the angular rotation rate for every individual spot. Furthermore, the derived rotation parameters <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> (<span class="math inline">\(14.381\pm0.004\)</span>&nbsp;deg/day,&nbsp;<span class="math inline">\(-2.72\pm0.04\)</span>&nbsp;deg/day; <a href="#ch4:fig2" data-reference-type="ref+label" data-reference="ch4:fig2">1.3</a>), which represent the equatorial rotation rate and the latitudinal gradient of rotation, respectively, are in good agreement with existing reports from other sunspot catalogues <span class="citation" data-cites="Javaraiah2005a Ribes1993">(<a href="#ref-Javaraiah2005a" role="doc-biblioref">Javaraiah, Bertello, and Ulrich 2005</a>; <a href="#ref-Ribes1993" role="doc-biblioref">Ribes and Nesme-Ribes 1993</a>)</span>. In fact, our results also compared well with results from the older, low-resolution, and manually processed KoSO sunspot data <span class="citation" data-cites="Howard1999 Gupta1999">(<a href="#ref-Howard1999" role="doc-biblioref">R. F. Howard, Gupta, and Sivaraman 1999</a>; <a href="#ref-Gupta1999" role="doc-biblioref">Gupta, Sivaraman, and Howard 1999</a>)</span>.</p>
+<p>During our analysis, we found that bigger spots rotate slower than smaller ones (<a href="#ch4:fig3" data-reference-type="ref+label" data-reference="ch4:fig3">1.4</a>), which could well be a possible signature of deeper anchoring depths of bigger spots <span class="citation" data-cites="Balthasar1986">(<a href="#ref-Balthasar1986" role="doc-biblioref">Balthasar, Vazquez, and Woehl 1986</a>)</span>. We have also studied the cyclic variations in the rotation profile along with its modulation with cycle strengths. Results suggest that during a strong cycle, the Sun not only rotates slower at the equator but the latitudinal gradient of rotation also gets reduced (<a href="#ch4:fig5" data-reference-type="ref+label" data-reference="ch4:fig5">1.6</a>). Another interesting finding from this study is the relative changes in the rotation rate in the northern and southern hemispheres, where high latitude (<span class="math inline">\(&gt;\)</span><!-- -->15<span class="math inline">\(^{\circ}\)</span>) spots seem to show pronounced variations (<span class="math inline">\(\approx\)</span><!-- -->1.5% as compared to low latitude (<span class="math inline">\(&lt;\)</span><!-- -->15<span class="math inline">\(^{\circ}\)</span>) ones (<a href="#ch4:fig6" data-reference-type="ref+label" data-reference="ch4:fig6">1.7</a>). Lastly, we check for the robustness of our tracking algorithm by implementing it onto the MDI data. Similar results from KoSO and MDI confirm the same.</p>
+<p>In this study we have assumed that sunspots are basically embedded structures within the photosphere and their motions, such as the rotation about their own axis <span class="citation" data-cites="Brown2003 Svanda2009">(<a href="#ref-Brown2003" role="doc-biblioref">Brown et al. 2003</a>; <a href="#ref-Svanda2009" role="doc-biblioref">Švanda, Klvaňa, and Sobotka 2009</a>)</span> is not accounted for in our study. The KoSO image database (with one day cadence and relatively low spatial resolution) is not really capable of taking care of these effects and we need modern day high resolution (spatial and temporal) data for such a study. Furthermore, KoSO has historical data for the last century in two other wavelengths, i.e.&nbsp;H<span class="math inline">\(\alpha\)</span> and CaII K. These datasets can further be used in the future to investigate the change in solar rotation above the photospheric height and in turn, this will provide insight about the coupling between different solar atmospheric layers.</p>
+
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Badalyan2017" class="csl-entry" role="listitem">
+Badalyan, O. G., and V. N. Obridko. 2017. <span>“<span class="nocase">22-year cycle of differential rotation of the solar corona and the rule by Gnevyshev-Ohl</span>”</span> 466 (4): 4535–39. <a href="https://doi.org/10.1093/mnras/stx134">https://doi.org/10.1093/mnras/stx134</a>.
+</div>
+<div id="ref-Balthasar1986" class="csl-entry" role="listitem">
+Balthasar, H., M. Vazquez, and H. Woehl. 1986. <span>“<span class="nocase">Differential rotation of sunspot groups in the period from 1874 through 1976 and changes of the rotation velocity within the solar cycle</span>”</span> 155 (1): 87–98.
+</div>
+<div id="ref-Brown2003" class="csl-entry" role="listitem">
+Brown, D. S., R. W. Nightingale, D. Alexander, C. J. Schrijver, T. R. Metcalf, R. A. Shine, A. M. Title, and C. J. Wolfson. 2003. <span>“<span class="nocase">Observations of Rotating Sunspots from TRACE</span>”</span> 216 (1): 79–108. <a href="https://doi.org/10.1023/A:1026138413791">https://doi.org/10.1023/A:1026138413791</a>.
+</div>
+<div id="ref-Carrington1863" class="csl-entry" role="listitem">
+Carrington, Richard Christopher. 1863. <em>Observations of the Spots on the Sun from November 9. 1853, to March 24, 1861, Made at Redhill</em>. London: Williams; Norgate.
+</div>
+<div id="ref-Charbonneau2010" class="csl-entry" role="listitem">
+Charbonneau, P. 2010. <span>“<span class="nocase">Dynamo Models of the Solar Cycle</span>.”</span> <em>Liv. Rev. Sol. Phys.</em> 7 (September): 3. <a href="https://doi.org/10.12942/lrsp-2010-3">https://doi.org/10.12942/lrsp-2010-3</a>.
+</div>
+<div id="ref-Domingo1995" class="csl-entry" role="listitem">
+Domingo, V., B. Fleck, and A. I. Poland. 1995. <span>“<span class="nocase">The SOHO Mission: an Overview</span>”</span> 162 (1-2): 1–37. <a href="https://doi.org/10.1007/BF00733425">https://doi.org/10.1007/BF00733425</a>.
+</div>
+<div id="ref-Gilman1983" class="csl-entry" role="listitem">
+Gilman, P. A. 1983. <span>“<span class="nocase">Dynamically consistent nonlinear dynamos driven by convection in a rotating spherical shell. II - Dynamos with cycles and strong feedbacks</span>”</span> 53 (October): 243–68. <a href="https://doi.org/10.1086/190891">https://doi.org/10.1086/190891</a>.
+</div>
+<div id="ref-Gilman1984" class="csl-entry" role="listitem">
+Gilman, P. A., and R. Howard. 1984. <span>“<span class="nocase">Variations in solar rotation with the sunspot cycle</span>”</span> 283 (August): 385–91. <a href="https://doi.org/10.1086/162316">https://doi.org/10.1086/162316</a>.
+</div>
+<div id="ref-Gilman1985" class="csl-entry" role="listitem">
+———. 1985. <span>“<span class="nocase">Rotation rates of leader and follower sunspots</span>”</span> 295 (August): 233–40. <a href="https://doi.org/10.1086/163368">https://doi.org/10.1086/163368</a>.
+</div>
+<div id="ref-Gupta1999" class="csl-entry" role="listitem">
+Gupta, S. S., K. R. Sivaraman, and R. F. Howard. 1999. <span>“<span class="nocase">Measurement of Kodaikanal White-Light Images - III. Rotation Rates and Activity Cycle Variations</span>”</span> 188 (September): 225–36. <a href="https://doi.org/10.1023/A:1005229124554">https://doi.org/10.1023/A:1005229124554</a>.
+</div>
+<div id="ref-Hathaway2015" class="csl-entry" role="listitem">
+Hathaway, David H. 2015. <span>“The Solar Cycle”</span> 12 (1): 4. <a href="https://doi.org/10.1007/lrsp-2015-4">https://doi.org/10.1007/lrsp-2015-4</a>.
+</div>
+<div id="ref-Howard1999" class="csl-entry" role="listitem">
+Howard, R. F., S. S. Gupta, and K. R. Sivaraman. 1999. <span>“<span class="nocase">Measurement of Kodaikanal White-Light Images - II. Rotation Comparison and Merging with Mount Wilson Data</span>”</span> 186 (May): 25–41. <a href="https://doi.org/10.1023/A:1005153925209">https://doi.org/10.1023/A:1005153925209</a>.
+</div>
+<div id="ref-Howard1990" class="csl-entry" role="listitem">
+Howard, R. F., J. W. Harvey, and S. Forgach. 1990. <span>“<span class="nocase">Solar Surface Velocity Fields Determined from Small Magnetic Features</span>”</span> 130 (1-2): 295–311. <a href="https://doi.org/10.1007/BF00156795">https://doi.org/10.1007/BF00156795</a>.
+</div>
+<div id="ref-Howard1984" class="csl-entry" role="listitem">
+Howard, R., P. I. Gilman, and P. A. Gilman. 1984. <span>“<span class="nocase">Rotation of the sun measured from Mount Wilson white-light images</span>”</span> 283 (August): 373–84. <a href="https://doi.org/10.1086/162315">https://doi.org/10.1086/162315</a>.
+</div>
+<div id="ref-Javaraiah2020" class="csl-entry" role="listitem">
+Javaraiah, J. 2020. <span>“Long–Term Variations in Solar Differential Rotation and Sunspot Activity, II: Differential Rotation Around the Maxima and Minima of Solar Cycles 12<span></span>–<span></span>24”</span> 295 (12): 170. <a href="https://doi.org/10.1007/s11207-020-01740-x">https://doi.org/10.1007/s11207-020-01740-x</a>.
+</div>
+<div id="ref-Javaraiah2005a" class="csl-entry" role="listitem">
+Javaraiah, J., L. Bertello, and R. K. Ulrich. 2005. <span>“<span class="nocase">Long-Term Variations in Solar Differential Rotation and Sunspot Activity</span>”</span> 232 (November): 25–40. <a href="https://doi.org/10.1007/s11207-005-8776-y">https://doi.org/10.1007/s11207-005-8776-y</a>.
+</div>
+<div id="ref-Kutsenko2020" class="csl-entry" role="listitem">
+Kutsenko, Alexander S. 2020. <span>“<span class="nocase">The rotation rate of solar active and ephemeral regions - I. Dependence on morphology and peak magnetic flux</span>,”</span> November. <a href="https://doi.org/10.1093/mnras/staa3616">https://doi.org/10.1093/mnras/staa3616</a>.
+</div>
+<div id="ref-Lamb2017" class="csl-entry" role="listitem">
+Lamb, Derek A. 2017. <span>“<span class="nocase">Measurements of Solar Differential Rotation and Meridional Circulation from Tracking of Photospheric Magnetic Features</span>”</span> 836 (1): 10. <a href="https://doi.org/10.3847/1538-4357/836/1/10">https://doi.org/10.3847/1538-4357/836/1/10</a>.
+</div>
+<div id="ref-Li2013a" class="csl-entry" role="listitem">
+Li, K. J., X. J. Shi, J. L. Xie, P. X. Gao, H. F. Liang, L. S. Zhan, and W. Feng. 2013. <span>“<span class="nocase">Solar-cycle-related variation of solar differential rotation</span>”</span> 433 (1): 521–27. <a href="https://doi.org/10.1093/mnras/stt744">https://doi.org/10.1093/mnras/stt744</a>.
+</div>
+<div id="ref-Livingston2006" class="csl-entry" role="listitem">
+Livingston, W., J. W. Harvey, O. V. Malanushenko, and L. Webster. 2006. <span>“<span class="nocase">Sunspots with the Strongest Magnetic Fields</span>”</span> 239 (1-2): 41–68. <a href="https://doi.org/10.1007/s11207-006-0265-4">https://doi.org/10.1007/s11207-006-0265-4</a>.
+</div>
+<div id="ref-Lustig1983" class="csl-entry" role="listitem">
+Lustig, G. 1983. <span>“<span class="nocase">Solar rotation 1947-1981 - Determined from sunspot data</span>”</span> 125 (2): 355–58.
+</div>
+<div id="ref-Mandal2017a" class="csl-entry" role="listitem">
+Mandal, S., M. Hegde, T. Samanta, G. Hazra, D. Banerjee, and B. Ravindra. 2017. <span>“<span class="nocase">Kodaikanal digitized white-light data archive (1921-2011): Analysis of various solar cycle features</span>”</span> 601 (May): A106. <a href="https://doi.org/10.1051/0004-6361/201628651">https://doi.org/10.1051/0004-6361/201628651</a>.
+</div>
+<div id="ref-Markwardt2009" class="csl-entry" role="listitem">
+Markwardt, C. B. 2009. <span>“<span class="nocase">Non-linear Least-squares Fitting in IDL with MPFIT</span>.”</span> In <em>Astronomical Data Analysis Software and Systems XVIII</em>, edited by D. A. Bohlender, D. Durand, and P. Dowler, 411:251. <a href="https://arxiv.org/abs/0902.2850">https://arxiv.org/abs/0902.2850</a>.
+</div>
+<div id="ref-MunozJaramillo2015" class="csl-entry" role="listitem">
+Muñoz-Jaramillo, A., R. R. Senkpeil, J. C. Windmueller, E. C. Amouzou, D. W. Longcope, A. G. Tlatov, Y. A. Nagovitsyn, et al. 2015. <span>“<span class="nocase">Small-scale and Global Dynamos and the Area and Flux Distributions of Active Regions, Sunspot Groups, and Sunspots: A Multi-database Study</span>”</span> 800 (February): 48. <a href="https://doi.org/10.1088/0004-637X/800/1/48">https://doi.org/10.1088/0004-637X/800/1/48</a>.
+</div>
+<div id="ref-Newton1951" class="csl-entry" role="listitem">
+Newton, H. W., and M. L. Nunn. 1951. <span>“<span class="nocase">The Sun’s rotation derived from sunspots 1934-1944 and additional results</span>”</span> 111 (January): 413. <a href="https://doi.org/10.1093/mnras/111.4.413">https://doi.org/10.1093/mnras/111.4.413</a>.
+</div>
+<div id="ref-Obridko2001" class="csl-entry" role="listitem">
+Obridko, V. N., and B. D. Shelting. 2001. <span>“<span class="nocase">Rotation Characteristics of Large-Scale Solar Magnetic Fields</span>”</span> 201 (1): 1–12. <a href="https://doi.org/10.1023/A:1010378224821">https://doi.org/10.1023/A:1010378224821</a>.
+</div>
+<div id="ref-Obridko2016" class="csl-entry" role="listitem">
+———. 2016. <span>“<span class="nocase">On the negative correlation between solar activity and solar rotation rate</span>”</span> 42 (9): 631–37. <a href="https://doi.org/10.1134/S1063773716080041">https://doi.org/10.1134/S1063773716080041</a>.
+</div>
+<div id="ref-Parker1955a" class="csl-entry" role="listitem">
+Parker, E. N. 1955. <span>“<span class="nocase">The Formation of Sunspots from the Solar Toroidal Field.</span>”</span> 121 (March): 491. <a href="https://doi.org/10.1086/146010">https://doi.org/10.1086/146010</a>.
+</div>
+<div id="ref-Pesnell2012" class="csl-entry" role="listitem">
+Pesnell, W. Dean, B. J. Thompson, and P. C. Chamberlin. 2012. <span>“<span>The Solar Dynamics Observatory (SDO)</span>”</span> 275 (1-2): 3–15. <a href="https://doi.org/10.1007/s11207-011-9841-3">https://doi.org/10.1007/s11207-011-9841-3</a>.
+</div>
+<div id="ref-PoljancicBeljan2017" class="csl-entry" role="listitem">
+Poljančić Beljan, I., R. Jurdana-Šepić, R. Brajša, D. Sudar, D. Ruždjak, D. Hržina, W. Pötzi, et al. 2017. <span>“<span class="nocase">Solar differential rotation in the period 1964-2016 determined by the Kanzelh<span class="nocase">ö</span>he data set</span>”</span> 606 (October): A72. <a href="https://doi.org/10.1051/0004-6361/201731047">https://doi.org/10.1051/0004-6361/201731047</a>.
+</div>
+<div id="ref-Ravindra2013" class="csl-entry" role="listitem">
+Ravindra, B., T. G. Priya, K. Amareswari, M. Priyal, A. A. Nazia, and D. Banerjee. 2013. <span>“<span class="nocase">Digitized archive of the Kodaikanal images: Representative results of solar cycle variation from sunspot area determination</span>”</span> 550 (February): A19. <a href="https://doi.org/10.1051/0004-6361/201220416">https://doi.org/10.1051/0004-6361/201220416</a>.
+</div>
+<div id="ref-Ribes1993" class="csl-entry" role="listitem">
+Ribes, J. C., and E. Nesme-Ribes. 1993. <span>“<span class="nocase">The solar sunspot cycle in the Maunder minimum AD1645 to AD1715</span>”</span> 276 (September): 549.
+</div>
+<div id="ref-Rosa1995" class="csl-entry" role="listitem">
+Roša, D., R. Brajša, B. Vršnak, and H. Wöhl. 1995. <span>“<span class="nocase">The Relation between the Synodic and Sidereal Rotation Period of the Sun</span>”</span> 159 (2): 393–98. <a href="https://doi.org/10.1007/BF00686540">https://doi.org/10.1007/BF00686540</a>.
+</div>
+<div id="ref-Ruzdjak2017" class="csl-entry" role="listitem">
+Ruždjak, Domagoj, Roman Brajša, Davor Sudar, Ivica Skokić, and Ivana Poljančić Beljan. 2017. <span>“<span class="nocase">A Relationship Between the Solar Rotation and Activity Analysed by Tracing Sunspot Groups</span>”</span> 292 (12): 179. <a href="https://doi.org/10.1007/s11207-017-1199-8">https://doi.org/10.1007/s11207-017-1199-8</a>.
+</div>
+<div id="ref-Scherrer1995" class="csl-entry" role="listitem">
+Scherrer, P. H., R. S. Bogart, R. I. Bush, J. T. Hoeksema, A. G. Kosovichev, J. Schou, W. Rosenberg, et al. 1995. <span>“<span>The Solar Oscillations Investigation - Michelson Doppler Imager</span>”</span> 162 (December): 129–88. <a href="https://doi.org/10.1007/BF00733429">https://doi.org/10.1007/BF00733429</a>.
+</div>
+<div id="ref-Skokic2014" class="csl-entry" role="listitem">
+Skokić, I., R. Brajša, D. Roša, D. Hržina, and H. Wöhl. 2014. <span>“<span class="nocase">Validity of the Relations Between the Synodic and Sidereal Rotation Velocities of the Sun</span>”</span> 289 (5): 1471–76. <a href="https://doi.org/10.1007/s11207-013-0426-1">https://doi.org/10.1007/s11207-013-0426-1</a>.
+</div>
+<div id="ref-Solanki2003" class="csl-entry" role="listitem">
+Solanki, Sami K. 2003. <span>“Sunspots: An Overview”</span> 11 (2): 153–286. <a href="https://doi.org/10.1007/s00159-003-0018-4">https://doi.org/10.1007/s00159-003-0018-4</a>.
+</div>
+<div id="ref-Svanda2009" class="csl-entry" role="listitem">
+Švanda, M., M. Klvaňa, and M. Sobotka. 2009. <span>“<span class="nocase">Large-scale horizontal flows in the solar photosphere. V. Possible evidence for the disconnection of bipolar sunspot groups from their magnetic roots</span>”</span> 506 (2): 875–84. <a href="https://doi.org/10.1051/0004-6361/200912422">https://doi.org/10.1051/0004-6361/200912422</a>.
+</div>
+<div id="ref-Ternullo1981" class="csl-entry" role="listitem">
+Ternullo, M., R. A. Zappala, and F. Zuccarello. 1981. <span>“<span class="nocase">The Age-Dependence of Photospheric Tracer Rotation</span>”</span> 74 (1): 111–15. <a href="https://doi.org/10.1007/BF00151280">https://doi.org/10.1007/BF00151280</a>.
+</div>
+<div id="ref-Ward1966" class="csl-entry" role="listitem">
+Ward, Fred. 1966. <span>“<span class="nocase">Determination of the Solar-Rotation Rate from the Motion of Identifiable Features</span>”</span> 145 (August): 416. <a href="https://doi.org/10.1086/148783">https://doi.org/10.1086/148783</a>.
+</div>
+<div id="ref-Wittmann1996" class="csl-entry" role="listitem">
+Wittmann, Axel D. 1996. <span>“<span class="nocase">On the Relation between the Synodic and Sidereal Rotation Period of the Sun</span>”</span> 168 (1): 211–13. <a href="https://doi.org/10.1007/BF00145837">https://doi.org/10.1007/BF00145837</a>.
+</div>
+<div id="ref-Woehl2010" class="csl-entry" role="listitem">
+Wöhl, H., R. Brajša, A. Hanslmeier, and S. F. Gissot. 2010. <span>“<span class="nocase">A precise measurement of the solar differential rotation by tracing small bright coronal structures in SOHO-EIT images. Results and comparisons for the period 1998-2006</span>”</span> 520 (September): A29. <a href="https://doi.org/10.1051/0004-6361/200913081">https://doi.org/10.1051/0004-6361/200913081</a>.
+</div>
+<div id="ref-Xie2018" class="csl-entry" role="listitem">
+Xie, Jinglan, Xiangjun Shi, and Zhining Qu. 2018. <span>“North<span></span>south Asymmetry of the Rotation of the Solar Magnetic Field”</span> 855 (2): 84. <a href="https://doi.org/10.3847/1538-4357/aaae68">https://doi.org/10.3847/1538-4357/aaae68</a>.
+</div>
+<div id="ref-Zhang2013" class="csl-entry" role="listitem">
+Zhang, L., K. Mursula, and I. Usoskin. 2013. <span>“<span class="nocase">Consistent long-term variation in the hemispheric asymmetry of solar rotation</span>”</span> 552 (April): A84. <a href="https://doi.org/10.1051/0004-6361/201220693">https://doi.org/10.1051/0004-6361/201220693</a>.
+</div>
+<div id="ref-Zhang2011" class="csl-entry" role="listitem">
+Zhang, L., K. Mursula, I. Usoskin, and H. Wang. 2011. <span>“<span class="nocase">Global analysis of active longitudes of sunspots</span>”</span> 529 (May): A23. <a href="https://doi.org/10.1051/0004-6361/201015255">https://doi.org/10.1051/0004-6361/201015255</a>.
+</div>
+</div>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>Available for download at <a href="https://kso.iiap.res.in/new/white_light" class="uri">https://kso.iiap.res.in/new/white_light</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Individual spots are not yet classified into groups in the current KoSO catalogue.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Detail of this function is available at <a href="https://hesperia.gsfc.nasa.gov/ssw/gen/idl/maps/drot_map.pro" class="uri">https://hesperia.gsfc.nasa.gov/ssw/gen/idl/maps/drot_map.pro</a>. This routine uses the differential rotation parameter from <span class="citation" data-cites="Howard1990">R. F. Howard, Harvey, and Forgach (<a href="#ref-Howard1990" role="doc-biblioref">1990</a>)</span> to differentially rotate an input image.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>We have used the mpfit_fun.pro function available in IDL for this purpose.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./chapter3.html" class="pagination-link" aria-label="Study of Sunspot Penumbra to Umbra Area Ratio using Kodaikanal White-light Digitized Data">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Study of Sunspot Penumbra to Umbra Area Ratio using Kodaikanal White-light Digitized Data</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./chapter5.html" class="pagination-link" aria-label="A Theoretical Model of the Near--Surface Shear Layer of the Sun">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">A Theoretical Model of the Near–Surface Shear Layer of the Sun</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

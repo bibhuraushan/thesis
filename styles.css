@@ -1,0 +1,217 @@
+/* Ultra-Modern Academic Web Aesthetics */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  --primary: #3b82f6;          /* Vibrant Blue */
+  --primary-light: #93c5fd;    /* Soft Blue */
+  --bg-color: #fcfcfd;         /* Ultra Soft White */
+  --text-main: #334155;        /* Deep Slate */
+  --text-muted: #64748b;       /* Cool Slate */
+  --math-bg: #f1f5f9;          /* Slightly darker background for math */
+  --glass-bg: rgba(255, 255, 255, 0.85);
+  --glass-border: rgba(0, 0, 0, 0.04);
+  --code-bg: #f8fafc;
+  --accent-color: #ec4899;     /* Soft Pink accent */
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --shadow-md: 0 10px 25px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
+  --shadow-hover: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+body.quarto-dark {
+  --primary: #60a5fa;
+  --primary-light: #bfdbfe;
+  --bg-color: #0f172a;         /* Deep Navy */
+  --text-main: #f1f5f9;
+  --text-muted: #94a3b8;
+  --math-bg: #1e293b;          /* Dark Slate for math */
+  --glass-bg: rgba(15, 23, 42, 0.85);
+  --glass-border: rgba(255, 255, 255, 0.05);
+  --code-bg: #1e293b;
+}
+
+html, body {
+  /* Sans-serif for UI, Serif for body reading */
+  font-family: 'Merriweather', serif; 
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  scroll-behavior: smooth;
+  line-height: 1.85;
+  font-size: 16px;             /* Default base font size */
+}
+
+/* Optimal Reading Width (UX Research implies 65-75 characters per line is optimal) */
+main {
+  max-width: 75ch !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Headings: UI font for clean structure */
+h1, h2, h3, h4, h5, h6, .sidebar, .nav-page, figcaption {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: var(--text-main);
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin-top: 3.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+}
+
+h1.title {
+  background: linear-gradient(135deg, var(--primary), var(--accent-color));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  font-size: clamp(2rem, 4vw, 3rem); /* Fluid typography */
+  line-height: 1.15;
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+/* Sidebar Glassmorphism */
+#quarto-sidebar, .sidebar {
+  background: var(--glass-bg) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-right: 1px solid var(--glass-border);
+  box-shadow: 2px 0 20px rgba(0,0,0,0.02);
+  padding-top: 1.5rem;
+}
+
+.sidebar a {
+  color: var(--text-muted);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+}
+
+.sidebar a:hover, 
+.sidebar a.active {
+  color: var(--primary);
+  transform: translateX(6px);
+  background: rgba(59, 130, 246, 0.08);
+}
+
+/* Enhancing Figure Captions */
+figcaption {
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--text-muted);
+  margin-top: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+/* Images Constraint and Soft Elevation */
+img, figure img, .quarto-figure img {
+  max-width: 100% !important;
+  height: auto !important;
+  border-radius: 16px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.5s ease;
+  margin: 2.5rem auto 1.5rem auto;
+  display: block;
+}
+
+img:hover, .quarto-figure img:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: var(--shadow-hover);
+}
+
+/* Advanced Blockquote with large quote mark */
+blockquote {
+  position: relative;
+  background: linear-gradient(to right, rgba(59, 130, 246, 0.08), transparent);
+  border-left: 4px solid var(--primary);
+  padding: 2rem 2.5rem;
+  margin: 3rem 0;
+  border-radius: 0 16px 16px 0;
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+
+blockquote::before {
+  content: "“";
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  font-size: 5rem;
+  font-family: serif;
+  color: var(--primary);
+  opacity: 0.15;
+  line-height: 1;
+}
+
+/* Elegant Math Blocks */
+.math.display {
+  background-color: var(--math-bg);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
+  border: 1px solid var(--glass-border);
+}
+
+/* Inline Code */
+code {
+  font-family: 'Plus Jakarta Sans', monospace;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 6px;
+  font-size: 0.85em;
+  color: var(--accent-color);
+}
+
+/* Smooth Links */
+p a, li a {
+  color: var(--primary);
+  text-decoration: none;
+  border-bottom: 2px solid rgba(59, 130, 246, 0.2);
+  transition: all 0.2s ease;
+  padding-bottom: 1px;
+}
+
+p a:hover, li a:hover {
+  border-bottom-color: var(--primary);
+  background-color: rgba(59, 130, 246, 0.05);
+}
+
+/* Lead Paragraph Style (Usually for Preface) */
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+/* Custom Scrollbar for Webkit */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color); 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.3); 
+  border-radius: 5px;
+  border: 2px solid var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.5); 
+}
