@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>3&nbsp; Study of Sunspot Penumbra to Umbra Area Ratio using Kodaikanal White-light Digitized Data – Long-term solar observations: probing the solar interior and magnetic fields</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./chapter4.html" rel="next">
+<link href="./chapter2.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-27c261d06b905028a18691de25d09dde.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-234501a227967ac462f24af7be37efa8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-27c261d06b905028a18691de25d09dde.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter3.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Study of Sunspot Penumbra to Umbra Area Ratio using Kodaikanal White-light Digitized Data</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Long-term solar observations: probing the solar interior and magnetic fields</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter3.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Study of Sunspot Penumbra to Umbra Area Ratio using Kodaikanal White-light Digitized Data</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Measurements of Solar Differential Rotation Using the Century Long Kodaikanal Sunspot Data</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">A Theoretical Model of the Near–Surface Shear Layer of the Sun</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Magnetic field dependence of bipolar magnetic region tilts on the Sun: Indication of tilt quenching</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">The Conclusion</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#ch3-intro" id="toc-ch3-intro" class="nav-link active" data-scroll-target="#ch3-intro"><span class="header-section-number">3.1</span> Introduction</a></li>
+  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data"><span class="header-section-number">3.2</span> Data</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results"><span class="header-section-number">3.3</span> Results</a>
+  <ul class="collapse">
+  <li><a href="#individual-variations" id="toc-individual-variations" class="nav-link" data-scroll-target="#individual-variations"><span class="header-section-number">3.3.1</span> Individual Variations</a></li>
+  <li><a href="#dependency-on-cycle-strength-and-its-phases" id="toc-dependency-on-cycle-strength-and-its-phases" class="nav-link" data-scroll-target="#dependency-on-cycle-strength-and-its-phases"><span class="header-section-number">3.3.2</span> Dependency on Cycle Strength and its Phases</a></li>
+  <li><a href="#behaviour-of-smaller-and-larger-spots" id="toc-behaviour-of-smaller-and-larger-spots" class="nav-link" data-scroll-target="#behaviour-of-smaller-and-larger-spots"><span class="header-section-number">3.3.3</span> Behaviour of Smaller and Larger Spots</a></li>
+  <li><a href="#application-on-sohomdi" id="toc-application-on-sohomdi" class="nav-link" data-scroll-target="#application-on-sohomdi"><span class="header-section-number">3.3.4</span> Application on SOHO/MDI</a></li>
+  </ul></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">3.4</span> Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="Chap3" class="quarto-section-identifier"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Study of Sunspot Penumbra to Umbra Area Ratio using Kodaikanal White-light Digitized Data</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="ch3-intro" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="ch3-intro"><span class="header-section-number">3.1</span> Introduction</h2>
+<p>Sunspots, the most prominent features on the solar photosphere, appear dark when observed in visible wavelengths. They also show periodic variations in properties over an <span class="math inline">\(\approx\)</span><!-- -->11 years time-scale, generally referred as the solar cycle <span class="citation" data-cites="Hathaway2015">(<a href="#ref-Hathaway2015" role="doc-biblioref">David H. Hathaway 2015</a>)</span>. In fact, after the observations by <span class="citation" data-cites="Hale1908">(<a href="#ref-Hale1908" role="doc-biblioref">Hale 1908</a>)</span>, it became clear that sunspots are the locations of strong magnetic fields (<span class="math inline">\(\approx\)</span><!-- -->4 kG) which inhibit convection within them. Due to such suppression of energy, they appear as dark structures <span class="citation" data-cites="Solanki2003">(<a href="#ref-Solanki2003" role="doc-biblioref">Solanki 2003</a>)</span>. A closer inspection of sunspot images reveals that there are, actually, two different features within a spot: a darker (with respect to photospheric intensity) umbra surrounded by a lighter penumbra. This contrast in appearance is generally attributed to different strengths and orientations of the magnetic fields which are present in these two regions <span class="citation" data-cites="Mathew2003a">(<a href="#ref-Mathew2003a" role="doc-biblioref">Mathew et al. 2003</a>)</span>. Hence, area measurements of umbra and penumbra carry these magnetic field information too. The other importance of these measurements come from their application in calculating the Photometric Solar Index (PSI) values which quantize the decrement of Total Solar Irradiance (TSI) due to the presence of a spot on solar disc <span class="citation" data-cites="Froehlich1977 Hudson1982a">(<a href="#ref-Froehlich1977" role="doc-biblioref">Fröhlich 1977</a>; <a href="#ref-Hudson1982a" role="doc-biblioref">Hudson et al. 1982</a>)</span>. Thus, a knowledge of long-term variations in the umbra and penumbra area will enhance our understanding of solar variability.</p>
+<p>One of the earliest measurements of umbra and penumbra area values was reported by <span class="citation" data-cites="Nicholson1933">(<a href="#ref-Nicholson1933" role="doc-biblioref">Nicholson 1933</a>)</span> who studied almost one thousand unipolar or preceding member of bipolar sunspots from Royal Observatory, Greenwich (RGO) between 1917 to 1920. The average ratio (<span class="math inline">\(\q\)</span>), between the area of penumbra to that of umbra, was quoted as <span class="math inline">\(\approx\)</span><!-- -->4.7 and it was also found to be independent of sunspot sizes. However, examining the diameters of umbra and penumbra of 53 sunspots as photographed by Wolfer at Zürich, <span class="citation" data-cites="Waldmeier1939">(<a href="#ref-Waldmeier1939" role="doc-biblioref">Waldmeier 1939</a>)</span> noted that the <span class="math inline">\(\q\)</span> value decreases from 6.8 to 3.4 as the sunspot area increases from <span class="math inline">\(100~\mu\)</span>Hem to <span class="math inline">\(1000~\mu\)</span>Hem. The first investigation of the long-term evolution of this ratio was reported by <span class="citation" data-cites="Jensen1955 Jensen1956">(<a href="#ref-Jensen1955" role="doc-biblioref">Jensen, Nordø, and Ringnes 1955</a>, <a href="#ref-Jensen1956" role="doc-biblioref">1956</a>)</span> where the authors analysed the RGO data from 1878 to 1945. Interestingly, they noted that the ratio is a decreasing function of sunspot size during cycle maxima but the variation is much lower than the values as reported in <span class="citation" data-cites="Waldmeier1939">(<a href="#ref-Waldmeier1939" role="doc-biblioref">Waldmeier 1939</a>)</span>. Several follow up studies by <span class="citation" data-cites="TandbergHanssen1956 Antalova1971 Beck1993">(<a href="#ref-TandbergHanssen1956" role="doc-biblioref">Tandberg-Hanssen 1956</a>; <a href="#ref-Antalova1971" role="doc-biblioref">Antalová 1971</a>; <a href="#ref-Beck1993" role="doc-biblioref">Beck and Chapman 1993</a>)</span> also confirmed similar results by including more complex sunspots and larger statistics.</p>
+<p>Using the largest set of observations as recorded in RGO data (161839 sunspot groups between 1874-1976), <span class="citation" data-cites="Hathaway2013">(<a href="#ref-Hathaway2013" role="doc-biblioref">D. H. Hathaway 2013</a>)</span> calculated the <span class="math inline">\(\q\)</span> values for each of these cases and noted that it increases from 5 to 6 as sunspot group size increases from <span class="math inline">\(100~\mu\)</span>Hem to <span class="math inline">\(2000~\mu\)</span>Hem. However, the author did not find any dependency of <span class="math inline">\(\q\)</span> on the cycle phase or the locations of the spots. The most remarkable result of all was the behaviour of smaller sunspot groups (area <span class="math inline">\(&lt;100~\mu\)</span>Hem), for which the author found a substantial change in the <span class="math inline">\(\q\)</span> values within a relatively smaller timescale. The ratio decreased significantly from 7 to 3 during solar Cycles 14<span class="math inline">\(-\)</span><!-- -->16, however, it again increased to <span class="math inline">\(&gt;\)</span><!-- -->7 in 1961 at the end of Cycle 19.</p>
+</section>
+<section id="data" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="data"><span class="header-section-number">3.2</span> Data</h2>
+<div id="fig3.1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="Figures/Chapter3/image_3_1.png" class="img-fluid figure-img"></p>
+<figcaption><em>Panel-(a):</em> A calibrated white-light image from Kodaikanal Observatory as recorded on 1955-01-07 08:15. <em>Panel-(b):</em> Binary image of the extracted sunspots. <em>Panel-(c):</em> Isolated spots in the original grey scale image produced by multiplying images on panel-(a) with panel-(b). A zoomed in view is presented in <em>Panel-(d).</em></figcaption>
+</figure>
+</div>
+<p>In this study, we have used the newly digitized and calibrated white-light full disk images (Figure&nbsp;<a href="#fig3.1" data-reference-type="ref" data-reference="fig3.1">1.1</a>a) from Kodaikanal Solar Observatory (KoSO). Details of this digitization, including the various steps of calibration process, are reported in <span class="citation" data-cites="Ravindra2013">(<a href="#ref-Ravindra2013" role="doc-biblioref">Ravindra et al. 2013</a>)</span>. Recently, <span class="citation" data-cites="Mandal2017a">(<a href="#ref-Mandal2017a" role="doc-biblioref">Mandal et al. 2017</a>)</span> catalogued the whole-spot area series<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> (between 1921 and 2011) by using a semi-automated sunspot detection algorithm on this data. We start our analysis with these detected binary images of sunspots as shown in Figure&nbsp;<a href="#fig3.1" data-reference-type="ref" data-reference="fig3.1">1.1</a>b. In order to isolate the spots, we multiply the binary mask with the limb-darkening corrected full disc images. The final results are displayed in Figure&nbsp;<a href="#fig3.1" data-reference-type="ref" data-reference="fig3.1">1.1</a>c-<a href="#fig3.1" data-reference-type="ref" data-reference="fig3.1">1.1</a>d.</p>
+<p>Considering the volume of the data to be processed, we opted for an automatic boundary detection algorithm. A number of methods have already been used in the past to automatically detect umbrae of sunspots: <span class="citation" data-cites="Brandt1990">(<a href="#ref-Brandt1990" role="doc-biblioref">Brandt, Schmidt, and Steinegger 1990</a>)</span> &amp; <span class="citation" data-cites="Pucha2016">(<a href="#ref-Pucha2016" role="doc-biblioref">Pucha, Hiremath, and Gurumath 2016</a>)</span> using fixed intensity threshold; <span class="citation" data-cites="Pettauer1997">(<a href="#ref-Pettauer1997" role="doc-biblioref">Pettauer and Brandt 1997</a>)</span> using cumulative histogram method and <span class="citation" data-cites="Steinegger1997a">(<a href="#ref-Steinegger1997a" role="doc-biblioref">Steinegger, Bonet, and Vázquez 1997</a>)</span> using the inflection method. Despite their successes on other data sets (mostly of smaller duration), we found that none of these methods actually produces a faithful result when applied on the entire Kodaikanal data. The main reasons behind this are the varying image quality over time, poor contrast, presence of artefacts etc. Keeping these limitations in mind, we select an adaptive umbra detection method based on the Otsu thresholding technique <span class="citation" data-cites="Otsu1979">(<a href="#ref-Otsu1979" role="doc-biblioref">Otsu 1979</a>)</span>. This method finds the optimum threshold for an image which has a bimodal intensity distribution. In our case, the two different intensity levels of umbra and penumbra constitute a similar type of distribution which is suitable for such an application. Mathematically, to calculate the threshold, this method maximizes the between-class variance of the distribution. If <span class="math inline">\(t\)</span> is the threshold that separates <span class="math inline">\({\rm L}\)</span> bins of histogram in background class (<span class="math inline">\(C_{\rm b}\)</span>) and foreground class (<span class="math inline">\(C_{\rm f}\)</span>), then the probability of occurrence of background (<span class="math inline">\(\omega _{\rm b}\)</span>) and foreground classes (<span class="math inline">\(\omega _{\rm f}\)</span>) are <span class="math display">\[\begin{eqnarray}
+   \omega _{\rm b}&amp;=&amp;\sum _{i=1}^{{\rm t}}P(i)=\omega(t),\\
+   \omega _{\rm f}&amp;=&amp;\sum _{{i=t+1}}^{{\rm L}}P(i)=1-\omega(t)
+\end{eqnarray}\]</span> where <span class="math inline">\(P(i)\)</span> represents the probability of occurrence of the <span class="math inline">\(i_{\rm th}\)</span> bin. The between-class variance <strong>(<span class="math inline">\(\sigma_{\rm B}\)</span>)</strong> of the distribution for a particular <span class="math inline">\(t\)</span> can be written as <span class="math display">\[\begin{equation}
+\sigma _{\rm B}(t)^2=\omega _{\rm b}(\mu _{\rm b}-\mu)^2+\omega _{\rm f}(\mu _{\rm f}-\mu)^2.
+\label{eq3.1}
+\end{equation}\]</span> In Equation <a href="#eq3.1" data-reference-type="ref" data-reference="eq3.1">[eq3.1]</a>, <span class="math inline">\(\mu\)</span> (the mean of the distribution) and <span class="math inline">\(\mu _{\rm b}\)</span> and <span class="math inline">\(\mu _{\rm f}\)</span> (the means of the background and foreground class) are defined as <span class="math display">\[\begin{eqnarray}
+    \mu&amp;=&amp;\sum _{i=1}^{{\rm L}}iP(i),\\
+    \mu _{\rm b}&amp;=&amp;\sum _{i=1}^{t}iP(i/C_{\rm b})=\frac{\mu(t)}{\omega(t)},\\
+    \mu _{\rm f}&amp;=&amp;\sum _{i=t+1}^{\rm L}iP(i/C_{\rm f})=\frac{\mu-\mu(t)}{1-\omega(t)}.
+\end{eqnarray}\]</span></p>
+<p>In this work, we use the <code>c</code>gotsu<span class="math inline">\(\_\)</span>threshold.pro<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> routine, an IDL<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> implementation of the above concept.</p>
+<div id="fig3.2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="Figures/Chapter3/image_3_2.png" class="img-fluid figure-img"></p>
+<figcaption>Two representative examples of our umbra detection technique on Kodaikanal sunspot data. The red contours (in panels (a1-b3)) highlight the umbra-penumbra boundaries as estimated by eye whereas the detected umbrae for different set of threshold values are shown as grey regions. See text for more details.</figcaption>
+</figure>
+</div>
+<p>We demonstrate the application of this algorithm on our data with two representative examples as shown in Figure&nbsp;<a href="#fig3.2" data-reference-type="ref" data-reference="fig3.2">1.2</a>. The red contours on the spots represent the umbra-penumbra boundary as estimated by visual inspections. We expect an umbral boundary, as detected by this Otsu method, to more-or-less coincide with this contour. When applied on the original image, the detected umbra comes out to be significantly larger in size as seen in panels (a1,b1) of Figure&nbsp;<a href="#fig3.2" data-reference-type="ref" data-reference="fig3.2">1.2</a>. Upon investigation, we realize that this over-estimation occurs due to the presence of few brighter pixels on the edge of the detected spots. In fact, these bright pixels are originally a part of the quiet Sun region and got picked up during the sunspot detection procedure. Though the number of such pixels is very small compared to the total pixels of a typical sunspot, it seems to have a significant influence on the derived threshold value. To get rid of these “rouge pixels", a pre-processing technique is applied before feeding the spots into the Otsu method. We set up an intensity filter which is based on a threshold defined as: <span class="math display">\[\begin{equation}
+I_{\rm th}=\bar{I}-k\sigma
+\label{eq3.2}
+\end{equation}\]</span> where <span class="math inline">\(\bar{I}\)</span> and <span class="math inline">\(\sigma\)</span> are mean and standard deviation of spot region. With this criteria, a pixel with intensity (<span class="math inline">\(I_{\rm n}\)</span>) greater than <span class="math inline">\(I_{\rm th}\)</span> gets removed form that specific spot <em>i.e.</em> we set <span class="math inline">\(I_{\rm n}=0\)</span>. Although, from Equation&nbsp;<a href="#eq3.2" data-reference-type="ref" data-reference="eq3.2">[eq3.2]</a>, we note that <em>k</em> is a free parameter which needs to be optimized. We fix this issue by taking a large subset of randomly chosen sunspots (of different contrasts and morphologies) and repeating the above procedure with multiple values of <em>k</em>. After visual inspections of each of those results, we find that two values, <span class="math inline">\(k=0.3\)</span> and <span class="math inline">\(k=0.5\)</span>, produce the most accurate results as compared to other <em>k</em> values. However, most often or not, the umbra gets underestimated with <span class="math inline">\(k = 0.5\)</span> (Figure&nbsp;<a href="#fig3.2" data-reference-type="ref" data-reference="fig3.2">1.2</a>a3, <a href="#fig3.2" data-reference-type="ref" data-reference="fig3.2">1.2</a>b3).</p>
+<div id="fig3.3" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="Figures/Chapter3/image_3_3.png" class="img-fluid figure-img"></p>
+<figcaption><em>Panel(a):</em> Comparison of yearly averaged umbral areas between Kodaikanal (<span class="math inline">\(k=0.3\)</span> (red) &amp; <span class="math inline">\(k=0.5\)</span> (green)) and Debrecen data (black). <em>Panel(b):</em> Same as before but for the whole-spot area.</figcaption>
+</figure>
+</div>
+<p>To better visualize this effect, we compare our results with the umbra measurements from Debrecen Observatory<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> <span class="citation" data-cites="Baranyi2016 Gyoeri2017">(<a href="#ref-Baranyi2016" role="doc-biblioref">Baranyi, Győri, and Ludmány 2016</a>; <a href="#ref-Gyoeri2017" role="doc-biblioref">Győri, Ludmány, and Baranyi 2017</a>)</span> as shown in Figure&nbsp;<a href="#fig3.3" data-reference-type="ref" data-reference="fig3.3">1.3</a>a. The plot highlights the fact that <span class="math inline">\(k=0.3\)</span> is indeed a better choice for our Kodaikanal data. However, there is a large discrepancy between the Kodaikanal values with that from Debrecen, near the Cycle 22 maxima. To eliminate the possibility of this being an artefact of our umbra detection technique, we also plot the whole spot area between the two observatories in Figure&nbsp;<a href="#fig3.3" data-reference-type="ref" data-reference="fig3.3">1.3</a>b. Presence of a similar difference in this case too, indicates an underestimation of total sunspot area during the original spot detection procedure, as reported in <span class="citation" data-cites="Mandal2017a">(<a href="#ref-Mandal2017a" role="doc-biblioref">Mandal et al. 2017</a>)</span>.</p>
+<p>Finally, we compute the penumbra to umbra area ratio as: <span class="math display">\[\begin{equation}
+{\rm Ratio }= \q = \frac{A_{\rm W}}{A_{\rm U}}-1
+\end{equation}\]</span> where <span class="math inline">\(A_{\rm W}\)</span> and <span class="math inline">\(A_{\rm U}\)</span> are whole spot area and umbra area. This definition is same as <span class="citation" data-cites="Antalova1971">(<a href="#ref-Antalova1971" role="doc-biblioref">Antalová 1971</a>)</span> and <span class="citation" data-cites="Hathaway2013">(<a href="#ref-Hathaway2013" role="doc-biblioref">D. H. Hathaway 2013</a>)</span>.</p>
+</section>
+<section id="results" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="results"><span class="header-section-number">3.3</span> Results</h2>
+<p>We calculate the the ratio <span class="math inline">\(\q\)</span> for the whole period of the currently available Kodaikanal data which covers Cycle 16 to Cycle 23. Different aspects of this ratio are discussed in this section.</p>
+<div id="fig3.4" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="Figures/Chapter3/image_3_4.png" class="img-fluid figure-img"></p>
+<figcaption><em>Panel(a):</em> Penumbra to umbra area ratio as function of total sunspot area binned over <span class="math inline">\(20~\mu\)</span>Hem. Grey shaded region represent the <span class="math inline">\(2\sigma\)</span> errors. <em>Panel(b)</em> shows the distribution of individual ratio (<span class="math inline">\(\q\)</span>) whereas the distribution of percentage coverage of umbral area over the whole-spot area is shown in <em>Panel(c)</em>.</figcaption>
+</figure>
+</div>
+<section id="individual-variations" class="level3" data-number="3.3.1">
+<h3 data-number="3.3.1" class="anchored" data-anchor-id="individual-variations"><span class="header-section-number">3.3.1</span> Individual Variations</h3>
+<p>To investigate the overall behaviour of <span class="math inline">\(\q\)</span>, we group the sunspot areas into bin sizes of <span class="math inline">\(20~\mu\)</span>Hem between <span class="math inline">\(20-2000~\mu\)</span>Hem and calculate the average ratio (<span class="math inline">\(\q_{\rm avg}\)</span>) for all the sunspots falling in that particular bin. Figure&nbsp;<a href="#fig3.4" data-reference-type="ref" data-reference="fig3.4">1.4</a>a shows the quantity <span class="math inline">\(\q_{\rm avg}\)</span> as a function of total spot area. The shaded region represents the standard error of <span class="math inline">\(2\sigma\)</span> uncertainty. The error bars beyond area <span class="math inline">\(&gt;1500~\mu\)</span>Hem are considerably larger due to poor statistics in those bins. Initially, the ratio for smaller spots (area <span class="math inline">\(&lt;100~\mu\)</span>Hem), increases rapidly from 3.4 to 5.2. As the area increases further (<span class="math inline">\(&gt;100~\mu\)</span>Hem), <span class="math inline">\(\q_{\rm avg}\)</span> tends to settle down to a value of <span class="math inline">\(\approx\)</span><!-- -->6 <span class="citation" data-cites="Jha2018">(<a href="#ref-Jha2018" role="doc-biblioref">Jha, Mandal, and Banerjee 2018</a>)</span>. In fact, these results are consistent with the findings by <span class="citation" data-cites="Antalova1971">(<a href="#ref-Antalova1971" role="doc-biblioref">Antalová 1971</a>)</span> &amp; <span class="citation" data-cites="Hathaway2013">(<a href="#ref-Hathaway2013" role="doc-biblioref">D. H. Hathaway 2013</a>)</span>. Physically this means larger spots tend to have larger penumbra (the observed slow upward trend), however large uncertainties make this conclusion rather weak. In addition to this, we note that there is a local minima of <span class="math inline">\(\q_{\rm avg}\)</span> around 150&nbsp;<span class="math inline">\(\mu\)</span>Hem which also needs further investigation and we do not have a convincing explanation for the same. Behavior of <span class="math inline">\(\q\)</span> for every detected sunspots is also analysed and presented in a histogram as shown in Figure&nbsp;<a href="#fig3.4" data-reference-type="ref" data-reference="fig3.4">1.4</a>b. The distribution peaks <span class="math inline">\(\approx\)</span><!-- -->4.5 and falls rapidly on both sides from the peak. Another interesting aspect is the coverage of umbra with respect to the total area for any individual sunspot. Figure&nbsp;<a href="#fig3.4" data-reference-type="ref" data-reference="fig3.4">1.4</a>c shows the distribution of this quantity (expressed in %). The distribution peaks at 15%, although there are significant number of cases between 15% to 25%. These properties are in good agreement with previously measured values by <span class="citation" data-cites="Watson2011 Carrasco2018">(<a href="#ref-Watson2011" role="doc-biblioref">F. T. Watson, Fletcher, and Marshall 2011</a>; <a href="#ref-Carrasco2018" role="doc-biblioref">Carrasco et al. 2018</a>)</span>.</p>
+</section>
+<section id="dependency-on-cycle-strength-and-its-phases" class="level3" data-number="3.3.2">
+<h3 data-number="3.3.2" class="anchored" data-anchor-id="dependency-on-cycle-strength-and-its-phases"><span class="header-section-number">3.3.2</span> Dependency on Cycle Strength and its Phases</h3>
+<p>During the onset of a solar cycle, we see very few spots present on the disc (mostly of smaller sizes <span class="citation" data-cites="Mandal2017a">(<a href="#ref-Mandal2017a" role="doc-biblioref">Mandal et al. 2017</a>)</span>). They are also located at higher latitudes and with the progress of the cycle, they move towards the equator to form the popular ‘sunspot butterfly diagram’.</p>
+<div id="fig3.5" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="Figures/Chapter3/image_3_5.png" class="img-fluid figure-img"></p>
+<figcaption><em>Panel (a):</em> Variation of <span class="math inline">\(\q_{\rm avg}\)</span> as a function of total area in four different latitude bands as written on the panel; <em>Panel (b):</em> Same as previous but separated for four different activity phases of cycles.</figcaption>
+</figure>
+</div>
+<p>We look for any such dependency of <span class="math inline">\(\q_{\rm avg}\)</span> by dividing the solar disc into several latitudinal bands. We fold the two hemispheres together and the results are plotted in Figure&nbsp;<a href="#fig3.5" data-reference-type="ref" data-reference="fig3.5">1.5</a>a. As seen from the plot, we find that the ratio does not depend on the latitude of a spot <span class="citation" data-cites="Antalova1971 Hathaway2013">(<a href="#ref-Antalova1971" role="doc-biblioref">Antalová 1971</a>; <a href="#ref-Hathaway2013" role="doc-biblioref">D. H. Hathaway 2013</a>)</span>. In a slightly different representation of the same phenomena, we isolate the spots according to their appearances during a solar cycle. In fact, we are also motivated by some of the earlier studies by <span class="citation" data-cites="Jensen1955 TandbergHanssen1956 Antalova1971">(<a href="#ref-Jensen1955" role="doc-biblioref">Jensen, Nordø, and Ringnes 1955</a>; <a href="#ref-TandbergHanssen1956" role="doc-biblioref">Tandberg-Hanssen 1956</a>; <a href="#ref-Antalova1971" role="doc-biblioref">Antalová 1971</a>)</span>, where these authors reported different values of <span class="math inline">\(\q_{\rm avg}\)</span> during a cycle maxima as opposed to a cycle minima. To check this, a cycle is divided into four phases: minimum phase, rising phase, maximum phase and declining phase. The definition of each of these phases is the same as described in <span class="citation" data-cites="Hathaway2013">(<a href="#ref-Hathaway2013" role="doc-biblioref">D. H. Hathaway 2013</a>)</span>. Considering all the cycles together, we generate a plot as shown in Figures&nbsp;<a href="#fig3.5" data-reference-type="ref" data-reference="fig3.5">1.5</a>b. In this case, too, we do not notice any change for a given spot range in different phases of cycles. This is consistent with the RGO data as found by <span class="citation" data-cites="Hathaway2013">(<a href="#ref-Hathaway2013" role="doc-biblioref">D. H. Hathaway 2013</a>)</span>.</p>
+<div id="fig3.6" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="Figures/Chapter3/image_3_6.png" class="img-fluid figure-img"></p>
+<figcaption>Figure above (a-h) shows the variations in <span class="math inline">\(\q_{\rm avg}\)</span> as recorded for each solar cycle (Cycles 16-23). Dashed red line is plotted just for reference.</figcaption>
+</figure>
+</div>
+<p>The other factor to potentially affect this ratio is the strength of a cycle. Similar spots in a weak cycle (Cycle 16) may have different <span class="math inline">\(\q_{\rm avg}\)</span> values than a strong cycle (Cycle 19). From Figure&nbsp;<a href="#fig3.6" data-reference-type="ref" data-reference="fig3.6">1.6</a>a-<a href="#fig3.6" data-reference-type="ref" data-reference="fig3.6">1.6</a>h we note that there is absolutely no variation of <span class="math inline">\(\q_{\rm avg}\)</span> with cycles of different strengths. In a similar analysis by <span class="citation" data-cites="Hathaway2013">(<a href="#ref-Hathaway2013" role="doc-biblioref">D. H. Hathaway 2013</a>)</span> on RGO data, showed two different behaviours, specifically for the smaller spots (area <span class="math inline">\(&lt;100~\mu\)</span>Hem), between even and odd numbered cycles. However, we do not find any such relation in our data.</p>
+<div id="fig3.7" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="Figures/Chapter3/image_3_7.png" class="img-fluid figure-img"></p>
+<figcaption>Yearly averaged values of <span class="math inline">\(\q\)</span> as obtained from Kodaikanal data (red points) for two sunspot classes; for area <span class="math inline">\(\geq\)</span><!-- -->100&nbsp;<span class="math inline">\(\mu\)</span>Hem (<em>Panel-(a)</em>) and for area <span class="math inline">\(&lt;\)</span><!-- -->100&nbsp;<span class="math inline">\(\mu\)</span>Hem (<em>Panel-(b)</em>). Similar values from RGO are also over plotted (grey points) for comparison. Error bars in each case represents the 2<span class="math inline">\(\sigma\)</span> uncertainties.</figcaption>
+</figure>
+</div>
+</section>
+<section id="behaviour-of-smaller-and-larger-spots" class="level3" data-number="3.3.3">
+<h3 data-number="3.3.3" class="anchored" data-anchor-id="behaviour-of-smaller-and-larger-spots"><span class="header-section-number">3.3.3</span> Behaviour of Smaller and Larger Spots</h3>
+<p>Sunspots of different sizes tend to show different behaviour <span class="citation" data-cites="Mandal2016">(<a href="#ref-Mandal2016" role="doc-biblioref">Mandal and Banerjee 2016</a>)</span>. In this section, we look for the temporal evolution of <span class="math inline">\(\q\)</span> from two class of sunspots: <em>i)</em> Sunspots with area <span class="math inline">\(&lt;\)</span><!-- -->100&nbsp;<span class="math inline">\(\mu\)</span>Hem (Figure&nbsp;<a href="#fig3.7" data-reference-type="ref" data-reference="fig3.7">1.7</a>a); <em>ii)</em> Sunspots with area <span class="math inline">\(&gt;\)</span><!-- -->100<span class="math inline">\(~\mu\)</span>Hem (Figure&nbsp;<a href="#fig3.7" data-reference-type="ref" data-reference="fig3.7">1.7</a>b). The choice of this threshold at 100<span class="math inline">\(\mu\)</span>Hem is primarily dictated by the fact that we see a jump in <span class="math inline">\(\q\)</span> value at this area value in Figure&nbsp;<a href="#fig3.4" data-reference-type="ref" data-reference="fig3.4">1.4</a>a . In order to compare our results with <span class="citation" data-cites="Hathaway2013">(<a href="#ref-Hathaway2013" role="doc-biblioref">D. H. Hathaway 2013</a>)</span>, we over plot the <span class="math inline">\(\q\)</span> values for RGO data as shown in Figure&nbsp;<a href="#fig3.7" data-reference-type="ref" data-reference="fig3.7">1.7</a>. For spots <span class="math inline">\(&gt;\)</span><!-- -->100<span class="math inline">\(~\mu\)</span>Hem, the ratio neither show any significant time variation, nor any tendency to follow the solar cycles. The over plotted RGO data is in accordance with our values, except some systematically lower values during Cycles 16 to 17. One of the highlights of the work by <span class="citation" data-cites="Hathaway2013">(<a href="#ref-Hathaway2013" role="doc-biblioref">D. H. Hathaway 2013</a>)</span>, was the large secular variation of the ratio for smaller spots which showed 300% increment with time. However, this property is not visible from Kodaikanal data which shows the ratio remains constant at <span class="math inline">\(\approx\)</span><!-- -->4.5 throughout the duration. In fact, analysing the Coimbra Astronomical Observatory (COI) data, <span class="citation" data-cites="Carrasco2018">(<a href="#ref-Carrasco2018" role="doc-biblioref">Carrasco et al. 2018</a>)</span> also reported the absence of any type of secular variation in smaller spots.</p>
+<p>As mentioned in the introduction, differences in the derived <span class="math inline">\(\q\)</span> values largely depend on the methods that have been used to detect umbra-penumbra boundary <span class="citation" data-cites="Steinegger1997a">(<a href="#ref-Steinegger1997a" role="doc-biblioref">Steinegger, Bonet, and Vázquez 1997</a>)</span>. Our method of Otsu thresholding has not been utilized in the literature before and thus, we feel the need of checking the robustness of this method on other independent datasets. The following section describes the application of the same on the space-based SOHO/MDI continuum images.</p>
+</section>
+<section id="application-on-sohomdi" class="level3" data-number="3.3.4">
+<h3 data-number="3.3.4" class="anchored" data-anchor-id="application-on-sohomdi"><span class="header-section-number">3.3.4</span> Application on SOHO/MDI</h3>
+<p>We analyse SOHO/MDI <span class="citation" data-cites="Scherrer1995">(<a href="#ref-Scherrer1995" role="doc-biblioref">Scherrer et al. 1995</a>)</span> continuum images from 1996 to 2010 with a frequency of one image per day. First, we detect the sunspots using the same Sunspot Tracking and Recognition Algorithm (STARA: <span class="citation" data-cites="Watson2009">(<a href="#ref-Watson2009" role="doc-biblioref">F. Watson et al. 2009</a>)</span>) as used on the Kodaikanal data. The detected spots are then fed to the Otsu algorithm for umbra detection. Figure&nbsp;<a href="#fig3.8" data-reference-type="ref" data-reference="fig3.8">1.8</a> summarizes the whole procedure.</p>
+<div id="fig3.8" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="Figures/Chapter3/image_3_8.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption>Detection of umbra from SOHO/MDI data. <em>Panel-(a):</em> A representative continuum image as captured on 1999-05-14 23:59. <em>Panel-(b)</em> and (͡c): Detected sunspots and its zoomed in view respectively. <em>Panel-(d):</em> Contours of the umbrae over plotted onto the spot.</figcaption>
+</figure>
+</div>
+<p>We first compare the whole spot area values between Kodaikanal and MDI and the result is shown in Figure&nbsp;<a href="#fig3.9" data-reference-type="ref" data-reference="fig3.9">1.9</a>a. Computed yearly averages of whole spot areas are very similar to each other (c.c=0.99). A similar behaviour is found for the umbral areas too (Figure&nbsp;<a href="#fig3.9" data-reference-type="ref" data-reference="fig3.9">1.9</a>b). Hence, the overall spot areas measured from these two observatories, show similar trends. However, our prime interest in this case, is to recover the behaviour of small (<span class="math inline">\(&lt;\)</span><!-- -->100 <span class="math inline">\(\mu\)</span>Hem) spots as seen from Kodaikanal.</p>
+<div id="fig3.9" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="Figures/Chapter3/image_3_9.png" class="img-fluid figure-img"></p>
+<figcaption>Comparison of yearly averaged whole sunspot area and umbra area as extracted from MDI and Kodaikanal.</figcaption>
+</figure>
+</div>
+<div id="fig3.10" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="Figures/Chapter3/image_3_10.png" class="img-fluid figure-img" style="width:90.0%"></p>
+<figcaption>Ratio of areas of penumbra to umbra as a function of time for smaller sunspots.</figcaption>
+</figure>
+</div>
+<p>In Figure&nbsp;<a href="#fig3.10" data-reference-type="ref" data-reference="fig3.10">1.10</a> we plot the <span class="math inline">\(\q\)</span> values (black solid line) for spots with area <span class="math inline">\(&lt;\)</span><!-- -->100<span class="math inline">\(\mu\)</span>Hem as calculated from MDI. Kodaikanal values, for the overlapping period, are also over plotted (in red) for the ease of comparison. We see similar trends in both the curves, however the MDI values are needed to scale up by adding a constant factor of 0.5 to match the absolute values of Kodaikanal. This underestimation in MDI data is again, primarily due to the bright pixels present near the spot boundaries. During our analysis, we learnt that it is impossible to completely avoid these bright pixels while using the Sunspot Tracking and Recognition Algorithm (STARA) algorithm on large datasets. We can get around this problem by using a suitable <span class="math inline">\(k\)</span> value as used in the earlier case. However, such a treatment only scales the absolute values, not the trend. Hence we present the results as it is.</p>
+</section>
+</section>
+<section id="conclusion" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">3.4</span> Conclusion</h2>
+<p>In this paper, we investigated the long-term evolution of sunspot penumbra to umbra area ratio primarily using Kodaikanal white-light data. The main findings are summarized below:</p>
+<p><span class="math inline">\(\bullet\)</span> A total of 8 solar cycle (Cycles 16-23) data of Kodaikanal white-light digitized archive (1923-2011) and 15 years of MDI data (1996-2010) have been analysed in this work. We have used an automated umbra detection technique based on Otsu thresholding method and found that this method is efficient in isolating the umbra from variety of spots with different intensity contrasts.</p>
+<p><span class="math inline">\(\bullet\)</span> The penumbra to umbra ratio is found to be in the range of 5.5 to 6 for the spot range of 100&nbsp;<span class="math inline">\(\mu\)</span>Hem to 2000&nbsp;<span class="math inline">\(\mu\)</span>Hem. It is also found to be independent of cycle strengths, latitude zones and cycle phases. These results are in agreement with the previous reports in the literature.</p>
+<p><span class="math inline">\(\bullet\)</span> We segregated the spots according to their sizes and found that there is no signature of long-term secular variations for spots <span class="math inline">\(&lt;\)</span><!-- -->100&nbsp;<span class="math inline">\(\mu\)</span>Hem. This results contradicts the observations made by <span class="citation" data-cites="Hathaway2013">(<a href="#ref-Hathaway2013" role="doc-biblioref">D. H. Hathaway 2013</a>)</span> using the RGO data. However, our results are in close agreement with a recent study by <span class="citation" data-cites="Carrasco2018">(<a href="#ref-Carrasco2018" role="doc-biblioref">Carrasco et al. 2018</a>)</span>.</p>
+<p><span class="math inline">\(\bullet\)</span> To check the robustness of our umbra detection technique, we analysed SOHO/MDI continuum images. These results also confirmed our previous findings from Kodaikanal data including the absence of any trend for smaller spots. During this study, we realized that although the Otsu technique is robust and adaptive in determining the umbral boundaries, it is also sensitive to any presence of artefacts within the spots.</p>
+<p>In future, we plan to continue our study using the Solar Dynamics Observatory (SDO)/Helioseismic and Magnetic Imager (HMI) <span class="citation" data-cites="Schou2012">(<a href="#ref-Schou2012" role="doc-biblioref">Schou et al. 2012</a>)</span> data. This will not only extend the time series but will also allow us to study the effect of higher spatial resolution (<em>i.e.</em> more pixels within a spot) in determining the optimum threshold. We also plan to use the Debrecen sunspot images (which are available online) and repeat the measurements of this ratio using our method. Debrecen has more than fifty years of overlap with Kodaikanal which makes this data suitable for cross calibration too.</p>
+
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Antalova1971" class="csl-entry" role="listitem">
+Antalová, A. 1971. <span>“<span class="nocase">The ratio of penumbral and umbral areas of sun-spots in the 11-year solar activity cycle</span>.”</span> <em>Bulletin of the Astronomical Institutes of Czechoslovakia</em> 22: 352.
+</div>
+<div id="ref-Baranyi2016" class="csl-entry" role="listitem">
+Baranyi, T., L. Győri, and A. Ludmány. 2016. <span>“<span class="nocase">On-line Tools for Solar Data Compiled at the Debrecen Observatory and Their Extensions with the Greenwich Sunspot Data</span>”</span> 291 (November): 3081–3102. <a href="https://doi.org/10.1007/s11207-016-0930-1">https://doi.org/10.1007/s11207-016-0930-1</a>.
+</div>
+<div id="ref-Beck1993" class="csl-entry" role="listitem">
+Beck, J. G., and G. A. Chapman. 1993. <span>“<span class="nocase">A study of the contrast of sunspots from photometric images</span>”</span> 146 (July): 49–60. <a href="https://doi.org/10.1007/BF00662169">https://doi.org/10.1007/BF00662169</a>.
+</div>
+<div id="ref-Brandt1990" class="csl-entry" role="listitem">
+Brandt, P. N., W. Schmidt, and M. Steinegger. 1990. <span>“<span class="nocase">On the umbra-penumbra area ratio of sunspots</span>”</span> 129 (September): 191–94. <a href="https://doi.org/10.1007/BF00154373">https://doi.org/10.1007/BF00154373</a>.
+</div>
+<div id="ref-Carrasco2018" class="csl-entry" role="listitem">
+Carrasco, V. M. S., J. M. Vaquero, R. M. Trigo, and M. C. Gallego. 2018. <span>“<span class="nocase">A Curious History of Sunspot Penumbrae: An Update</span>”</span> 293 (July): 104. <a href="https://doi.org/10.1007/s11207-018-1328-z">https://doi.org/10.1007/s11207-018-1328-z</a>.
+</div>
+<div id="ref-Froehlich1977" class="csl-entry" role="listitem">
+Fröhlich, C. 1977. <span>“<span class="nocase">Contemporary Measures of the Solar Constant</span>.”</span> In <em>The Solar Output and Its Variation</em>, edited by O. R. White, 93.
+</div>
+<div id="ref-Gyoeri2017" class="csl-entry" role="listitem">
+Győri, L., A. Ludmány, and T. Baranyi. 2017. <span>“Comparative Analysis of Debrecen Sunspot Catalogues.”</span> <em>Monthly Notices of the Royal Astronomical Society</em> 465 (2): 1259–73. <a href="https://doi.org/10.1093/mnras/stw2667">https://doi.org/10.1093/mnras/stw2667</a>.
+</div>
+<div id="ref-Hale1908" class="csl-entry" role="listitem">
+Hale, G. E. 1908. <span>“<span class="nocase">On the Probable Existence of a Magnetic Field in Sun-Spots</span>”</span> 28 (November): 315. <a href="https://doi.org/10.1086/141602">https://doi.org/10.1086/141602</a>.
+</div>
+<div id="ref-Hathaway2013" class="csl-entry" role="listitem">
+Hathaway, D. H. 2013. <span>“<span class="nocase">A Curious History of Sunspot Penumbrae</span>”</span> 286 (September): 347–56. <a href="https://doi.org/10.1007/s11207-013-0291-y">https://doi.org/10.1007/s11207-013-0291-y</a>.
+</div>
+<div id="ref-Hathaway2015" class="csl-entry" role="listitem">
+Hathaway, David H. 2015. <span>“The Solar Cycle”</span> 12 (1): 4. <a href="https://doi.org/10.1007/lrsp-2015-4">https://doi.org/10.1007/lrsp-2015-4</a>.
+</div>
+<div id="ref-Hudson1982a" class="csl-entry" role="listitem">
+Hudson, H. S., S. Silva, M. Woodard, and R. C. Willson. 1982. <span>“The Effects of Sunspots on Solar Irradiance.”</span> <em>Solar Physics</em> 76 (2): 211–19. <a href="https://doi.org/10.1007/BF00170984">https://doi.org/10.1007/BF00170984</a>.
+</div>
+<div id="ref-Jensen1955" class="csl-entry" role="listitem">
+Jensen, E., J. Nordø, and T. S. Ringnes. 1955. <span>“<span class="nocase">Variations in the Structure of Sunspots in Relation to the Sunspot Cycle</span>.”</span> <em>Astrophysica Norvegica</em> 5: 167.
+</div>
+<div id="ref-Jensen1956" class="csl-entry" role="listitem">
+———. 1956. <span>“<span class="nocase">Variations in the relative size of penumbra and umbra of sunspots in the Years 1878-1954</span>.”</span> <em>Annales d’Astrophysique</em> 19 (January): 165.
+</div>
+<div id="ref-Jha2018" class="csl-entry" role="listitem">
+Jha, Bibhuti Kumar, Sudip Mandal, and Dipankar Banerjee. 2018. <span>“Long-Term Variation of Sunspot Penumbra to Umbra Area Ratio: A Study Using Kodaikanal White-Light Digitized Data.”</span> <em>Proceedings of the International Astronomical Union</em> 13 (S340): 185–86. <a href="https://doi.org/10.1017/S1743921318001989">https://doi.org/10.1017/S1743921318001989</a>.
+</div>
+<div id="ref-Mandal2016" class="csl-entry" role="listitem">
+Mandal, S., and D. Banerjee. 2016. <span>“<span class="nocase">Sunspot Sizes and the Solar Cycle: Analysis Using Kodaikanal White-light Digitized Data</span>”</span> 830 (October): L33. <a href="https://doi.org/10.3847/2041-8205/830/2/L33">https://doi.org/10.3847/2041-8205/830/2/L33</a>.
+</div>
+<div id="ref-Mandal2017a" class="csl-entry" role="listitem">
+Mandal, S., M. Hegde, T. Samanta, G. Hazra, D. Banerjee, and B. Ravindra. 2017. <span>“<span class="nocase">Kodaikanal digitized white-light data archive (1921-2011): Analysis of various solar cycle features</span>”</span> 601 (May): A106. <a href="https://doi.org/10.1051/0004-6361/201628651">https://doi.org/10.1051/0004-6361/201628651</a>.
+</div>
+<div id="ref-Mathew2003a" class="csl-entry" role="listitem">
+Mathew, S. K., A. Lagg, S. K. Solanki, M. Collados, J. M. Borrero, S. Berdyugina, N. Krupp, J. Woch, and C. Frutiger. 2003. <span>“<span class="nocase">Three dimensional structure of a regular sunspot from the inversion of IR Stokes profiles</span>”</span> 410 (November): 695–710. <a href="https://doi.org/10.1051/0004-6361:20031282">https://doi.org/10.1051/0004-6361:20031282</a>.
+</div>
+<div id="ref-Nicholson1933" class="csl-entry" role="listitem">
+Nicholson, S. B. 1933. <span>“<span class="nocase">The Area of a Sun-Spot and the Intensity of Its Magnetic Field</span>”</span> 45 (February): 51–53. <a href="https://doi.org/10.1086/124301">https://doi.org/10.1086/124301</a>.
+</div>
+<div id="ref-Otsu1979" class="csl-entry" role="listitem">
+Otsu, N. 1979. <span>“A Threshold Selection Method from Gray-Level Histograms.”</span> <em>IEEE Transactions on Systems, Man, and Cybernetics</em> 9 (1): 62–66. <a href="https://doi.org/10.1109/TSMC.1979.4310076">https://doi.org/10.1109/TSMC.1979.4310076</a>.
+</div>
+<div id="ref-Pettauer1997" class="csl-entry" role="listitem">
+Pettauer, T., and P. N. Brandt. 1997. <span>“<span class="nocase">On Novel Methods to Determine Areas of Sunspots from Photoheliograms</span>”</span> 175 (September): 197–203. <a href="https://doi.org/10.1023/A:1004903201224">https://doi.org/10.1023/A:1004903201224</a>.
+</div>
+<div id="ref-Pucha2016" class="csl-entry" role="listitem">
+Pucha, R., K. M. Hiremath, and S. R. Gurumath. 2016. <span>“<span class="nocase">Development of a Code to Analyze the Solar White-Light Images from the Kodaikanal Observatory: Detection of Sunspots, Computation of Heliographic Coordinates and Area</span>.”</span> <em>Journal of Astrophysics and Astronomy</em> 37 (March): 3. <a href="https://doi.org/10.1007/s12036-016-9370-4">https://doi.org/10.1007/s12036-016-9370-4</a>.
+</div>
+<div id="ref-Ravindra2013" class="csl-entry" role="listitem">
+Ravindra, B., T. G. Priya, K. Amareswari, M. Priyal, A. A. Nazia, and D. Banerjee. 2013. <span>“<span class="nocase">Digitized archive of the Kodaikanal images: Representative results of solar cycle variation from sunspot area determination</span>”</span> 550 (February): A19. <a href="https://doi.org/10.1051/0004-6361/201220416">https://doi.org/10.1051/0004-6361/201220416</a>.
+</div>
+<div id="ref-Scherrer1995" class="csl-entry" role="listitem">
+Scherrer, P. H., R. S. Bogart, R. I. Bush, J. T. Hoeksema, A. G. Kosovichev, J. Schou, W. Rosenberg, et al. 1995. <span>“<span>The Solar Oscillations Investigation - Michelson Doppler Imager</span>”</span> 162 (December): 129–88. <a href="https://doi.org/10.1007/BF00733429">https://doi.org/10.1007/BF00733429</a>.
+</div>
+<div id="ref-Schou2012" class="csl-entry" role="listitem">
+Schou, J., P. H. Scherrer, R. I. Bush, R. Wachter, S. Couvidat, M. C. Rabello-Soares, R. S. Bogart, et al. 2012. <span>“<span class="nocase">Design and Ground Calibration of the Helioseismic and Magnetic Imager (HMI) Instrument on the Solar Dynamics Observatory (SDO)</span>”</span> 275 (January): 229–59. <a href="https://doi.org/10.1007/s11207-011-9842-2">https://doi.org/10.1007/s11207-011-9842-2</a>.
+</div>
+<div id="ref-Solanki2003" class="csl-entry" role="listitem">
+Solanki, Sami K. 2003. <span>“Sunspots: An Overview”</span> 11 (2): 153–286. <a href="https://doi.org/10.1007/s00159-003-0018-4">https://doi.org/10.1007/s00159-003-0018-4</a>.
+</div>
+<div id="ref-Steinegger1997a" class="csl-entry" role="listitem">
+Steinegger, Michael, José A. Bonet, and Manuel Vázquez. 1997. <span>“SIMULATION OF SEEING INFLUENCES ON THE PHOTOMETRIC DETERMINATION OF SUNSPOT AREAS.”</span> <em>Solar Physics</em> 171 (2): 303–30. <a href="https://doi.org/10.1023/A:1004983913393">https://doi.org/10.1023/A:1004983913393</a>.
+</div>
+<div id="ref-TandbergHanssen1956" class="csl-entry" role="listitem">
+Tandberg-Hanssen, E. 1956. <span>“<span class="nocase">A Study of the Penumbra-Umbra Ratio of Sunspot Pairs</span>.”</span> <em>Astrophysica Norvegica</em> 5: 207.
+</div>
+<div id="ref-Waldmeier1939" class="csl-entry" role="listitem">
+Waldmeier, M. 1939. <span>“<span class="nocase"><span>Ü</span>ber die Struktur der Sonnenflecken</span>.”</span> <em>Astronomische Mitteilungen Der Eidgen<span>ö</span>ssischen Sternwarte Zurich</em> 14: 439–50.
+</div>
+<div id="ref-Watson2011" class="csl-entry" role="listitem">
+Watson, F. T., L. Fletcher, and S. Marshall. 2011. <span>“<span class="nocase">Evolution of sunspot properties during solar cycle 23</span>”</span> 533 (September): A14. <a href="https://doi.org/10.1051/0004-6361/201116655">https://doi.org/10.1051/0004-6361/201116655</a>.
+</div>
+<div id="ref-Watson2009" class="csl-entry" role="listitem">
+Watson, F., L. Fletcher, S. Dalla, and S. Marshall. 2009. <span>“Modelling the Longitudinal Asymmetry in Sunspot Emergence: The Role of the Wilson Depression.”</span> <em>Solar Physics</em> 260 (1): 5–19. <a href="https://doi.org/10.1007/s11207-009-9420-z">https://doi.org/10.1007/s11207-009-9420-z</a>.
+</div>
+</div>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>This catalogue is available online at <a href="https://kso.iiap.res.in/new/white_light" class="uri">https://kso.iiap.res.in/new/white_light</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Description is available at <a href="http://www.idlcoyote.com/idldoc/cg/cgotsu_threshold.html" class="uri">http://www.idlcoyote.com/idldoc/cg/cgotsu_threshold.html</a>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>For more details, visit <a href="https://www.harrisgeospatial.com/Software-Technology/IDL" class="uri">https://www.harrisgeospatial.com/Software-Technology/IDL</a>.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>This data is downloaded from <a href="http://fenyi.solarobs.csfk.mta.hu/ftp/pub/DPD/data/dailyDPD1974_2016.txt" class="uri">http://fenyi.solarobs.csfk.mta.hu/ftp/pub/DPD/data/dailyDPD1974_2016.txt</a>.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./chapter2.html" class="pagination-link" aria-label="Data">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./chapter4.html" class="pagination-link" aria-label="Measurements of Solar Differential Rotation Using the Century Long Kodaikanal Sunspot Data">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Measurements of Solar Differential Rotation Using the Century Long Kodaikanal Sunspot Data</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

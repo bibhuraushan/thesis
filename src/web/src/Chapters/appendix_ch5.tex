@@ -1,0 +1,114 @@
+\chapter[Temperature Variations Over Isochoric Surface]{Isochoric Surfaces within the Solar Convection Zone and Temperature Variations over them}
+% \section{Isochoric surfaces within the solar convection zone and temperature variations over them}
+\label{ch5:appn}
+%=============================================================================================================
+% \lhead{\emph{Chapter 4: Appendix A}} % Write in your own chapter title to set the page header
+\noindent
+
+
+% \section{}
+% \label{appendix}
+
+From the basic fluid dynamical equations, we arrive at 
+Equation~\ref{ch5:eq1}
+involving a differentiation of $S$ with respect to $\theta$ on a surface of constant $r$.  However, the rotation of the Sun makes the Sun slightly oblate so that the solar surface is not a surface of constant $r$.  The important question is how we connect a theory involving differentiation at constant $r$ to actual observations of the solar surface.
+
+First of all, we argue that the oblateness of the Sun is extremely small as estimated in \citet{Kuhn2012}. One can also make a rough estimate of this oblateness from theoretical considerations. If we take $\Omega$ to be constant inside the Sun for this approximate estimate, then we can introduce an effective potential
+\begin{equation}
+ \Phi_{\rm eff} = - \frac{G M_{\odot}}{r} - \frac{1}{2} | {\bf \Omega} \times {\bf r} |^2
+ \label{ae1}
+\end{equation}
+inside the convection zone, which has to be constant over isobaric surfaces (see, for example, \citet{Choudhuri1998book}, Section~9.3). If $\Delta r$ is the extension of such a surface in the equatorial 
+region compared to the polar region, then we can equate $\Phi_{\rm eff}$ in the polar and equatorial regions to obtain
+%
+\begin{equation}
+ - \frac{G M_{\odot}}{r} = - \frac{G M_{\odot}}{r + \Delta r} - \frac{1}{2} \Omega^2 r^2,\nonumber
+\end{equation}
+from which
+\begin{equation}
+\Delta r = \frac{1}{2} \frac{\Omega^2 r^4}{G M_{\odot}}.
+\label{ae2}
+\end{equation}
+Since the mass contained within the convection zone is small compared to the solar mass, we can
+take $M_{\odot}$ to be the total solar mass for estimating the oblateness of isobaric surfaces
+within the convection zone.  Using $\Omega/2 \pi = 420$ nHz and $r = 0.85$\Rsun, we find
+\begin{equation}
+\Delta r = 3.3 \; {\rm km},
+\label{ae3}
+\end{equation}
+which is less than 0.0005\% of the solar radius. The expected oblateness of the Sun is minuscule.
+
+
+We now focus our attention on isochoric surfaces over which the entropy differential would
+be related with the temperature differential by Equation~\ref{ch5:eq2}.
+We denote the distance measured along an isochore by $l$. It is pointed out in Appendix A of \citet{Choudhuri2021a} that we approximately have
+%
+\begin{equation}
+\frac{dS}{dl} = \left( \frac{\pa S}{\pa \theta}\right)_r \frac{d \theta}{d l}. 
+\label{ae4}
+\end{equation}
+Using this relation, we can put Equation~\ref{ch5:eq1} in the form
+\begin{equation}
+r \sin \theta \frac{\pa}{\pa z} \Omega^2 = \frac{g}{\gamma C_V} \frac{d S}{d l}, 
+\label{ae5}
+\end{equation}
+where $d S/ dl$ is the derivative of entropy $S$ along the isochore and we have used $d l = r d \theta$
+in view of the very small oblateness of the Sun.  
+We can now substitute Equation~\ref{ch5:eq2} in Equation~\ref{ae5} to obtain
+%
+\begin{equation}
+r \sin \theta \frac{\pa}{\pa z} \Omega^2 = \frac{g}{\gamma T} \frac{d}{d l} \Delta T.
+\label{ae6}
+\end{equation}
+Now, as we move along an isochore, the change in $l$ 
+is accompanied by a change in $\theta$.  We have
+\begin{equation}
+\frac{d}{d l} \Delta T = \frac{1}{r}
+\left(\frac{d}{d \theta} \Delta T \right)_{\rm isochore}.
+\label{ae7}
+\end{equation}
+Note that here the differenetiation is with respect to
+the changing value of $\theta$ along an isochore.
+On substituting Equation~\ref{ae7} into Equation~\ref{ae6}, we are readily led to Equation~\ref{ch5:eq3}. 
+
+One fact is clear from Equation~\ref{ch5:eq3}.  If the Sun did not have a thermal wind (which would require $\Omega$
+not to vary along $z$ for consistency), then the temperature would be constant over the
+isochoric surface.  The isochoric surface would then be a isothermal surface and hence also an
+isobaric surface.  Now,
+the observed solar surface is a surface at which the optical depth becomes 1, the opacity
+depending on both density and temperature. In the absence of the thermal wind, the isochoric, isothermal
+and isobaric surfaces would coincide and the observed surface of the Sun would be one such surface.
+%{It may be noted that in this discussion we are not considering the possibility of the very slow
+%Eddington--Sweet circulation arising out of the small variation of the temperature gradient with
+%latitude, since the time scale of this circulation for the Sun is larger than the age of the 
+%Universe \citet{Choudhuri2021b}.
+To obtain the temperature variation on the solar surface, we need to find the temperature difference
+on isochoric surfaces.  For this purpose, we can use Equation~\ref{ch5:eq3}.
+
+% \end{document}
+
+
+If $\Omega (r, \theta)$ is given, then
+Equation~\ref{ch5:eq3} can be integrated to obtain
+$\Delta T$ along an isochore.  Because of the miniscule oblateness of the isochore, we can regard the isochore
+to be a spherical surface.  However, at a conceptual level, we shall keep in mind that we would be considering
+$\Delta T$ on isochoirc surfaces, since this will eventually enable us to compare with observational data
+on the solar surface.
+
+We point out one other thing, which can sometimes be
+a source of confusion. By the chain rule of 
+differentiation, we have
+\begin{equation}
+\frac{d}{dl}\Delta T = \left( \frac{\partial T}{\partial r} \right)_{\theta} \frac{d r}{dl}
++ \left( \frac{\partial T}{\partial \theta} \right)_r \frac{d \theta}{dl}. 
+\label{ae8}
+\end{equation}
+Even though $d r/ dl$ is very small, the first term on
+the right hand side of Equation~\ref{ae8} cannot be
+neglected with respect to the second term because $(\partial T/ \partial r)_{\theta}$ is much larger
+than $(1/r)(\partial T / \partial \theta)_r$.  As a result, we cannot write down an equation for temperature
+similar to Equation~\ref{ae4} for entropy. However, when
+we connect the theory with observations, the observed
+temperature variations of the solar surface have to be
+compared with $((d/d \theta) \Delta T)_{\rm isochore}$
+appearing in Equation~\ref{ch5:eq3} and not with $(\partial T / \partial \theta)_r$ which is not of much interest to us.

@@ -1,0 +1,175 @@
+# The Conclusion {#Chap7}
+
+::: epigraph
+*"Statistics: The only science that enables different experts using the
+same figures to draw different conclusions."*
+
+-- Evan Esar
+:::
+
+Now, I came to the end of the thesis, which brings me to discuss the
+conclusion, novelty, and future aspects of it. In the entire thesis, I
+have primarily used the white light data from KoSO along with white
+light and magnetogram data from space-based modern instruments MDI and
+HMI. With the help of these data sets, I have explored the multiple
+observational aspects of the solar long--term variability and how it can
+reduce the gap between observation and the theoretical aspects of solar
+dynamo models. Let me start to conclude my thesis for each chapter
+separately.
+
+## Chapter 3
+
+Motivated by the work of @Hathaway2013 [references therein] and
+understanding the importance of penumbra to umbra area ratio ($q$), I
+have studied the long-term variation of this ratio using the historical
+KoSO digitized data (1923--2011). I have developed an automatic method
+based on Otsu technique to extract the penumbra and umbra from the
+sunspots. I have noted that the $q$ increases initially for area
+$<200\mu$Hem, but after that, it increases very slow and saturates
+around 5.5 to 6, which is in agreement with earlier findings. Although
+the bigger sunspots (Area$>200\mu$Hem) show a similar trend in both the
+data sets (RGO & KoSO), the smaller sunspots (sunspot area
+$<100~\mu$Hem) in KoSO data does not show any systematic variation in
+the ratio contrary to the result reported by @Hathaway2013. It has been
+further verified using MDI white--light data [@Jha2019]. The result from
+RGO data raise a question about the origin of two classes of sunspots,
+but since KoSO data does not show any difference in both, the classes
+imply they are from the same source. Hence, dynamo modellers might treat
+them on the same footing.
+
+## Chapter 4
+
+The significant role of solar differential rotation and its variation
+for the solar dynamo models; and the unavailability of an automated
+tracking algorithm to track the sunspots motivated me to measure it
+using a computerized method. I have developed an automatic way to track
+the sunspots from the century-long KoSO digitized white-light data and
+calculated the solar rotation profile. Average rotation profile measured
+in [\[Chap4\]](#Chap4){reference-type="ref+label" reference="Chap4"}
+show a very good agreement with the earlier results [@Gupta1999] with
+the following rotation profile when measured in degree/day,
+$$\begin{equation}
+    \Omega (\theta) = (14.381\pm 0.004)-(2.72\pm0.04)\cos^2{\theta},
+\end{equation}$$ where $\theta$ is the co-latitude. KoSO data neither
+show any phase dependency nor the significant long--term variation in
+the solar differential rotation. However, differential rotation
+parameters $A$ and $B$ show the negative and positive correlation with
+the strength of the solar cycle. In the case of KoSO white--light data,
+the smaller sunspots (area $<200~\mu$Hem) gives a faster rotation rate
+than the bigger ones (area $>400~\mu$Hem) which is believed to be due to
+their different anchored depth and drag imposed by them.
+
+## Chapter 5
+
+The differential rotation measurement based on the Doppler velocity
+[@Howard1970] gives a slightly lower rotation rate when compared with
+the one measured using sunspots
+[[\[Chap4\]](#Chap4){reference-type="ref+label" reference="Chap4"}, and
+@Beck2000; @Jha2021]. This is due to the sharp change in the solar
+differential profile near the surface called NSSL, and the
+helioseismology observation has confirmed the existence of this
+intriguing layer. The absence of theoretical understanding of this layer
+made me think about its physics. Therefore, based on the thermal wind
+balance equation, which tells how the slight difference in temperature
+between solar pole and equator is balanced by centrifugal force, a
+theoretical model for NSSL is presented. Here the idea is the Coriolis
+force, arising due to solar rotation, has an effect on the convective
+blobs in the inner convection zone where convective turnover time
+($\tau$) is comparable (or greater) than the solar rotation period ($T$)
+whereas it will be unaffected, near the surface ($\tau<<T$ ). Hence,
+near the surface the rate of fall of temperature becomes independent of
+latitude making the thermal wind term very large. The centrifugal term
+increases to balance the increase in the thermal wind term, leading to
+the observed NSSL. The analytical expression of $\Omega (r,\theta)$ and
+the observed $\Omega (r, \theta)$ gives $r_c=0.92$  and
+0.96  respectively. Here convection zone model, which is called MODEL-S
+[@Dalsgaard1996] is used for the temperature profile. The result based
+on the observed profile of solar differential rotation and corresponding
+calculated PETD show good agreement with measured PETD in @Rast2008.
+
+## Chapter 6
+
+Tilt quenching has been regularly used in the different types of solar
+dynamo models, particularly the  type dynamos. What these models were
+lacking was the observation support to this idea. Although the
+@DasiEspuig2010 has used the white light data, which do not have the
+magnetic filed information, and given some indication of the tilt
+quenching but the measurement based on the magnetogram data was not
+available. Therefore, in [\[Chap6\]](#Chap6){reference-type="ref+label"
+reference="Chap6"} I have first developed and automatic method to
+identify the BMRs from the MDI (1996--2011) and HMI (2010--2018)
+magnetogram, which is inspired from the method described in
+@Stenflo2012a. Interestingly, in this work a bimodal distribution of
+ has been found where each peaks corresponds to the two classes of BMR;
+one which does not show the sunspot (limited by resolution and contrast)
+in white light (peaks around 600 G) and second which show sunspot in
+white light (peaks around 2100 G). The  dependence of amplitude of Joy's
+law ($\gamma_0$) shows an initial increase in $\gamma_0$ and then after
+around 2 kG it start decreasing and this behaviour is present in both
+MDI and HMI data sets. This result gives an indication of tilt quenching
+which need to be further verified using longer data sets with stronger
+solar cycle.
+
+## Novelty of the Thesis
+
+$\bm{\Rightarrow}$ The first time, a fully automatic method is developed
+to extract the penumbra, and umbra area from KoSO digitized white--light
+data. The results obtained in this work does not show any difference in
+the long--term variation in penumbra to umbra area ratio as speculated
+based on RGO data ([\[Chap3\]](#Chap3){reference-type="ref+label"
+reference="Chap3"}).
+
+$\bm{\Rightarrow}$ A new and automated algorithm to track the sunspots
+has been developed and used to track the sunspot in KoSO white--light
+digitized data to measure the solar differential rotation. A significant
+difference in measurement of solar differential rotation when bigger and
+smaller sunspots are used has been reported
+([\[Chap4\]](#Chap4){reference-type="ref+label" reference="Chap4"}).
+
+$\bm{\Rightarrow}$ A theoretical model for the NSSL based on thermal
+wind balance equation, which shows an excellent agreement with
+observation, has been given very first time
+([\[Chap5\]](#Chap5){reference-type="ref+label" reference="Chap5"}).
+
+$\bm{\Rightarrow}$ The indication of tilt quenching based on the
+magnetogram data from MDI and HMI along with the two classes of BMRs has
+been found, which was not reported earlier.
+
+## Future prospects
+
+This thesis primarily focused on developing several new automated
+algorithms to extract different magnetic features as seen on the solar
+surface, study them, and provide input to the solar dynamo models. There
+is always a possibility of improving these techniques, and the recent
+development in computational power, Machine Learning (ML) and Artificial
+Intelligence (AI) could make it even more efficient and sophisticated.
+Here I will discuss a few possibilities that I am currently exploring
+and looking for.
+
+1.  In [\[Chap3\]](#Chap3){reference-type="ref+label"
+    reference="Chap3"}, I have used the data from KoSO and MDI, which
+    can be further extended to data from other observatories such as the
+    National Astronomical Observatory of Japan (NAOJ) and others. It
+    will help us to test the algorithm with different data set to
+    improve our statistics and consistency.
+
+2.  The method developed in
+    [\[Chap4\]](#Chap4){reference-type="ref+label" reference="Chap4"}
+    only tracks the sunspots in two consecutive observations, and hence
+    it can be modified to follow the sunspots for full-disk passage or
+    their lifetime. It will help us get more accurate results for the
+    solar differential rotation.
+
+3.  A theoretical model of NSSL, given in
+    [\[Chap5\]](#Chap5){reference-type="ref+label" reference="Chap5"},
+    also predict the variation of solar surface temperature from the
+    pole to the equator, which can be verified by future observation
+    with the help of more accurate observations.
+
+4.  To understand the magnetic field dependence of tilt quenching in
+    [\[Chap6\]](#Chap6){reference-type="ref+label" reference="Chap6"} I
+    have counted each BMR multiple times as every magnetogram has been
+    treated independently. Therefore, to better understand the
+    dependence of tilt on  in BMRs it is crucial to track all of them
+    for disk passage or their lifetimes. I am currently involved in the
+    work that is exploring this idea.

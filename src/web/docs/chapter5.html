@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>5&nbsp; A Theoretical Model of the Near–Surface Shear Layer of the Sun – Long-term solar observations: probing the solar interior and magnetic fields</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./chapter6.html" rel="next">
+<link href="./chapter4.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-27c261d06b905028a18691de25d09dde.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-234501a227967ac462f24af7be37efa8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-27c261d06b905028a18691de25d09dde.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter5.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">A Theoretical Model of the Near–Surface Shear Layer of the Sun</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Long-term solar observations: probing the solar interior and magnetic fields</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Study of Sunspot Penumbra to Umbra Area Ratio using Kodaikanal White-light Digitized Data</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Measurements of Solar Differential Rotation Using the Century Long Kodaikanal Sunspot Data</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter5.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">A Theoretical Model of the Near–Surface Shear Layer of the Sun</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Magnetic field dependence of bipolar magnetic region tilts on the Sun: Indication of tilt quenching</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">The Conclusion</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#ch5:intro" id="toc-ch5:intro" class="nav-link active" data-scroll-target="#ch5\:intro"><span class="header-section-number">5.1</span> Introduction</a></li>
+  <li><a href="#ch5:method" id="toc-ch5:method" class="nav-link" data-scroll-target="#ch5\:method"><span class="header-section-number">5.2</span> Basic Methodology</a></li>
+  <li><a href="#ch5:empirical" id="toc-ch5:empirical" class="nav-link" data-scroll-target="#ch5\:empirical"><span class="header-section-number">5.3</span> Results Based on Analytical Expression</a></li>
+  <li><a href="#ch5:helio" id="toc-ch5:helio" class="nav-link" data-scroll-target="#ch5\:helio"><span class="header-section-number">5.4</span> Results Based on Helioseismology Data</a></li>
+  <li><a href="#ch5:conclusion" id="toc-ch5:conclusion" class="nav-link" data-scroll-target="#ch5\:conclusion"><span class="header-section-number">5.5</span> Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="Chap5" class="quarto-section-identifier"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">A Theoretical Model of the Near–Surface Shear Layer of the Sun</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="ch5:intro" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="ch5:intro"><span class="header-section-number">5.1</span> Introduction</h2>
+<p>One of the intriguing features in the differential rotation map of the Sun, as seen, for example, in Figure&nbsp;1 of <span class="citation" data-cites="Howe2009">Rachel Howe (<a href="#ref-Howe2009" role="doc-biblioref">2009</a>)</span> or in Figure&nbsp;26 of <span class="citation" data-cites="Basu2016">Basu (<a href="#ref-Basu2016" role="doc-biblioref">2016</a>)</span>, is the existence of the near-surface shear layer (NSSL). This is a layer near the solar surface at the top of the convection zone, within which the angular velocity decreases sharply with increasing solar radius. The first indication of the existence of such a layer came more than half a century ago, when it was noted that the rotation rate of the solar surface measured from the Doppler shifts of photospheric spectral lines was about 5% lower than the rotation rate inferred from the positions of sunspots on the solar surface <span class="citation" data-cites="Howard1970">(<a href="#ref-Howard1970" role="doc-biblioref">Howard and Harvey 1970</a>)</span>. While the depth at which sunspots are anchored remains unclear and probably changes with the age of a sunspot group <span class="citation" data-cites="Longcope2002">(<a href="#ref-Longcope2002" role="doc-biblioref">Longcope and Choudhuri 2002</a>)</span>, the rotation rate inferred from the sunspots was assumed to correspond to a layer underneath the solar surface, implying that the angular velocity was higher in that layer. When helioseismology mapped the internal differential rotation of the Sun, the existence of this layer was fully established. <a href="#ch5:fig1" data-reference-type="ref+label" data-reference="ch5:fig1">1.1</a> shows the differential rotation map of the Sun obtained by helioseismology (with contours of constant angular velocity) which we shall use later in our calculations in Section&nbsp;<a href="#ch5:helio" data-reference-type="ref" data-reference="ch5:helio">1.4</a>. The contours of constant angular velocity, which are nearly radial within a large part of the body of the solar convection zone, bend towards the equator within a layer of thickness of order <span class="math inline">\(\approx 0.05\)</span>at the top of the convection zone <span class="citation" data-cites="Schou1998 Howe2005">(<a href="#ref-Schou1998" role="doc-biblioref">Schou et al. 1998</a>; <a href="#ref-Howe2005" role="doc-biblioref">R. Howe et al. 2005</a>)</span>.</p>
+<div id="ch5:fig1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="Figures/Chapter5/image_5_1.png" class="img-fluid figure-img"></p>
+<figcaption>Rotation profile on the basis of helioseismology data. The contours correspond to values of <span class="math inline">\(\Omega\)</span> at the interval of 10 nHz, the extreme contours inside the main body of the convection zone being for the values 340 nHz and 460 nHz (apart from a few lower value contours near the surface at the polar region, where helioseismic inversions are not trustworthy).</figcaption>
+</figure>
+</div>
+<p>What causes this NSSL is still not properly understood. The first attempts to explain it <span class="citation" data-cites="Foukal1975 Gilman1979">(<a href="#ref-Foukal1975" role="doc-biblioref">Foukal and Jokipii 1975</a>; <a href="#ref-Gilman1979" role="doc-biblioref">Gilman and Foukal 1979</a>)</span> were based on the idea that convection in the upper layers of the convection zone mixes angular momentum in such a manner that the angular momentum per unit mass tends to become constant in these layers, leading to a decrease of the angular velocity with radius. Once the differential rotation of the Sun was properly mapped and no evidence was found for the constancy of the specific angular momentum within the convection zone, it was realized that this could not be the appropriate explanation. Within the last few years, there have been attempts to explain the NSSL on the basis of numerical simulations of the solar convection <span class="citation" data-cites="Guerrero2013 Hotta2015 Matilsky2019">(<a href="#ref-Guerrero2013" role="doc-biblioref">Guerrero et al. 2013</a>; <a href="#ref-Hotta2015" role="doc-biblioref">Hotta, Rempel, and Yokoyama 2015</a>; <a href="#ref-Matilsky2019" role="doc-biblioref">Matilsky, Hindman, and Toomre 2019</a>)</span>. It has been argued by <span class="citation" data-cites="Hotta2015">Hotta, Rempel, and Yokoyama (<a href="#ref-Hotta2015" role="doc-biblioref">2015</a>)</span> that the Reynolds stresses play an important role in creating the NSSL, whereas <span class="citation" data-cites="Matilsky2019">Matilsky, Hindman, and Toomre (<a href="#ref-Matilsky2019" role="doc-biblioref">2019</a>)</span> suggested that the steep decrease in density in the top layers of the convection zone is crucial in giving rise to the NSSL. <span class="citation" data-cites="Choudhuri2021a">Arnab Rai Choudhuri (<a href="#ref-Choudhuri2021a" role="doc-biblioref">2021a</a>)</span> has recently proposed a possible alternative theoretical explanation of the NSSL based on order-of-magnitude estimates. The aim of the present paper is to substantiate the ideas proposed by <span class="citation" data-cites="Choudhuri2021a">Arnab Rai Choudhuri (<a href="#ref-Choudhuri2021a" role="doc-biblioref">2021a</a>)</span> through detailed calculations.</p>
+<p>The theories of the two large-scale flow patterns within the convection zone of the Sun—the differential rotation and the meridional circulation—are intimately connected with each other <span class="citation" data-cites="Kitchatinov2013 Choudhuri2021b">(<a href="#ref-Kitchatinov2013" role="doc-biblioref">Leonid L. Kitchatinov 2013</a>; <a href="#ref-Choudhuri2021b" role="doc-biblioref">Arnab Rai Choudhuri 2021b</a>)</span>. The idea we wish to develop follows from the central equation in the theory of the meridional circulation: the thermal wind balance equation. Since the nature of the Coriolis force arising out of the solar rotation varies with latitude, the effect of this force on the convection is expected to vary with latitude <span class="citation" data-cites="Durney1971 Belvedere1976">(<a href="#ref-Durney1971" role="doc-biblioref">Durney and Roxburgh 1971</a>; <a href="#ref-Belvedere1976" role="doc-biblioref">Belvedere and Paterno 1976</a>)</span>. Since the Coriolis force provides the least hindrance to convective heat transport in the polar regions, the poles of the Sun are expected to be slightly hotter than the equator <span class="citation" data-cites="Kitchatinov1995">(<a href="#ref-Kitchatinov1995" role="doc-biblioref">L. L. Kitchatinov and Ruediger 1995</a>)</span>. There are some observational indications that this may indeed be the case <span class="citation" data-cites="Kuhn1988 Rast2008">(<a href="#ref-Kuhn1988" role="doc-biblioref">Kuhn, Libbrecht, and Dicke 1988</a>; <a href="#ref-Rast2008" role="doc-biblioref">Rast, Ortiz, and Meisner 2008</a>)</span>. Hotter poles would tend to drive what is called a thermal wind, i.e.&nbsp;a meridional circulation which would be equatorward at the solar surface. Since the observed meridional circulation is the opposite of that, we must have another effect which overpowers this and drives the meridional circulation in the poleward direction at the surface as observed. It is easy to show that the centrifugal force arising out of the observed differential rotation of the Sun can do this job: see Figure&nbsp;8 and the accompanying text in <span class="citation" data-cites="Choudhuri2021b">Arnab Rai Choudhuri (<a href="#ref-Choudhuri2021b" role="doc-biblioref">2021b</a>)</span>. The term corresponding to the dissipation of the meridional circulation is found to be negligible compared to the driving terms within the bulk of the convention zone, as pointed out in the Appendix of <span class="citation" data-cites="Choudhuri2021b">Arnab Rai Choudhuri (<a href="#ref-Choudhuri2021b" role="doc-biblioref">2021b</a>)</span>. As a result, we expect the two driving terms of the meridional circulation—the thermal wind term and the centrifugal term—to be comparable within the main body of the solar convection zone. This is often referred to as the thermal wind balance condition.</p>
+<p>It is generally believed that the thermal wind balance condition holds within the body of the convection zone <span class="citation" data-cites="Kitchatinov2013 Karak2014a">(<a href="#ref-Kitchatinov2013" role="doc-biblioref">Leonid L. Kitchatinov 2013</a>; <a href="#ref-Karak2014a" role="doc-biblioref">Karak, Kitchatinov, and Choudhuri 2014</a>)</span>, although different authors may not completely agree as to the extent to which it holds <span class="citation" data-cites="Brun2010">(<a href="#ref-Brun2010" role="doc-biblioref">Brun, Antia, and Chitre 2010</a>)</span>. There is, however, not much agreement among different authors whether the thermal wind condition should hold even within the top upper layer of the solar convection zone. A widely held view is that this upper layer is a kind of boundary layer within which the dissipation term or Reynolds stresses become important, giving rise to a violation of the thermal wind balance condition. It is argued that the NSSL arises in some manner out of this violation. A completely opposite argument is given in the earlier paper by <span class="citation" data-cites="Choudhuri2021a">Arnab Rai Choudhuri (<a href="#ref-Choudhuri2021a" role="doc-biblioref">2021a</a>)</span> and in the present paper. We point out that the thermal wind term becomes very large in the top layer of the solar convection zone due to a combination of two factors: (i) the temperature falls sharply as we move outward through this layer, and (ii) the pole-equator temperature difference does not vary with depth in this layer because of the reduced effect of the Coriolis force on convection in this layer, as explained in the next section (Section&nbsp;<a href="#ch5:method" data-reference-type="ref" data-reference="ch5:method">1.2</a>). The dissipation term is much smaller than the thermal wind term even within the main body of the convection zone, as the order of magnitude estimate in the Appendix of <span class="citation" data-cites="Choudhuri2021a">Arnab Rai Choudhuri (<a href="#ref-Choudhuri2021a" role="doc-biblioref">2021a</a>)</span> suggests. If the thermal wind term becomes even much larger in the upper layers of the convection zone, then it appears unlikely to us that this large thermal wind term can be balanced by the dissipation term. The only possibility is that the centrifugal term also has to become very large in the top layer to balance the thermal wind term. This dictates that the top layer has to be a region within which the angular velocity undergoes a large variation. We show through quantitative calculations that the structure of the NSSL calculated theoretically on the basis of our ideas agrees with the observational data remarkably well.</p>
+<p>We explain our basic methodology in the next section (Section&nbsp;<a href="#ch5:method" data-reference-type="ref" data-reference="ch5:method">1.2</a>). After that Section&nbsp;<a href="#ch5:empirical" data-reference-type="ref" data-reference="ch5:empirical">1.3</a> is devoted to the applying our methodology to an analytical expression of the differential rotation in the interior of the solar convection zone. Then the actual data of differential rotation obtained by helioseismology are applied to calculate the structure of the NSSL in Section&nbsp;<a href="#ch5:helio" data-reference-type="ref" data-reference="ch5:helio">1.4</a>. Finally, our conclusions are summarized in Section&nbsp;<a href="#ch5:conclusion" data-reference-type="ref" data-reference="ch5:conclusion">1.5</a>.</p>
+</section>
+<section id="ch5:method" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="ch5:method"><span class="header-section-number">5.2</span> Basic Methodology</h2>
+<p>The equation for thermal wind balance is <span class="math display">\[\begin{equation}
+r \sin{\theta} \frac{\pa}{\pa z} \Omega^2=\frac{1}{r}\frac{g}{\gamma C_V} \frac{\pa S}{\pa \theta},
+\label{ch5:eq1}
+\end{equation}\]</span> where <span class="math inline">\(\Omega\)</span> is the angular velocity, <span class="math inline">\(z\)</span> is the distance from the equatorial plane measured upward, <span class="math inline">\(g\)</span> is the acceleration due to gravity of the Sun at the point under consideration and <span class="math inline">\(\gamma\)</span> is the adiabatic index, while <span class="math inline">\(S\)</span> and <span class="math inline">\(C_V\)</span> are respectively the entropy and the specific heat of the gas per unit mass. See <span class="citation" data-cites="Choudhuri2021b">Arnab Rai Choudhuri (<a href="#ref-Choudhuri2021b" role="doc-biblioref">2021b</a>)</span> for the derivation and a discussion of this equation.</p>
+<p>Over any isochoric surface, the entropy and temperature differentials between two points are related by <span class="math display">\[\begin{equation}
+\Delta S = C_V \frac{\Delta T}{T},
+\label{ch5:eq2}
+\end{equation}\]</span> We also point out in Appendix&nbsp;<a href="#ch5:appn" data-reference-type="ref" data-reference="ch5:appn">[ch5:appn]</a> that Equation&nbsp;<a href="#ch5:eq1" data-reference-type="ref" data-reference="ch5:eq1">[ch5:eq1]</a> and Equation&nbsp;<a href="#ch5:eq2" data-reference-type="ref" data-reference="ch5:eq2">[ch5:eq2]</a> give the following equation for the temperature differences on isochoric surfaces <span class="math display">\[\begin{equation}
+r^2 \sin \theta \frac{\pa}{\pa z} \Omega^2 = \frac{g}{\gamma T} \left( \frac{\pa}{\pa \theta} \Delta T \right)_{\rm isochore}.
+\label{ch5:eq3}
+\end{equation}\]</span> This is the main equation on which the analysis of the present paper is based. Since the oblateness of isochoric surfaces in the Sun is so small, they can be regarded as spherical surfaces for most practical purposes. However, from a conceptual point of view, it is important to remember that our central equation (Equation&nbsp;<a href="#ch5:eq3" data-reference-type="ref" data-reference="ch5:eq3">[ch5:eq3]</a>) refers to temperature variations over isochoric surfaces and that is what gives the possibility of comparing our theoretical results with observational data of the solar surface.</p>
+<p>In our discussions, we sometimes will have to deal with situations like the following. We may know the distribution of <span class="math inline">\(\Omega (r, \theta)\)</span> in some region. Suppose we also know the temperature on some axis <span class="math inline">\(\theta = \theta_0\)</span>, which means that we would know the value of the temperature at one point on a spherical surface. From this, we want to find the temperature at other points. According to Equation&nbsp;<a href="#ch5:eq3" data-reference-type="ref" data-reference="ch5:eq3">[ch5:eq3]</a>, the temperature difference between the points <span class="math inline">\((r, \theta)\)</span> and <span class="math inline">\((r,\theta_0)\)</span> is given by <span class="math display">\[\begin{equation}
+\Delta T_{\theta_0} (r, \theta) = \frac{r^2 \gamma}{g}
+\int_{\theta_0}^{\theta} d\theta \; T
+\sin \theta \frac{\pa}{\pa z} \Omega^2.
+\label{ch5:eq34}
+\end{equation}\]</span> As stressed earlier by <span class="citation" data-cites="Choudhuri2021a Choudhuri2021b">Arnab Rai Choudhuri (<a href="#ref-Choudhuri2021a" role="doc-biblioref">2021a</a>, <a href="#ref-Choudhuri2021b" role="doc-biblioref">2021b</a>)</span>, whether the Coriolis force due to the Sun’s rotation has any effect on the convection cells depends on whether the convective turnover time is comparable to the rotation period or not. Numerical simulations suggest that convection in the deeper layers of the convection zone involves large convection cells with long turnover times and are affected by the Coriolis force: see Figure&nbsp;1 in <span class="citation" data-cites="Brown2010">Brown et al. (<a href="#ref-Brown2010" role="doc-biblioref">2010</a>)</span> or Figure&nbsp;3 in <span class="citation" data-cites="Gastine2014">Gastine et al. (<a href="#ref-Gastine2014" role="doc-biblioref">2014</a>)</span>. As a result, heat transfer depends on latitude. However, this is not the case near the top of the convection zone, where the convection cells (the granules) are much smaller in size and have turnover times as short as a few minutes. The extent to which the temperature gradient <span class="math inline">\(d T/ dr\)</span> differs from the adiabatic gradient depends on the mixing length (see, for exmaple, <span class="citation" data-cites="Kippenhahn1990">Kippenhahn and Weigert (<a href="#ref-Kippenhahn1990" role="doc-biblioref">1990</a>)</span>, Section&nbsp;7). In the top of the convection zone which is not affected by rotation, the mixing length is independent of latitute and we expect <span class="math inline">\(d T/ dr\)</span> also to be independent of latitude <span class="citation" data-cites="Choudhuri2021a">(<a href="#ref-Choudhuri2021a" role="doc-biblioref">Arnab Rai Choudhuri 2021a</a>)</span>. Although there must be a gradual transition from deeper layers within which heat transport depends on the latitude to the top layer within which this is not the case, we assume for simplicity that the transition takes place at radius <span class="math inline">\(r = r_c\)</span> above which we have <span class="math inline">\(d T/d r\)</span> independent of latitude. We shall work out our model by assuming different values of <span class="math inline">\(r_c\)</span> in the range 0.92 – 0.98&nbsp;.</p>
+<p>In the simplest kind of a spherically symmetric model of the Sun, the temperature <span class="math inline">\(T\)</span> would be function of <span class="math inline">\(r\)</span> alone and would be independent of <span class="math inline">\(\theta\)</span>. If the heat transport depends on latitude, then that would introduce a small variation of <span class="math inline">\(T\)</span> with <span class="math inline">\(\theta\)</span>. We can write <span class="math display">\[\begin{equation}
+T(r, \theta) = T (r, 0) + \Delta T (r, \theta).
+\label{ch5:eq4}
+\end{equation}\]</span> If <span class="math inline">\(d T/ dr\)</span> is independent of latitude in the layer above <span class="math inline">\(r &gt; r_c\)</span>, then we have <span class="math display">\[\begin{equation}
+\frac{dT (r,\theta)}{dr} = \frac{dT (r,0)}{dr} \nonumber
+\end{equation}\]</span> so that it follows from Equation&nbsp;<a href="#ch5:eq4" data-reference-type="ref" data-reference="ch5:eq4">[ch5:eq4]</a> that <span class="math display">\[\begin{equation}
+\frac{d}{dr} \Delta T (r, \theta)= 0 \nonumber
+\end{equation}\]</span> in this top layer. So we can write <span class="math display">\[\begin{equation}
+\Delta T (r &gt; r_c, \theta) = \Delta T (r_c, \theta).
+\label{ch5:eq5}
+\end{equation}\]</span> In principle, it would be possible to determine <span class="math inline">\(T (r, \theta)\)</span> throughout the convection zone if we have a theory of how convective heat transport varies with latitude due to the effect of the Coriolis force. Since our understanding of this complex problem is limited, we can proceed in a different manner. Since there is general agreement that the thermal wind balance condition holds within the deeper layers of the convection zone, we assume Equation&nbsp;<a href="#ch5:eq3" data-reference-type="ref" data-reference="ch5:eq3">[ch5:eq3]</a> to hold below the radius <span class="math inline">\(r = r_c\)</span>. If we know the angular velocity <span class="math inline">\(\Omega (r, \theta)\)</span> in this region, then it is straightforward to evaluate the left hand side of Equation&nbsp;<a href="#ch5:eq3" data-reference-type="ref" data-reference="ch5:eq3">[ch5:eq3]</a>. Once we have the value of the left hand side, we can carry on integration in accordance with Equation&nbsp;<a href="#ch5:eq34" data-reference-type="ref" data-reference="ch5:eq34">[ch5:eq34]</a> to determine <span class="math inline">\(\Delta T (r, \theta)\)</span> at all points within the convection zone below <span class="math inline">\(r = r_c\)</span>. Once we have the value of <span class="math inline">\(\Delta T (r, \theta)\)</span> at the radius <span class="math inline">\(r = r_c\)</span>, we readily have the value of <span class="math inline">\(\Delta T (r, \theta)\)</span> at all points above this surface by using Equation&nbsp;<a href="#ch5:eq5" data-reference-type="ref" data-reference="ch5:eq5">[ch5:eq5]</a>. In other words, we can obtain <span class="math inline">\(\Delta T (r, \theta)\)</span> throughout the convection zone from the values of <span class="math inline">\(\Omega (r, \theta)\)</span> in the deeper layers below <span class="math inline">\(r = r_c\)</span>, where Equation&nbsp;<a href="#ch5:eq3" data-reference-type="ref" data-reference="ch5:eq3">[ch5:eq3]</a> is expected to hold. Comparing Equation&nbsp;<a href="#ch5:eq34" data-reference-type="ref" data-reference="ch5:eq34">[ch5:eq34]</a> with Equation&nbsp;<a href="#ch5:eq5" data-reference-type="ref" data-reference="ch5:eq5">[ch5:eq5]</a>, it should be clear that <span class="math inline">\(\Delta T (r, \theta)\)</span> is nothing but <span class="math inline">\(\Delta T_{\theta_0} (r, \theta)\)</span> with <span class="math inline">\(\theta_0 = 0\)</span>.</p>
+<p>As we already pointed out, there is a lack of consensus whether the thermal wind balance equation holds in the top layer of the convection zone. It follows from Equation&nbsp;<a href="#ch5:eq5" data-reference-type="ref" data-reference="ch5:eq5">[ch5:eq5]</a> that <span class="math inline">\((\pa/\pa \theta) \Delta T (r,\theta)\)</span> does not vary with <span class="math inline">\(r\)</span> above the radial surface <span class="math inline">\(r = r_c\)</span>. On the other hand, the temperature scale height becomes very small in this top layer and the temperature falls by orders of magnitude as we move to the solar surface from <span class="math inline">\(r = r_c\)</span>. As a result, the thermal wind term represented by the right hand side of Equation&nbsp;<a href="#ch5:eq3" data-reference-type="ref" data-reference="ch5:eq3">[ch5:eq3]</a> in which <span class="math inline">\(T\)</span> appears in the denominator becomes very large. We do not think that this term can be balanced by the dissipation term. We suggest that the thermal wind balance must hold even in this top layer and the centrifugal term represented by left hand side of Equation&nbsp;<a href="#ch5:eq3" data-reference-type="ref" data-reference="ch5:eq3">[ch5:eq3]</a> has to become very large to balance the thermal wind term, implying a strong variation of <span class="math inline">\(\Omega^2\)</span> along <span class="math inline">\(z\)</span>. As we have the values of <span class="math inline">\(\Delta T\)</span> above <span class="math inline">\(r = r_c\)</span>, we can evaluate the right hand side of Equation&nbsp;<a href="#ch5:eq3" data-reference-type="ref" data-reference="ch5:eq3">[ch5:eq3]</a> easily. Then we can use Equation&nbsp;<a href="#ch5:eq3" data-reference-type="ref" data-reference="ch5:eq3">[ch5:eq3]</a> to determine how <span class="math inline">\(\Omega^2\)</span> varies within this top layer.</p>
+<p>In a nutshell, our methodology is as follows. We start by assuming a value of <span class="math inline">\(r = r_c\)</span> below which convective heat transport is affected by the Coriolis force and above which this is not the case. To begin with, we need the value of <span class="math inline">\(\Omega (r, \theta)\)</span> below <span class="math inline">\(r_c\)</span>, from which we can calculate the left hand side of Equation&nbsp;<a href="#ch5:eq3" data-reference-type="ref" data-reference="ch5:eq3">[ch5:eq3]</a> and eventually obtain <span class="math inline">\(\Delta T (r, \theta)\)</span> throughout the solar convection zone, obtaining <span class="math inline">\(\Delta T (r, \theta)\)</span> above <span class="math inline">\(r_c\)</span> by using Equation&nbsp;<a href="#ch5:eq5" data-reference-type="ref" data-reference="ch5:eq5">[ch5:eq5]</a>. Once we have <span class="math inline">\(\Delta T (r, \theta)\)</span> above <span class="math inline">\(r_c\)</span>, the right hand side of Equation&nbsp;<a href="#ch5:eq3" data-reference-type="ref" data-reference="ch5:eq3">[ch5:eq3]</a> can be evaluated, which enables us to find out <span class="math inline">\(\Omega (r, \theta)\)</span> above <span class="math inline">\(r_c\)</span> from Equation&nbsp;<a href="#ch5:eq3" data-reference-type="ref" data-reference="ch5:eq3">[ch5:eq3]</a>. Although we use Equation&nbsp;<a href="#ch5:eq3" data-reference-type="ref" data-reference="ch5:eq3">[ch5:eq3]</a> for all our calculations, we proceed differently below and above <span class="math inline">\(r = r_c\)</span>. Below <span class="math inline">\(r_c\)</span> we calculate <span class="math inline">\(\Delta T (r, \theta)\)</span> from <span class="math inline">\(\Omega (r, \theta)\)</span> beginning with the left hand side of Equation&nbsp;<a href="#ch5:eq3" data-reference-type="ref" data-reference="ch5:eq3">[ch5:eq3]</a>, whereas above <span class="math inline">\(r_c\)</span> we calculate <span class="math inline">\(\Omega (r, \theta)\)</span> from <span class="math inline">\(\Delta T (r, \theta)\)</span> beginning with the right hand side of Equation&nbsp;<a href="#ch5:eq3" data-reference-type="ref" data-reference="ch5:eq3">[ch5:eq3]</a>.</p>
+<p>The earlier paper by <span class="citation" data-cites="Choudhuri2021a">Arnab Rai Choudhuri (<a href="#ref-Choudhuri2021a" role="doc-biblioref">2021a</a>)</span> presented some order-of-magnitude estimates based on the methodology outlined above. Now we present a detailed analysis. It order to carry on this analysis, we need the values of the temperature as a function of <span class="math inline">\(r\)</span>, which we can take to be <span class="math inline">\(T(r, 0)\)</span>, i.e.&nbsp;temperature values on the polar axis where the effect of the Coriolis force is minimal. Several models of the convection zone exist in the literature <span class="citation" data-cites="Spruit1974 Bahcall1988 Dalsgaard1996 Bahcall2004">(<a href="#ref-Spruit1974" role="doc-biblioref">Spruit 1974</a>; <a href="#ref-Bahcall1988" role="doc-biblioref">Bahcall and Ulrich 1988</a>; <a href="#ref-Dalsgaard1996" role="doc-biblioref">Christensen-Dalsgaard et al. 1996</a>; <a href="#ref-Bahcall2004" role="doc-biblioref">Bahcall and Pinsonneault 2004</a>)</span>. We use what has been referred to as Model&nbsp;S by <span class="citation" data-cites="Dalsgaard1996">Christensen-Dalsgaard et al. (<a href="#ref-Dalsgaard1996" role="doc-biblioref">1996</a>)</span> to obtain <span class="math inline">\(T\)</span> at different values of <span class="math inline">\(r\)</span>. Actually, all the models of the convection zone give very similar <span class="math inline">\(T(r)\)</span>, as can be seen in <a href="#ch5:fig2" data-reference-type="ref+label" data-reference="ch5:fig2">1.2</a>. We also note the sharp fall of the temperature in the outer layers of the convection zone, which is of crucial importance in our theory. The thermal wind term appearing in Equation&nbsp;<a href="#ch5:eq3" data-reference-type="ref" data-reference="ch5:eq3">[ch5:eq3]</a> has <span class="math inline">\(T\)</span> in the denominator and becomes very large in the uppermost layers of the convection zone. The value of the adiabatic index <span class="math inline">\(\gamma\)</span> is taken to be 5/3 in all our calculations. We point out that, in Model S, the value of <span class="math inline">\(\gamma\)</span> is very close to 5/3 throughout the convection zone except in the top layer 0.97–, where it becomes somewhat less due to the variations in the level of hydrogen ionization. We also need the values of <span class="math inline">\(\Omega (r, \theta)\)</span> below <span class="math inline">\(r = r_c\)</span> to start our calculations. Calculations based on an analytical expression of <span class="math inline">\(\Omega (r, \theta)\)</span> which fits helioseismology observtions reasonably well are presented in Section&nbsp;<a href="#ch5:empirical" data-reference-type="ref" data-reference="ch5:empirical">1.3</a>. Then Section&nbsp;<a href="#ch5:helio" data-reference-type="ref" data-reference="ch5:helio">1.4</a> will present calculations done with the actual helioseismology data of differential rotation <span class="math inline">\(\Omega (r, \theta)\)</span> used below <span class="math inline">\(r_c\)</span>. Calculations of both Section&nbsp;<a href="#ch5:empirical" data-reference-type="ref" data-reference="ch5:empirical">1.3</a> and Section&nbsp;<a href="#ch5:helio" data-reference-type="ref" data-reference="ch5:helio">1.4</a> give the NSSL matching the observational data quite closely for appropriate values of <span class="math inline">\(r_c\)</span>. We point out that the input data of <span class="math inline">\(\Omega (r, \theta)\)</span> used in both these sections (given by <a href="#ch5:eq6" data-reference-type="ref+label" data-reference="ch5:eq6">[ch5:eq6]</a> and from helioseismology respectively) give nearly radial contours till <span class="math inline">\(r_c\)</span> without much sign of the NSSL below <span class="math inline">\(r_c\)</span>. In fact, the analytical expression of <span class="math inline">\(\Omega (r, \theta)\)</span> that we use does not incorporate the NSSL at all and gives radial contours till the solar surface. As we get the NSSL even in this case, we can clearly rule out the possibility that there might have been some indication about the existence of the NSSL in the input data which percolated through the calculations to give the NSSL at the end. There is no doubt that the NSSL arises primarily out of the requirement that the centrifugal term has to match the thermal wind term which has become very large in the top layers of the solar convection zone.</p>
+<figure id="ch5:fig2" data-latex-placement="!ht" class="figure">
+<img src="Figures/Chapter5/image_5_2.png" class="figure-img">
+<figcaption>
+Variation of temperature with <span class="math inline"><em>r</em></span> in different convection zone models. The curve corresponds to Model S used in our calculations.
+</figcaption>
+</figure>
+<p>It may be mentioned that <span class="citation" data-cites="Matilsky2020">Matilsky, Hindman, and Toomre (<a href="#ref-Matilsky2020" role="doc-biblioref">2020</a>)</span> calculated the temperature difference <span class="math inline">\(\Delta T\)</span> which one would get from the solar differential rotation by assuming the thermal wind balance Equation&nbsp;<a href="#ch5:eq3" data-reference-type="ref" data-reference="ch5:eq3">[ch5:eq3]</a> to be valid till the top of the convection zone and plotted it in Figure&nbsp;13 of their paper. However, they did not discuss any physical significance of this. Some related issues are also discussed in a recent paper by <span class="citation" data-cites="Vasil2020">Vasil, Julien, and Featherstone (<a href="#ref-Vasil2020" role="doc-biblioref">2020</a>)</span>.</p>
+</section>
+<section id="ch5:empirical" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="ch5:empirical"><span class="header-section-number">5.3</span> Results Based on Analytical Expression</h2>
+<p>As pointed out in Section&nbsp;<a href="#ch5:method" data-reference-type="ref" data-reference="ch5:method">1.2</a>, we need the values of <span class="math inline">\(\Omega (r,\theta)\)</span> below <span class="math inline">\(r&lt;r_c\)</span> to start our calculations. In this section, we present the results of our calculations based on the following analytical expression of <span class="math inline">\(\Omega (r,\theta)\)</span> which fits the helioseismology observations closely <span class="citation" data-cites="Schou1998 Charbonneau1999">(<a href="#ref-Schou1998" role="doc-biblioref">Schou et al. 1998</a>; <a href="#ref-Charbonneau1999" role="doc-biblioref">Charbonneau et al. 1999</a>)</span>: <span class="math display">\[\begin{equation}
+    \Omega(r,\theta)= \Omega_{\rm RZ}+ \frac{1}{2}\left[1-{\rm erf}\left(\frac{r-r_t}{d_t}\right)\right] \left[\Omega_{\rm SCZ}(\theta)-\Omega_{\rm RZ}\right],
+    \label{ch5:eq6}
+\end{equation}\]</span> where <span class="math inline">\(r_t=0.7\)</span>, <span class="math inline">\(d_t=0.025\)</span>, <span class="math inline">\(\Omega_{\rm RZ}/2\pi=432.8\)</span> nHz and <span class="math inline">\(\Omega_{\rm SCZ}(\theta)/2\pi=\Omega_{\rm EQ}+\alpha_2\cos^2(\theta)+\alpha_4\cos^4(\theta)\)</span>, with <span class="math inline">\(\Omega_{\rm EQ}/2\pi= 460.7\)</span> nHz, <span class="math inline">\(\alpha_2/2\pi=-62.69\)</span> nHz and <span class="math inline">\(\alpha_4/2\pi=-67.13\)</span> nHz. <a href="#ch5:fig3" data-reference-type="ref+label" data-reference="ch5:fig3">1.3</a> shows the rotation profile obtained from <a href="#ch5:eq6" data-reference-type="ref+label" data-reference="ch5:eq6">[ch5:eq6]</a> along with contours of constant <span class="math inline">\(\Omega\)</span> (solid black lines). We note the absence of any signature of NSSL. On comparing with Figure&nbsp;<a href="#ch5:fig1" data-reference-type="ref" data-reference="ch5:fig1">1.1</a> giving the rotation profile based on helioseismology data, we see that the analytical expression gives a reasonable fit to the data in the deeper layers of the convection zone.</p>
+<figure id="ch5:fig3" data-latex-placement="!ht" class="figure">
+<img src="Figures/Chapter5/image_5_3.png" class="figure-img">
+<figcaption>
+Rotation profile calculated by using the analytical expression (Equation&nbsp;<a href="#ch5:eq6" data-reference-type="ref" data-reference="ch5:eq6">[ch5:eq6]</a>). The contours correspond to values of <span class="math inline"><em>Ω</em></span> at the interval of 10 nHz, the extreme contours being for the values 340 nHz and 460 nHz.
+</figcaption>
+</figure>
+<p>As explained in Section&nbsp;<a href="#ch5:method" data-reference-type="ref" data-reference="ch5:method">1.2</a>, our first step is to obtain <span class="math inline">\(\Delta T (r, \theta)\)</span> for <span class="math inline">\(r&lt;r_c\)</span> by making use of <a href="#ch5:eq3" data-reference-type="ref+label" data-reference="ch5:eq3">[ch5:eq3]</a>, in which the left hand side is evaluated by using <span class="math inline">\(\Omega (r, \theta)\)</span> as given by <a href="#ch5:eq6" data-reference-type="ref+label" data-reference="ch5:eq6">[ch5:eq6]</a>. To calculate the left side of <a href="#ch5:eq3" data-reference-type="ref+label" data-reference="ch5:eq3">[ch5:eq3]</a>, we need to evaluate the derivative of <span class="math inline">\(\Omega^2\)</span> along the <span class="math inline">\(z\)</span> direction. For this purpose, we use the transformation equation <span class="math display">\[\begin{equation}
+    \left(\frac{\partial}{\partial z}\right)_s=\left(\frac{\partial r}{\partial z}\right)_s\frac{\partial}{\partial r}-\left(\frac{\partial \theta}{\partial z}\right)_s\frac{\partial}{\partial \theta}=\cos{\theta}\frac{\partial}{\partial r}-\frac{\sin{\theta}}{r}\frac{\partial}{\partial \theta},
+    \label{ch5:eq7}
+\end{equation}\]</span> on making use of <span class="math inline">\(s=r\cos{\theta}\)</span> and <span class="math inline">\(z=r\sin{\theta}\)</span> (shown in <a href="#ch5:fig4" data-reference-type="ref+label" data-reference="ch5:fig4">1.4</a>). We need to choose a particular value of <span class="math inline">\(r_c\)</span>. We are going to present discussions for values of <span class="math inline">\(r_c\)</span> in the range 0.92&nbsp; – 0.97&nbsp;. We now use <a href="#ch5:eq34" data-reference-type="ref+label" data-reference="ch5:eq34">[ch5:eq34]</a> to calculate <span class="math inline">\(\Delta T (r,\theta)\)</span> in the convection zone for all values of <span class="math inline">\(r\)</span> below the maximum value 0.98&nbsp;&nbsp;of <span class="math inline">\(r_c\)</span> that we consider. We calculate the numerical derivative of <span class="math inline">\(\Omega^2\)</span> with the help of the transformation <a href="#ch5:eq7" data-reference-type="ref+label" data-reference="ch5:eq7">[ch5:eq7]</a> by using the first order divided difference scheme. Then we use the Runge-Kutta 4th order (RK4) method to solve <a href="#ch5:eq3" data-reference-type="ref+label" data-reference="ch5:eq3">[ch5:eq3]</a>, which is equivalent to carrying on the integration in <a href="#ch5:eq34" data-reference-type="ref+label" data-reference="ch5:eq34">[ch5:eq34]</a>.</p>
+<figure id="ch5:fig4" data-latex-placement="!ht" class="figure">
+<img src="Figures/Chapter5/image_5_4.png" class="figure-img">
+<figcaption>
+Relation between spherical co-ordinate system <span class="math inline">(<em>r</em>, <em>θ</em>)</span> and the other coordinates <span class="math inline">(<em>s</em>, <em>z</em>)</span> we use.
+</figcaption>
+</figure>
+<p><a href="#ch5:fig5" data-reference-type="ref+label" data-reference="ch5:fig5">1.5</a> shows the distribution of <span class="math inline">\(\Delta T (r, \theta)\)</span> in the convection zone below 0.98&nbsp;&nbsp;that would follow on assuming the thermal wind balance and using <span class="math inline">\(\Omega (r, \theta)\)</span> given by the analytical expression <a href="#ch5:eq6" data-reference-type="ref+label" data-reference="ch5:eq6">[ch5:eq6]</a>. We clearly see a decrease in <span class="math inline">\(\Delta T(r,\theta)\)</span> with <span class="math inline">\(r\)</span> as we approach the surface. Now, one quantity which is of particular interest to us is the pole-equator temperature difference <span class="math inline">\(\Delta T(r, \theta=0) - \Delta T(r, \theta=\pi/2)\)</span> as a function of <span class="math inline">\(r\)</span>. Figure&nbsp;<a href="#ch5:fig6" data-reference-type="ref+label" data-reference="ch5:fig6">1.6</a> shows this pole-equator temperature difference as a function of <span class="math inline">\(r\)</span> within the convection zone for <span class="math inline">\(r&lt;0.98\)</span>.</p>
+<figure id="ch5:fig5" data-latex-placement="!ht" class="figure">
+<img src="Figures/Chapter5/image_5_5.png" class="figure-img">
+<figcaption>
+Profile of <span class="math inline"><em>Δ</em><em>T</em>(<em>r</em>, <em>θ</em>)</span> in the solar convection zone below <span class="math inline"><em>r</em> = 0.98</span>&nbsp;, which would follow from the analytical expression (<a href="#ch5:eq6" data-reference-type="ref+label" data-reference="ch5:eq6">[ch5:eq6]</a>) on taking <span class="math inline"><em>r</em><sub><em>c</em></sub> = 0.98</span>&nbsp;. Contours represent the constant values of <span class="math inline"><em>Δ</em><em>T</em>(<em>r</em>, <em>θ</em>)</span>.
+</figcaption>
+</figure>
+<figure id="ch5:fig6" data-latex-placement="!ht" class="figure">
+<img src="Figures/Chapter5/image_5_6.png" class="figure-img">
+<figcaption>
+The pole-equator temperature difference as a function of radius, corresponding to Figure&nbsp;<a href="#ch5:fig5" data-reference-type="ref" data-reference="ch5:fig5">1.5</a>.
+</figcaption>
+</figure>
+<p>We shall now present our results for the NSSL by assuming different values of <span class="math inline">\(r_c\)</span> in the range 0.92 – 0.97. For a particular value of <span class="math inline">\(r_c\)</span>, we take <span class="math inline">\(\Delta T (r,\theta)\)</span> to be as given in <a href="#ch5:fig5" data-reference-type="ref+label" data-reference="ch5:fig5">1.5</a> for <span class="math inline">\(r &lt;r_c\)</span> and as given by <a href="#ch5:eq5" data-reference-type="ref+label" data-reference="ch5:eq5">[ch5:eq5]</a> for <span class="math inline">\(r &gt;r_c\)</span>. In this way, we obtain <span class="math inline">\(\Delta T (r,\theta)\)</span> throughout the convection zone for a chosen value of <span class="math inline">\(r_c\)</span>. We point out that the observational value of the pole-equator temperature difference reported by <span class="citation" data-cites="Rast2008">Rast, Ortiz, and Meisner (<a href="#ref-Rast2008" role="doc-biblioref">2008</a>)</span> is <span class="math inline">\(\approx 2.5\)</span> K. <a href="#ch5:fig6" data-reference-type="ref+label" data-reference="ch5:fig6">1.6</a> shows that such a value of the pole-equator temperature difference occurs at around <span class="math inline">\(r \approx 0.92\)</span>&nbsp;when we evaluate <span class="math inline">\(\Delta T (r, \theta)\)</span> from the analytical expression (<a href="#ch5:eq6" data-reference-type="ref+label" data-reference="ch5:eq6">[ch5:eq6]</a>) of <span class="math inline">\(\Omega(r, \theta)\)</span>. This means that we have to take <span class="math inline">\(r_c \approx 0.92\)</span>&nbsp;&nbsp;to get the pole-equator temperature difference at the surface which matches the observations of <span class="citation" data-cites="Rast2008">Rast, Ortiz, and Meisner (<a href="#ref-Rast2008" role="doc-biblioref">2008</a>)</span>.</p>
+<p>Now that we have <span class="math inline">\(\Delta T (r,\theta)\)</span> throughout the convection zone including the top layer (<span class="math inline">\(r\ge r_c\)</span>) for different values of <span class="math inline">\(r_c\)</span>, the last step is to calculate <span class="math inline">\(\Omega (r\ge r_c,\theta)\)</span> in this top layer by assuming that the thermal wind balance holds in this layer. We have already made use of <span class="math inline">\(\Omega (r &lt; r_c,\theta)\)</span> in the deeper layers of the convection zone, as given by <a href="#ch5:eq6" data-reference-type="ref+label" data-reference="ch5:eq6">[ch5:eq6]</a>, to calculate <span class="math inline">\(\Delta T (r,\theta)\)</span> by making use of <a href="#ch5:eq34" data-reference-type="ref+label" data-reference="ch5:eq34">[ch5:eq34]</a> (which is effectively the same as <a href="#ch5:eq3" data-reference-type="ref+label" data-reference="ch5:eq3">[ch5:eq3]</a>) and <a href="#ch5:eq5" data-reference-type="ref+label" data-reference="ch5:eq5">[ch5:eq5]</a>. We now use the thermal balance <a href="#ch5:eq3" data-reference-type="ref+label" data-reference="ch5:eq3">[ch5:eq3]</a> in the top layer (<span class="math inline">\(r\ge r_c\)</span>) in a different manner. From the value of <span class="math inline">\(\Delta T (r\ge r_c,\theta)\)</span> in this top layer, we calculate the right hand side of <a href="#ch5:eq3" data-reference-type="ref+label" data-reference="ch5:eq3">[ch5:eq3]</a> and then solve <a href="#ch5:eq3" data-reference-type="ref+label" data-reference="ch5:eq3">[ch5:eq3]</a> to find the distribution of <span class="math inline">\(\Omega (r\ge r_c,\theta)\)</span> in this top layer which would satisfy <a href="#ch5:eq3" data-reference-type="ref+label" data-reference="ch5:eq3">[ch5:eq3]</a>. We carry on this procedure for the values <span class="math inline">\(r_c =\)</span> 0.92 , 0.93 , 0.94 , 0.95 , 0.96 , 0.97 . We can combine <span class="math inline">\(\Omega (r\ge r_c,\theta)\)</span> obtained in the top layer in this manner with <span class="math inline">\(\Omega (r &lt; r_c,\theta)\)</span> in the deeper layers as given by <a href="#ch5:eq6" data-reference-type="ref+label" data-reference="ch5:eq6">[ch5:eq6]</a>. This combination for the different values of <span class="math inline">\(r_c\)</span> which we have used are shown in <a href="#ch5:fig7" data-reference-type="ref+label" data-reference="ch5:fig7">1.7</a>. The dotted circles in the various sub-figures indicate the values of <span class="math inline">\(r_c\)</span> for all these cases.</p>
+<figure id="ch5:fig7" data-latex-placement="!ht" class="figure">
+<img src="Figures/Chapter5/image_5_7.png" class="figure-img">
+<figcaption>
+The profiles of <span class="math inline"><em>Ω</em>(<em>r</em>, <em>θ</em>)</span> for different values of <span class="math inline"><em>r</em> = <em>r</em><sub><em>c</em></sub></span>, obtained by using <span class="math inline"><em>Ω</em>(<em>r</em>, <em>θ</em>)</span> given by <a href="#ch5:eq6" data-reference-type="ref+label" data-reference="ch5:eq6">[ch5:eq6]</a> as input data for <span class="math inline"><em>r</em> &lt; <em>r</em><sub><em>c</em></sub></span> .
+</figcaption>
+</figure>
+<p>The contours of constant <span class="math inline">\(\Omega\)</span> bend towards the equator in the top layers of the convection zone for all values of <span class="math inline">\(r_c\)</span> shown in <a href="#ch5:fig7" data-reference-type="ref+label" data-reference="ch5:fig7">1.7</a>. This indicates the clear presence of the NSSL in all these cases. We stress again that the initial input data <span class="math inline">\(\Omega (r &lt; r_c,\theta)\)</span> which we had used in the deeper layers of the convection zone in order to start our calculations did not have the NSSL. In fact, the analytical expression (<a href="#ch5:eq6" data-reference-type="ref+label" data-reference="ch5:eq6">[ch5:eq6]</a>), which we had used for the values of <span class="math inline">\(\Omega (r &lt; r_c,\theta)\)</span> in the deeper layers, does not give rise to the NSSL at all, as seen in <a href="#ch5:fig3" data-reference-type="ref+label" data-reference="ch5:fig3">1.3</a>. It is thus clear that the NSSL that we see in <a href="#ch5:fig7" data-reference-type="ref+label" data-reference="ch5:fig7">1.7</a> could not be an artifact of the input data. The NSSL arises from the fact that the thermal wind term becomes very large in the top layers due to the falling temperature there and the centrifugal term also has to become very large to balance it. This requirement for satisfying the thermal wind condition (<a href="#ch5:eq3" data-reference-type="ref+label" data-reference="ch5:eq3">[ch5:eq3]</a>) in the top layer can only be met if there is an NSSL. We propose this as the explanation for the existence of the NSSL in the top layer of the solar convection zone. The different sub-plots in <a href="#ch5:fig7" data-reference-type="ref+label" data-reference="ch5:fig7">1.7</a> show that the increase in <span class="math inline">\(r_c\)</span> causes the NSSL to be confined to an increasingly narrower layer near the solar surface.</p>
+</section>
+<section id="ch5:helio" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="ch5:helio"><span class="header-section-number">5.4</span> Results Based on Helioseismology Data</h2>
+<p>After presenting the results based on the analytical expression Equation&nbsp;<a href="#ch5:eq6" data-reference-type="ref" data-reference="ch5:eq6">[ch5:eq6]</a> of <span class="math inline">\(\Omega (r, \theta)\)</span> in the previous section (Section&nbsp;<a href="#ch5:empirical" data-reference-type="ref" data-reference="ch5:empirical">1.3</a>), we now carry on exactly the same calculations based on the value of <span class="math inline">\(\Omega (r, \theta)\)</span> as given by helioseismology. We use <span class="math inline">\(\Omega (r, \theta)\)</span> averaged over cycle&nbsp;23, as supplied to us by H.M.&nbsp;Antia. The methodology that was used for obtaining the <span class="math inline">\(\Omega (r, \theta)\)</span> profile from helioseismology data has been described by <span class="citation" data-cites="Antia1998 Antia2008">Antia, Basu, and Chitre (<a href="#ref-Antia1998" role="doc-biblioref">1998</a>; <a href="#ref-Antia2008" role="doc-biblioref">Antia, Basu, and Chitre 2008</a>)</span>. Our calculations are based on the tabulated value of temporally averaged <span class="math inline">\(\Omega (r, \theta)\)</span> for all <span class="math inline">\(r\)</span> in the range 0.7 to at steps of 0.005 and for all <span class="math inline">\(\theta\)</span> in the range of <span class="math inline">\(2^{\circ}\)</span> to <span class="math inline">\(90^{\circ}\)</span> (<span class="math inline">\(88^{\circ}\)</span> to <span class="math inline">\(0^{\circ}\)</span> latitude) at steps of <span class="math inline">\(2^{\circ}\)</span>. The profile of <span class="math inline">\(\Omega (r, \theta)\)</span> with the contours of constant <span class="math inline">\(\Omega\)</span> (represented as black solid lines) has been shown in <a href="#ch5:fig1" data-reference-type="ref+label" data-reference="ch5:fig1">1.1</a>.</p>
+<p>As in Section&nbsp;<a href="#ch5:empirical" data-reference-type="ref" data-reference="ch5:empirical">1.3</a>, we carry on calculations for different values of <span class="math inline">\(r_c\)</span> in the range 0.93  – 0.98 . For a particular value of <span class="math inline">\(r_c\)</span>, we substitute the values of <span class="math inline">\(\Omega (r &lt; r_c,\theta)\)</span> in the left hand side of <a href="#ch5:eq3" data-reference-type="ref+label" data-reference="ch5:eq3">[ch5:eq3]</a> to calculate <span class="math inline">\(\Delta T (r &lt; r_c,\theta)\)</span>. The values of <span class="math inline">\(\Delta T (r,\theta)\)</span> for <span class="math inline">\(r &gt; r_c\)</span> are again given by <a href="#ch5:eq5" data-reference-type="ref+label" data-reference="ch5:eq5">[ch5:eq5]</a>. <a href="#ch5:fig8" data-reference-type="ref+label" data-reference="ch5:fig8">1.8</a>a shows the profile of <span class="math inline">\(\Delta T(r&lt;r_c,\theta)\)</span> calculated for the case <span class="math inline">\(r_c = 0.98\)</span> . One concern we have is that the helioseismic determination of <span class="math inline">\(\Omega (r, \theta)\)</span> has large uncertainties in the polar regions at high latitudes and, when we use <a href="#ch5:eq34" data-reference-type="ref+label" data-reference="ch5:eq34">[ch5:eq34]</a> to calculate <span class="math inline">\(\Delta T (r &lt; r_c,\theta)\)</span>, which is <span class="math inline">\(\Delta T_{\theta_0} (r &lt; r_c,\theta)\)</span> with <span class="math inline">\(\theta_0 = 0\)</span>, we have to integrate over this region where the value of <span class="math inline">\(\Omega (r, \theta)\)</span> is unreliable. One way of avoiding this difficulty is to consider temperature variations only in regions not too close to the poles where we can trust the helioseismic values of <span class="math inline">\(\Omega(r, \theta)\)</span>. We have used <a href="#ch5:eq34" data-reference-type="ref+label" data-reference="ch5:eq34">[ch5:eq34]</a> to calculate <span class="math inline">\(\Delta T_{20^{\circ}} (r &lt; r_c,\theta)\)</span> by avoiding the polar region. <a href="#ch5:fig8" data-reference-type="ref+label" data-reference="ch5:fig8">1.8</a>b shows the profile of <span class="math inline">\(\Delta T_{20^{\circ}} (r &lt; r_c,\theta)\)</span>. Comparing the profiles of <span class="math inline">\(\Delta T (r &lt; r_c,\theta)\)</span> for co-latitudes higher than <span class="math inline">\(20^{\circ}\)</span> (i.e.&nbsp;latitudes lower than <span class="math inline">\(70^{\circ}\)</span>) in <a href="#ch5:fig8" data-reference-type="ref+label" data-reference="ch5:fig8">1.8</a>a – b, we find that various features are in broad agreement, indicating that they are not due to errors in <span class="math inline">\(\Omega (r, \theta)\)</span> near the polar region. Especially, we find an annular strip near <span class="math inline">\(r = 0.925 R_{\odot}\)</span> within which the value of <span class="math inline">\(\Delta T (r &lt; r_c,\theta)\)</span> is close to zero in <a href="#ch5:fig8" data-reference-type="ref+label" data-reference="ch5:fig8">1.8</a>a. This strip becomes less prominent in <a href="#ch5:fig8" data-reference-type="ref+label" data-reference="ch5:fig8">1.8</a>b, though it does not disappear. The reason behind this strip is this. On taking a careful look at <a href="#ch5:fig1" data-reference-type="ref+label" data-reference="ch5:fig1">1.1</a>, we realize that <span class="math inline">\(\pa \Omega^2/\pa z\)</span> just below the NSSL is close to zero at latitudes higher than mid-latitudes and is even positive at very high latitudes (it is usually negative within the convection zone). This explains, on the basis of <a href="#ch5:eq34" data-reference-type="ref+label" data-reference="ch5:eq34">[ch5:eq34]</a>, why we have this unusual strip even in <a href="#ch5:fig8" data-reference-type="ref+label" data-reference="ch5:fig8">1.8</a>b after excluding the polar region. <span class="citation" data-cites="Schou1998">Schou et al. (<a href="#ref-Schou1998" role="doc-biblioref">1998</a>)</span> refer to this region at high latitudes somewhat below the surface as “a submerged polar jet” and comment in Section&nbsp;5.5 of their paper that it “is seen consistently by several independent methods”. If this submerged polar jet is real and not a data artifact, then what causes it is certainly an important question. We do not attempt to address this question in the present paper.</p>
+<figure id="ch5:fig8" data-latex-placement="!ht" class="figure">
+<img src="Figures/Chapter5/image_5_8.png" style="height:80.0%" class="figure-img">
+<figcaption>
+Profile of <span class="math inline"><em>Δ</em><em>T</em>(<em>r</em>, <em>θ</em>)</span> in the solar convection zone below <span class="math inline"><em>r</em> = 0.98</span>, which would follow from the helioseismology data of differential rotation on taking <span class="math inline"><em>r</em><sub><em>c</em></sub> = 0.98</span>. Contours represent the constant values of <span class="math inline"><em>Δ</em><em>T</em>(<em>r</em>, <em>θ</em>)</span>. (a) shows the profile of <span class="math inline"><em>Δ</em><em>T</em><sub>0<sup>⊙</sup></sub>(<em>r</em>, <em>θ</em>)</span> and (b) the profile of <span class="math inline"><em>Δ</em><em>T</em><sub>20<sup>⊙</sup></sub>(<em>r</em>, <em>θ</em>)</span> as defined in Equation&nbsp;<a href="#ch5:eq34" data-reference-type="ref" data-reference="ch5:eq34">[ch5:eq34]</a>
+</figcaption>
+</figure>
+<p>We now plot the temperature difference <span class="math inline">\(\Delta T (r, \theta=20^{\circ}) - \Delta T (r, \theta=90^{\circ})\)</span> between the co-latitude <span class="math inline">\(20^{\circ}\)</span> (i.e.&nbsp;latitude <span class="math inline">\(70^{\circ}\)</span>) and the equator as a function of <span class="math inline">\(r\)</span> in <a href="#ch5:fig9" data-reference-type="ref+label" data-reference="ch5:fig9">1.9</a>. It should be clear from <a href="#ch5:eq34" data-reference-type="ref+label" data-reference="ch5:eq34">[ch5:eq34]</a> that this temperature difference is given by integrating the integrand in the right hand side of <a href="#ch5:eq34" data-reference-type="ref+label" data-reference="ch5:eq34">[ch5:eq34]</a> from <span class="math inline">\(\theta=20^{\circ}\)</span> to <span class="math inline">\(\theta=90^{\circ}\)</span>. In other words, this temperature difference is independent of the values of <span class="math inline">\(\Omega (r, \theta)\)</span> at very high latitudes (where these values may have large uncertainties) and should be the same for both the cases shown in <a href="#ch5:fig8" data-reference-type="ref+label" data-reference="ch5:fig8">1.8</a>a and <a href="#ch5:fig8" data-reference-type="ref+label" data-reference="ch5:fig8">1.8</a>b. We have seen in the calculations based on the analytical expression of <span class="math inline">\(\Omega (r, \theta)\)</span> in the previous section (Section&nbsp;<a href="#ch5:empirical" data-reference-type="ref" data-reference="ch5:empirical">1.3</a>) that the pole-equator temperature difference decreased monotonically with <span class="math inline">\(r\)</span> (see <a href="#ch5:fig6" data-reference-type="ref+label" data-reference="ch5:fig6">1.6</a>). However, <a href="#ch5:fig9" data-reference-type="ref+label" data-reference="ch5:fig9">1.9</a> shows a more complicated dependence of a similar temperature difference on <span class="math inline">\(r\)</span>. We indeed find a monotonic decrease of the temperature difference with <span class="math inline">\(r\)</span> for values of <span class="math inline">\(r\)</span> lower than <span class="math inline">\(\approx0.92\)</span>. But then it starts increasing with <span class="math inline">\(r\)</span> up to <span class="math inline">\(\approx 0.97\)</span>, beyond which it decreases again. This complicated variation of the temperature difference is connected with the submerged polar jet which continues even a little bit beyond co-latitude <span class="math inline">\(20^{\circ}.\)</span></p>
+<figure id="ch5:fig9" data-latex-placement="!ht" class="figure">
+<img src="Figures/Chapter5/image_5_9.png" class="figure-img">
+<figcaption>
+The temperature difference between the co-latitude <span class="math inline">20<sup>∘</sup></span> and the equator as a function of radius, corresponding to <a href="#ch5:fig8" data-reference-type="ref+label" data-reference="ch5:fig8">1.8</a>.
+</figcaption>
+</figure>
+<p>The final step in our analysis is exactly the same as in Section&nbsp;<a href="#ch5:empirical" data-reference-type="ref" data-reference="ch5:empirical">1.3</a>. Once we have <span class="math inline">\(\Delta T (r, \theta)\)</span> throughout the convection zone corresponding to different values of <span class="math inline">\(r_c\)</span> (with its value for <span class="math inline">\(r \ge r_c\)</span> being given by <a href="#ch5:eq5" data-reference-type="ref+label" data-reference="ch5:eq5">[ch5:eq5]</a>), we evaluate the right hand side of <a href="#ch5:eq3" data-reference-type="ref+label" data-reference="ch5:eq3">[ch5:eq3]</a> for <span class="math inline">\(r\ge r_c\)</span> and then solve <a href="#ch5:eq3" data-reference-type="ref+label" data-reference="ch5:eq3">[ch5:eq3]</a> to obtain <span class="math inline">\(\Omega (r\ge r_c, \theta)\)</span> in the top layers of the convection zone. Since we have to differentiate <span class="math inline">\(\Delta T (r &gt; r_c,\theta)\)</span> with respect to <span class="math inline">\(\theta\)</span>, it does not matter whether we use <span class="math inline">\(\Delta T_{\theta_0} (r &gt; r_c,\theta)\)</span> with <span class="math inline">\(\theta_0 = 0\)</span> or with <span class="math inline">\(\theta_0 = 20^{\circ}\)</span>. The temperature profiles in both <a href="#ch5:fig8" data-reference-type="ref+label" data-reference="ch5:fig8">1.8</a>a and <a href="#ch5:fig8" data-reference-type="ref+label" data-reference="ch5:fig8">1.8</a>b give the same distribution of <span class="math inline">\(\Omega (r\ge r_c, \theta)\)</span> in the top layers of the convection zone for <span class="math inline">\(\theta\)</span> higher than <span class="math inline">\(20^{\circ}\)</span>. Thus, the profile of <span class="math inline">\(\Omega (r\ge r_c, \theta)\)</span> in the top layers of the convection zone that we have calculated starting initially from <span class="math inline">\(\Omega (r\le r_c, \theta)\)</span> in the deeper layers of the convection is independent of the errors in <span class="math inline">\(\Omega (r\le r_c, \theta)\)</span> in the polar region. In <a href="#ch5:fig10" data-reference-type="ref+label" data-reference="ch5:fig10">1.10</a>, we have shown the distribution of <span class="math inline">\(\Omega (r\ge r_c, \theta)\)</span> obtained in this way for different values of <span class="math inline">\(r_c\)</span> (represented by black dashed circles), along with <span class="math inline">\(\Omega (r&lt;r_c,\theta)\)</span> as given by helioseismology data (same as in <a href="#ch5:fig1" data-reference-type="ref+label" data-reference="ch5:fig1">1.1</a>). In all these cases, we clearly see the NSSL. While the input data <span class="math inline">\(\Omega (r &lt; r_c, \theta)\)</span> used in our calculations show some indications of the NSSL for the cases <span class="math inline">\(r_c =\)</span><!-- -->0.97 , 0.98 , there was no sign of the NSSL in the input data for the cases <span class="math inline">\(r_c =\)</span><!-- -->0.93 , 0.94 . The fact that we get a layer just below the solar surface resembling the NSSL in all these cases strongly suggests that the NSSL arises from the requirement of the thermal wind balance with the thermal wind term becoming very large in the top layer of the convection zone. To facilitate comparison of our theoretical results with the observations, we have over-plotted in <a href="#ch5:fig10" data-reference-type="ref+label" data-reference="ch5:fig10">1.10</a> the contours of constant <span class="math inline">\(\Omega\)</span> obtained from helioseismology observation (shown by dashed red lines).</p>
+<figure id="ch5:fig10" data-latex-placement="!ht" class="figure">
+<img src="Figures/Chapter5/image_5_10.png" class="figure-img">
+<figcaption>
+The profiles of <span class="math inline"><em>Ω</em>(<em>r</em>, <em>θ</em>)</span> for different values of <span class="math inline"><em>r</em> = <em>r</em><sub><em>c</em></sub></span>, obtained by using <span class="math inline"><em>Ω</em>(<em>r</em>, <em>θ</em>)</span> given by helioseismology as input data for <span class="math inline"><em>r</em> &lt; <em>r</em><sub><em>c</em></sub></span> .
+</figcaption>
+</figure>
+<p>We at last come to the question whether the theoretical results obtained on the basis of our assumption that the thermal balance equation holds in the top layers of the convection zone agree with observational data. Comparing the solid lines indicating the theoretical results with the dashed red lines indicating helioseismology data above <span class="math inline">\(r = r_c\)</span> in <a href="#ch5:fig10" data-reference-type="ref+label" data-reference="ch5:fig10">1.10</a>, it is evident that the agreement is very good for all values of <span class="math inline">\(r\)</span> larger than 0.96 . In the cases <span class="math inline">\(r =\)</span><!-- -->0.97 , 0.98 , the lower part of the NSSL was present in the input data and one may argue that it is not so surprising that our theoretical calculations correctly gave the structure of the NSSL in the upper layers. However, this is clearly not case for <span class="math inline">\(r = 0.96\)</span> . One other aspect of the observational data we need to match is the pole-equator temperature difference. Looking at Figure&nbsp;4 of <span class="citation" data-cites="Rast2008">Rast, Ortiz, and Meisner (<a href="#ref-Rast2008" role="doc-biblioref">2008</a>)</span>, we find that they present measurements up to latitudes of about <span class="math inline">\(70^{\circ}\)</span>. What they loosely refer to as the pole-equator temperature difference (PETD) is actually the temperature difference between <span class="math inline">\(70^{\circ}\)</span> and the equator. If we also use the same convention, then what is plotted in <a href="#ch5:fig9" data-reference-type="ref+label" data-reference="ch5:fig9">1.9</a> can be called PETD and compared directly with the results of <span class="citation" data-cites="Rast2008">Rast, Ortiz, and Meisner (<a href="#ref-Rast2008" role="doc-biblioref">2008</a>)</span>. Taking the value 2.5&nbsp;K reported by <span class="citation" data-cites="Rast2008">Rast, Ortiz, and Meisner (<a href="#ref-Rast2008" role="doc-biblioref">2008</a>)</span> to be the correct value, we note in <a href="#ch5:fig9" data-reference-type="ref+label" data-reference="ch5:fig9">1.9</a> that the PETD has the value 2.5 K at <span class="math inline">\(r \approx 0.96\)</span> . If this is taken to be the value of <span class="math inline">\(r_c\)</span>, then PETD at the solar surface should also be 2.5 K. It is thus clear that an accurate determination of the PETD at the solar surface is extremely important and can put constraints on the appropriate value of <span class="math inline">\(r_c\)</span> to be used in theoretical calculations. If this temperature difference is indeed 2.5 K, then we conclude that the theoretical calculations carried out with <span class="math inline">\(r_c=0.96\)</span> in our model are in good agreement with observational data. This case gives a good structure of the NSSL as we see in <a href="#ch5:fig10" data-reference-type="ref+label" data-reference="ch5:fig10">1.10</a> and the PETD at the solar surface also has the desired value 2.5 K.</p>
+<p>To check quantitatively how well our theoretically determined <span class="math inline">\(\Omega\)</span> in the NSSL compares with observational <span class="math inline">\(\Omega_{\rm heliseismology}\)</span>, we consider the percentile error <span class="math display">\[\begin{equation}
+    f = 100 \frac{\Omega - \Omega_{\rm helioseismology}}
+    {\Omega_{\rm helioseismology}}
+    \label{ch5:eq11}
+\end{equation}\]</span> at different points. Since the observed variation of <span class="math inline">\(\Omega\)</span> within the NSSL is at the level of 5%, we must have <span class="math inline">\(f\)</span> considerably less than that for the fit to be considered sufficiently good. <a href="#ch5:fig11" data-reference-type="ref+label" data-reference="ch5:fig11">1.11</a> shows the distribution of <span class="math inline">\(f\)</span> for the case <span class="math inline">\(r_c = 0.96\)</span> in the top layer of the convection zone above <span class="math inline">\(r = 0.96\)</span>  . We indeed find that <span class="math inline">\(f\)</span> is much less than 5% within the NSSL, except in a very thin layer above <span class="math inline">\(0.995\)</span> close to the solar surface. This perhaps suggests that the thermal wind balance breaks down in this very thin layer near the surface. The smallness of <span class="math inline">\(f\)</span> within the NSSL below this very thin layer presumably indicates that the thermal wind balance holds there to a very good approximation. The root mean square (RMS) value of <span class="math inline">\(f\)</span> for the case presented in <a href="#ch5:fig9" data-reference-type="ref+label" data-reference="ch5:fig9">1.9</a> is found to be 1.36%. The RMS values of <span class="math inline">\(f\)</span> for cases <span class="math inline">\(r_c = 0.95\)</span> and <span class="math inline">\(r_c = 0.97\)</span> turn out to be 1.50% and 2.41% respectively.</p>
+<figure id="ch5:fig11" data-latex-placement="!ht" class="figure">
+<img src="Figures/Chapter5/image_5_11.png" class="figure-img">
+<figcaption>
+Distribution of percentile error <span class="math inline"><em>f</em></span> for the case of <span class="math inline"><em>r</em><sub><em>c</em></sub> = 0.96</span> .
+</figcaption>
+</figure>
+<p>We are not aware of any independent measurements of the pole-equator temperature difference after the work of <span class="citation" data-cites="Rast2008">Rast, Ortiz, and Meisner (<a href="#ref-Rast2008" role="doc-biblioref">2008</a>)</span> done more than a decade ago. If the variation of the temperature with latitude on the solar surface is be measured more accurately by modern techniques in the future, then it will be useful to compare such observations with the theoretical results of our model. <a href="#ch5:fig12" data-reference-type="ref+label" data-reference="ch5:fig12">1.12</a> shows how <span class="math inline">\(\Delta T_{20^{\circ}} (R_\odot, \theta)\)</span> varies with the co-latitude <span class="math inline">\(\theta\)</span> for different values of <span class="math inline">\(r_c\)</span>. Note that <span class="math inline">\(\Delta T_{20^{\circ}} (r, \theta)\)</span> is defined in Equation&nbsp;<a href="#ch5:eq34" data-reference-type="ref" data-reference="ch5:eq34">[ch5:eq34]</a> in such a manner that its value is always zero at <span class="math inline">\(\theta = 20^{\circ}\)</span>. Also, note that the curves for cases <span class="math inline">\(r_c = 0.96\)</span> , 0.97 , 0.98 &nbsp;do not appear in the same simple sequence as the curves for cases <span class="math inline">\(r_c = 0.93\)</span> , 0.94 , 0.95 . Given the complicated plot shown in <a href="#ch5:fig9" data-reference-type="ref+label" data-reference="ch5:fig9">1.9</a>, this behaviour is not surprising. It will be instructive to compare <a href="#ch5:fig12" data-reference-type="ref+label" data-reference="ch5:fig12">1.12</a> with observational data when such data become available. We remind the readers that all the results in this Section were obtained on the assumption of a sudden jump in the nature of convective heat transport at <span class="math inline">\(r = r_c\)</span>. If the transition is more gradual, that may change the results slightly. Detailed comparison between theoretical results and observational data in future may throw more light on this.</p>
+<div id="ch5:fig12" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="Figures/Chapter5/image_5_12.png" class="img-fluid figure-img"></p>
+<figcaption>Variation of <span class="math inline">\(\Delta T_{20^{\circ}} (R_\odot, \theta)\)</span> on the solar surface with co-latitude <span class="math inline">\(\theta\)</span> for different values of <span class="math inline">\(r_c\)</span> (markers are plotted at every 5 data points).</figcaption>
+</figure>
+</div>
+<p>Assuming that the intensity of radiation <span class="math inline">\(I\)</span> emitted from a region of the surface goes as <span class="math inline">\(T^4\)</span> according to the Stefan-Boltzmann law, the variation of intensity with latitude caused by the variation of temperature with latitude would be given by <span class="math display">\[\begin{equation}
+    \frac{\Delta I}{I} \approx 4 \frac{\Delta T}{T}.
+\end{equation}\]</span> The pole-equator intensity difference corresponding to a temperature difference of 2.5 K would be <span class="math display">\[\begin{equation}
+    \frac{\Delta I}{I} \approx 0.0016.
+\end{equation}\]</span> In other words, the pole would be only about 0.16% brighter than the equator. The latitudinal variation of intensity measured by <span class="citation" data-cites="Rast2008">Rast, Ortiz, and Meisner (<a href="#ref-Rast2008" role="doc-biblioref">2008</a>)</span> is given in Figure&nbsp;4 of their paper. They point out that it is non-trivial to measure this small latitudinal variation of intensity. Apart from instrumental errors, the presence of polar faculae makes these measurements difficult. However, <span class="citation" data-cites="Rast2008">Rast, Ortiz, and Meisner (<a href="#ref-Rast2008" role="doc-biblioref">2008</a>)</span> claimed that their measurement of enhanced intensity near the polar region is a real physical effect.</p>
+</section>
+<section id="ch5:conclusion" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="ch5:conclusion"><span class="header-section-number">5.5</span> Conclusion</h2>
+<p>There are differences of opinion why the Sun has a Near-Surface Shear Layer (NSSL). A novel explanation of the NSSL was recently proposed by <span class="citation" data-cites="Choudhuri2021a">Arnab Rai Choudhuri (<a href="#ref-Choudhuri2021a" role="doc-biblioref">2021a</a>)</span> on the basis of order-of-magnitude estimates. We now substantiate the proposal of <span class="citation" data-cites="Choudhuri2021a">Arnab Rai Choudhuri (<a href="#ref-Choudhuri2021a" role="doc-biblioref">2021a</a>)</span> through detailed calculations. Although it is generally agreed that the thermal wind balance equation holds within the body of the solar convection zone, whether this equation even holds in the top layers had been debated. It has been suggested that this equation breaks down in a boundary layer at the top and this may somehow give rise to the NSSL. <span class="citation" data-cites="Choudhuri2021a">Arnab Rai Choudhuri (<a href="#ref-Choudhuri2021a" role="doc-biblioref">2021a</a>)</span> argued on the other hand that the thermal wind term becomes very large in the top layers of the convection zone and the thermal wind balance equation has to hold. This means that the centrifugal term also has to be very large in the top layers to achieve the thermal wind balance, necessitating the existence of the NSSL. When we compare the final results of our theoretical model with observational data from helioseismology, we conclude that the thermal wind balance condition may break down only in a very thin layer near the solar surface (having thickness of order <span class="math inline">\(\approx 0.005\)</span> or <span class="math inline">\(\approx 3000\)</span> km).</p>
+<p>The argument proposed in this paper hinges crucially on the fact that the convective cells are affected by the solar rotation within the main body of the convection zone, except in the top layers within which the convective turnover time is less than the rotation period of the Sun. Although the transition from the layers where rotational effects are large to the layers where they are small must be a gradual transition, we simplify the calculations by assuming that this transition takes place at <span class="math inline">\(r = r_c\)</span>. Since the effect of the solar rotation would make the convective heat transport in the deeper layers dependent on latitude, we expect that the temperature at a point within the convection zone will depart by an amount <span class="math inline">\(\Delta T (r, \theta)\)</span> from what we get from the standard models of the convection zone in which the effect of rotation is not taken into account. In principle, it should be possible to calculate <span class="math inline">\(\Delta T (r, \theta)\)</span> from the theory of convective heat transport. However, this is a formidably difficult problem in practice and we calculate <span class="math inline">\(\Delta T (r, \theta)\)</span> in the deeper layers of the convection zone from the differential rotation measured by helioseismology by assuming that the thermal wind balance condition prevails in the deep layers of the convection zone. Since the effect of rotation on the convection is negligible above <span class="math inline">\(r = r_c\)</span>, we expect the radial temperature gradient <span class="math inline">\(dT/dr\)</span> to be independent of latitude in this layer, which implies that <span class="math inline">\(\Delta T (r, \theta)\)</span> does not vary with <span class="math inline">\(r\)</span> in this layer. It is this fact, coupled with the fact that the temperature drops sharply in this top layer, which makes the thermal wind term very large in this top layer. From the requirement that the centrifugal term also has to become large to balance the large thermal wind term in this layer, we can calculate the distribution of <span class="math inline">\(\Omega (r, \theta)\)</span> in this near-surface layer. We have found that our calculations give a layer resembling the NSSL.</p>
+<p>The non-variation of <span class="math inline">\(\Delta T (r, \theta)\)</span> with <span class="math inline">\(r\)</span> in the upper layers of the convection zone ensures that the pole-equator temperature difference does not vary in this layer. The means that the value of the pole-equator temperature difference at <span class="math inline">\(r_c\)</span> gets mapped to the solar surface. A careful measurement of the pole-equator temperature difference at the solar surface would enable us to assess the value of <span class="math inline">\(r_c\)</span> above which the convective motions are not affected much by rotation. The value 2.5 K of the pole-equator temperature difference reported by <span class="citation" data-cites="Rast2008">Rast, Ortiz, and Meisner (<a href="#ref-Rast2008" role="doc-biblioref">2008</a>)</span> led us to conclude that <span class="math inline">\(r_c \approx 0.96\)</span>. For this value of <span class="math inline">\(r_c\)</span>, the various aspects of observational data, including the structure of the NSSL, are explained very well by our theoretical model. Fairly sophisticated simulations of solar convection are now being carried on by many groups. We hope that such simulations may also eventually be able to give an indication of the value of <span class="math inline">\(r_c\)</span> above which the effect of rotation is negligible. Since the measurement of the pole-equator temperature difference allows us to assess <span class="math inline">\(r_c\)</span>, such a measurement can put important constraints on the simulations of solar convection. It appears that there have not been any independent measurements of the pole-equator temperature difference after the work of <span class="citation" data-cites="Rast2008">Rast, Ortiz, and Meisner (<a href="#ref-Rast2008" role="doc-biblioref">2008</a>)</span> done more than a decade ago. We hope that other groups will undertake this measurement in the near future, since the value of this temperature difference has connections with such important issues as the nature of the solar convection and the structure of the NSSL.</p>
+<p>The large-scale flows in the solar convection zone like the differential rotation and the meridional circulation play important roles in the flux transport dynamo model for explaining the solar cycle, which started being developed from the 1990s <span class="citation" data-cites="Wang1991 Choudhuri1995 Durney1995">(<a href="#ref-Wang1991" role="doc-biblioref">Wang, Sheeley, and Nash 1991</a>; <a href="#ref-Choudhuri1995" role="doc-biblioref">A. R. Choudhuri, Schüssler, and Dikpati 1995</a>; <a href="#ref-Durney1995" role="doc-biblioref">Durney 1995</a>)</span> and has been reviewed by several authors in the last few years <span class="citation" data-cites="Charbonneau2010 Choudhuri2011 Karak2014">(<a href="#ref-Charbonneau2010" role="doc-biblioref">Charbonneau 2010</a>; <a href="#ref-Choudhuri2011" role="doc-biblioref">Arnab Rai Choudhuri 2011</a>; <a href="#ref-Karak2014" role="doc-biblioref">Karak et al. 2014</a>)</span>. One crucial question is whether the NSSL is important in the solar dynamo process. One key idea in the solar dynamo models is that the toroidal magnetic field is generated by the strong differential rotation at the bottom of the solar convection zone, where the field can be stored in the stable sub-adiabatic layers below the bottom of the convection zone and can undergo amplification there. Srtands of the toroidal magnetic field eventually break out of the stable layers to rise through the convection zone due to magnetic buoyancy. Since the near-surface layer is a region of strong super-adiabatic temperature gradient which enhances magnetic buoyancy <span class="citation" data-cites="Moreno1983 Choudhuri1987">(<a href="#ref-Moreno1983" role="doc-biblioref">Moreno-Insertis 1983</a>; <a href="#ref-Choudhuri1987" role="doc-biblioref">Arnab Rai Choudhuri and Gilman 1987</a>)</span>, magnetic fields are expected to rise through this layer quickly without allowing much time for shear amplification. Unless there is some mechanism to keep magnetic fields stored in the NSSL for some time, most likely the NSSL is not important for the dynamo process, although there is not complete unanimity on this <span class="citation" data-cites="Brandenburg2005">(<a href="#ref-Brandenburg2005" role="doc-biblioref">Brandenburg 2005</a>)</span>. Models of the flux transport dynamo without including the NSSL give reasonable fits with observations <span class="citation" data-cites="Chatterjee2004">(<a href="#ref-Chatterjee2004" role="doc-biblioref">Chatterjee, Nandy, and Choudhuri 2004</a>)</span>. Dynamo-generated magnetic fields, however, can react back on the large-scale flows producing temporal variations with the solar cycle <span class="citation" data-cites="Chakraborty2009 Hazra2017">(<a href="#ref-Chakraborty2009" role="doc-biblioref">Chakraborty, Choudhuri, and Chatterjee 2009</a>; <a href="#ref-Hazra2017" role="doc-biblioref">G. Hazra, Choudhuri, and Miesch 2017</a>)</span>. For example, the meridional circulation varies periodically with the solar cycle and modelling it requires going beyond the thermal wind balance <a href="#ch5:eq3" data-reference-type="ref+label" data-reference="ch5:eq3">[ch5:eq3]</a> to include a time derivative term <span class="citation" data-cites="Hazra2017 Choudhuri2021b">(<a href="#ref-Hazra2017" role="doc-biblioref">G. Hazra, Choudhuri, and Miesch 2017</a>; <a href="#ref-Choudhuri2021b" role="doc-biblioref">Arnab Rai Choudhuri 2021b</a>)</span>. The thermal wind balance equation follows from the full equation for the meridional circulation under steady state conditions if the dissipation term can be ignored. Presumably, the thermal wind balance <a href="#ch5:eq3" data-reference-type="ref+label" data-reference="ch5:eq3">[ch5:eq3]</a> holds for the time-averaged part of large-scale flows, which has been our focus in this paper. However, there is evidence of random temporal fluctuations in the meridional circulation <span class="citation" data-cites="Karak2010 Karak2011 Choudhuri2012 Choudhuri2014 Hazra2019">(<a href="#ref-Karak2010" role="doc-biblioref">Karak 2010</a>; <a href="#ref-Karak2011" role="doc-biblioref">Karak and Choudhuri 2011</a>; <a href="#ref-Choudhuri2012" role="doc-biblioref">A. R. Choudhuri and Karak 2012</a>; <a href="#ref-Choudhuri2014" role="doc-biblioref">Arnab Rai Choudhuri 2014</a>; <a href="#ref-Hazra2019" role="doc-biblioref">G. Hazra et al. 2019</a>)</span>, possibly indicating slight violations of the thermal wind balance equation. Since the terms involved in the thermal wind balance are much larger than the other terms in the equation of the meridional circulation (see, for example, the discussion in the Appendix of <span class="citation" data-cites="Choudhuri2021b">Arnab Rai Choudhuri (<a href="#ref-Choudhuri2021b" role="doc-biblioref">2021b</a>)</span>), even a slight imbalance between these large terms is sufficient to cause fluctuation in the meridional circulations and we believe that the violations of the thermal wind balance remain very small.</p>
+<p>Lastly, we suggest that other solar-like stars with rotation periods similar to the Sun are likely to have similar shear layers near their surfaces, since the solar NSSL arises out of very general considerations which should hold for such stars. The study of starspots and stellar cycles in the last few years have suggested that the solar-like stars also must have large-scale flows like the differential rotation and the meridional circulation giving rise to dynamo cycles, as in the case of the Sun <span class="citation" data-cites="Karak2014a Choudhuri2017 Hazra2019b">(<a href="#ref-Karak2014a" role="doc-biblioref">Karak, Kitchatinov, and Choudhuri 2014</a>; <a href="#ref-Choudhuri2017" role="doc-biblioref">Arnab Rai Choudhuri 2017</a>; <a href="#ref-Hazra2019b" role="doc-biblioref">Gopal Hazra et al. 2019</a>)</span>. Although asteroseismology has started giving some initial results of differential rotation in solar-like stars <span class="citation" data-cites="Benomar2018">(<a href="#ref-Benomar2018" role="doc-biblioref">Benomar et al. 2018</a>)</span>, we are still very far for determining observationally whether other stars also have NSSL.</p>
+
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Antia1998" class="csl-entry" role="listitem">
+Antia, H. M., Sarbani Basu, and S. M. Chitre. 1998. <span>“<span class="nocase">Solar internal rotation rate and the latitudinal variation of the tachocline</span>”</span> 298 (2): 543–56. <a href="https://doi.org/10.1046/j.1365-8711.1998.01635.x">https://doi.org/10.1046/j.1365-8711.1998.01635.x</a>.
+</div>
+<div id="ref-Antia2008" class="csl-entry" role="listitem">
+Antia, H. M., S. Basu, and S. M. Chitre. 2008. <span>“<span class="nocase">Solar Rotation Rate and Its Gradients During Cycle 23</span>”</span> 681 (July): 680–92. <a href="https://doi.org/10.1086/588523">https://doi.org/10.1086/588523</a>.
+</div>
+<div id="ref-Bahcall2004" class="csl-entry" role="listitem">
+Bahcall, John N., and M. H. Pinsonneault. 2004. <span>“<span class="nocase">What Do We (Not) Know Theoretically about Solar Neutrino Fluxes?</span>”</span> 92 (12): 121301. <a href="https://doi.org/10.1103/PhysRevLett.92.121301">https://doi.org/10.1103/PhysRevLett.92.121301</a>.
+</div>
+<div id="ref-Bahcall1988" class="csl-entry" role="listitem">
+Bahcall, John N., and Roger K. Ulrich. 1988. <span>“<span class="nocase">Solar models, neutrino experiments, and helioseismology</span>.”</span> <em>Reviews of Modern Physics</em> 60 (2): 297–372. <a href="https://doi.org/10.1103/RevModPhys.60.297">https://doi.org/10.1103/RevModPhys.60.297</a>.
+</div>
+<div id="ref-Basu2016" class="csl-entry" role="listitem">
+Basu, Sarbani. 2016. <span>“<span class="nocase">Global seismology of the Sun</span>.”</span> <em>Living Reviews in Solar Physics</em> 13 (1): 2. <a href="https://doi.org/10.1007/s41116-016-0003-4">https://doi.org/10.1007/s41116-016-0003-4</a>.
+</div>
+<div id="ref-Belvedere1976" class="csl-entry" role="listitem">
+Belvedere, G., and L. Paterno. 1976. <span>“<span class="nocase">Large scale circulation in the convection zone and solar differential rotation.</span>”</span> 47 (2): 525–39. <a href="https://doi.org/10.1007/BF00154761">https://doi.org/10.1007/BF00154761</a>.
+</div>
+<div id="ref-Benomar2018" class="csl-entry" role="listitem">
+Benomar, O., M. Bazot, M. B. Nielsen, L. Gizon, T. Sekii, M. Takata, H. Hotta, S. Hanasoge, K. R. Sreenivasan, and J. Christensen-Dalsgaard. 2018. <span>“<span class="nocase">Asteroseismic detection of latitudinal differential rotation in 13 Sun-like stars</span>.”</span> <em>Science</em> 361 (6408): 1231–34. <a href="https://doi.org/10.1126/science.aao6571">https://doi.org/10.1126/science.aao6571</a>.
+</div>
+<div id="ref-Brandenburg2005" class="csl-entry" role="listitem">
+Brandenburg, A. 2005. <span>“<span class="nocase">The Case for a Distributed Solar Dynamo Shaped by Near-Surface Shear</span>”</span> 625 (May): 539–47. <a href="https://doi.org/10.1086/429584">https://doi.org/10.1086/429584</a>.
+</div>
+<div id="ref-Brown2010" class="csl-entry" role="listitem">
+Brown, B. P., M. K. Browning, A. S. Brun, M. S. Miesch, and J. Toomre. 2010. <span>“<span class="nocase">Persistent Magnetic Wreaths in a Rapidly Rotating Sun</span>”</span> 711 (March): 424–38. <a href="https://doi.org/10.1088/0004-637X/711/1/424">https://doi.org/10.1088/0004-637X/711/1/424</a>.
+</div>
+<div id="ref-Brun2010" class="csl-entry" role="listitem">
+Brun, A. S., H. M. Antia, and S. M. Chitre. 2010. <span>“<span class="nocase">Is the solar convection zone in strict thermal wind balance?</span>”</span> 510 (February): A33. <a href="https://doi.org/10.1051/0004-6361/200913166">https://doi.org/10.1051/0004-6361/200913166</a>.
+</div>
+<div id="ref-Chakraborty2009" class="csl-entry" role="listitem">
+Chakraborty, Sagar, Arnab Rai Choudhuri, and Piyali Chatterjee. 2009. <span>“<span class="nocase">Why Does the Sun’s Torsional Oscillation Begin before the Sunspot Cycle?</span>”</span> 102 (4): 041102. <a href="https://doi.org/10.1103/PhysRevLett.102.041102">https://doi.org/10.1103/PhysRevLett.102.041102</a>.
+</div>
+<div id="ref-Charbonneau2010" class="csl-entry" role="listitem">
+Charbonneau, P. 2010. <span>“<span class="nocase">Dynamo Models of the Solar Cycle</span>.”</span> <em>Liv. Rev. Sol. Phys.</em> 7 (September): 3. <a href="https://doi.org/10.12942/lrsp-2010-3">https://doi.org/10.12942/lrsp-2010-3</a>.
+</div>
+<div id="ref-Charbonneau1999" class="csl-entry" role="listitem">
+Charbonneau, P., J. Christensen-Dalsgaard, R. Henning, R. M. Larsen, J. Schou, M. J. Thompson, and S. Tomczyk. 1999. <span>“<span class="nocase">Helioseismic Constraints on the Structure of the Solar Tachocline</span>”</span> 527 (1): 445–60. <a href="https://doi.org/10.1086/308050">https://doi.org/10.1086/308050</a>.
+</div>
+<div id="ref-Chatterjee2004" class="csl-entry" role="listitem">
+Chatterjee, P., D. Nandy, and A. R. Choudhuri. 2004. <span>“<span class="nocase">Full-sphere simulations of a circulation-dominated solar dynamo: Exploring the parity issue</span>”</span> 427 (December): 1019–30. <a href="https://doi.org/10.1051/0004-6361:20041199">https://doi.org/10.1051/0004-6361:20041199</a>.
+</div>
+<div id="ref-Choudhuri2012" class="csl-entry" role="listitem">
+Choudhuri, A. R., and B. B. Karak. 2012. <span>“<span class="nocase">Origin of Grand Minima in Sunspot Cycles</span>.”</span> <em>Phys. Rev. Lett.</em> 109 (17): 171103.
+</div>
+<div id="ref-Choudhuri1995" class="csl-entry" role="listitem">
+Choudhuri, A. R., M. Schüssler, and M. Dikpati. 1995. <span>“<span class="nocase">The solar dynamo with meridional circulation.</span>”</span> 303 (November): L29.
+</div>
+<div id="ref-Choudhuri2011" class="csl-entry" role="listitem">
+Choudhuri, Arnab Rai. 2011. <span>“<span class="nocase">The origin of the solar magnetic cycle</span>.”</span> <em>Pramana</em> 77 (1): 77–96. <a href="https://doi.org/10.1007/s12043-011-0113-4">https://doi.org/10.1007/s12043-011-0113-4</a>.
+</div>
+<div id="ref-Choudhuri2014" class="csl-entry" role="listitem">
+———. 2014. <span>“<span class="nocase">The irregularities of the sunspot cycle and their theoretical modelling</span>.”</span> <em>Indian Journal of Physics</em> 88 (9): 877–84. <a href="https://doi.org/10.1007/s12648-014-0481-y">https://doi.org/10.1007/s12648-014-0481-y</a>.
+</div>
+<div id="ref-Choudhuri2017" class="csl-entry" role="listitem">
+———. 2017. <span>“<span class="nocase">Starspots, stellar cycles and stellar flares: Lessons from solar dynamo models</span>.”</span> <em>Science China Physics, Mechanics, and Astronomy</em> 60 (1): 19601. <a href="https://doi.org/10.1007/s11433-016-0413-7">https://doi.org/10.1007/s11433-016-0413-7</a>.
+</div>
+<div id="ref-Choudhuri2021a" class="csl-entry" role="listitem">
+———. 2021a. <span>“<span class="nocase">A Theoretical Estimate of the Pole-Equator Temperature Difference and a Possible Origin of the Near-Surface Shear Layer</span>”</span> 296 (2): 37. <a href="https://doi.org/10.1007/s11207-021-01784-7">https://doi.org/10.1007/s11207-021-01784-7</a>.
+</div>
+<div id="ref-Choudhuri2021b" class="csl-entry" role="listitem">
+———. 2021b. <span>“<span class="nocase">The meridional circulation of the Sun: Observations, theory and connections with the solar dynamo</span>.”</span> <em>Science China Physics, Mechanics, and Astronomy</em> 64 (3): 239601. <a href="https://doi.org/10.1007/s11433-020-1628-1">https://doi.org/10.1007/s11433-020-1628-1</a>.
+</div>
+<div id="ref-Choudhuri1987" class="csl-entry" role="listitem">
+Choudhuri, Arnab Rai, and Peter A. Gilman. 1987. <span>“<span class="nocase">The Influence of the Coriolis Force on Flux Tubes Rising through the Solar Convection Zone</span>”</span> 316 (May): 788. <a href="https://doi.org/10.1086/165243">https://doi.org/10.1086/165243</a>.
+</div>
+<div id="ref-Dalsgaard1996" class="csl-entry" role="listitem">
+Christensen-Dalsgaard, J., W. Dappen, S. V. Ajukov, E. R. Anderson, H. M. Antia, S. Basu, V. A. Baturin, et al. 1996. <span>“<span class="nocase">The Current State of Solar Modeling</span>.”</span> <em>Science</em> 272 (5266): 1286–92. <a href="https://doi.org/10.1126/science.272.5266.1286">https://doi.org/10.1126/science.272.5266.1286</a>.
+</div>
+<div id="ref-Durney1995" class="csl-entry" role="listitem">
+Durney, B. R. 1995. <span>“<span class="nocase">On a Babcock-Leighton dynamo model with a deep-seated generating layer for the toroidal magnetic field</span>”</span> 160 (September): 213–35. <a href="https://doi.org/10.1007/BF00732805">https://doi.org/10.1007/BF00732805</a>.
+</div>
+<div id="ref-Durney1971" class="csl-entry" role="listitem">
+Durney, B. R., and I. W. Roxburgh. 1971. <span>“<span class="nocase">Inhomogeneous Convection and the Equatorial Acceleration of the Sun</span>”</span> 16 (1): 3–20. <a href="https://doi.org/10.1007/BF00154496">https://doi.org/10.1007/BF00154496</a>.
+</div>
+<div id="ref-Foukal1975" class="csl-entry" role="listitem">
+Foukal, P., and J. R. Jokipii. 1975. <span>“<span class="nocase">On the rotation of gas and magnetic fields at the solar photosphere.</span>”</span> 199 (July): L71–73. <a href="https://doi.org/10.1086/181851">https://doi.org/10.1086/181851</a>.
+</div>
+<div id="ref-Gastine2014" class="csl-entry" role="listitem">
+Gastine, T., R. K. Yadav, J. Morin, A. Reiners, and J. Wicht. 2014. <span>“<span class="nocase">From solar-like to antisolar differential rotation in cool stars</span>”</span> 438 (February): L76–80. <a href="https://doi.org/10.1093/mnrasl/slt162">https://doi.org/10.1093/mnrasl/slt162</a>.
+</div>
+<div id="ref-Gilman1979" class="csl-entry" role="listitem">
+Gilman, P. A., and P. V. Foukal. 1979. <span>“<span class="nocase">Angular velocity gradients in the solar convection zone.</span>”</span> 229 (May): 1179–85. <a href="https://doi.org/10.1086/157052">https://doi.org/10.1086/157052</a>.
+</div>
+<div id="ref-Guerrero2013" class="csl-entry" role="listitem">
+Guerrero, G., P. K. Smolarkiewicz, A. G. Kosovichev, and N. N. Mansour. 2013. <span>“<span class="nocase">Differential Rotation in Solar-like Stars from Global Simulations</span>”</span> 779 (December): 176. <a href="https://doi.org/10.1088/0004-637X/779/2/176">https://doi.org/10.1088/0004-637X/779/2/176</a>.
+</div>
+<div id="ref-Hazra2017" class="csl-entry" role="listitem">
+Hazra, G., A. R. Choudhuri, and M. S. Miesch. 2017. <span>“<span class="nocase">A Theoretical Study of the Build-up of the Sun’s Polar Magnetic Field by using a 3D Kinematic Dynamo Model</span>”</span> 835 (January): 39. <a href="https://doi.org/10.3847/1538-4357/835/1/39">https://doi.org/10.3847/1538-4357/835/1/39</a>.
+</div>
+<div id="ref-Hazra2019" class="csl-entry" role="listitem">
+Hazra, G., J. Jiang, B. B Karak, and L. L. Kitchatinov. 2019. <span>“<span class="nocase">Stellar Cycles with Dynamo</span>.”</span><em>, Submitted</em> 000: 00.
+</div>
+<div id="ref-Hazra2019b" class="csl-entry" role="listitem">
+Hazra, Gopal, Jie Jiang, Bidya Binay Karak, and Leonid Kitchatinov. 2019. <span>“<span class="nocase">Exploring the Cycle Period and Parity of Stellar Magnetic Activity with Dynamo Modeling</span>”</span> 884 (1): 35. <a href="https://doi.org/10.3847/1538-4357/ab4128">https://doi.org/10.3847/1538-4357/ab4128</a>.
+</div>
+<div id="ref-Hotta2015" class="csl-entry" role="listitem">
+Hotta, H., M. Rempel, and T. Yokoyama. 2015. <span>“<span class="nocase">High-resolution Calculation of the Solar Global Convection with the Reduced Speed of Sound Technique. II. Near Surface Shear Layer with the Rotation</span>”</span> 798 (1): 51. <a href="https://doi.org/10.1088/0004-637X/798/1/51">https://doi.org/10.1088/0004-637X/798/1/51</a>.
+</div>
+<div id="ref-Howard1970" class="csl-entry" role="listitem">
+Howard, Robert, and J. Harvey. 1970. <span>“<span class="nocase">Spectroscopic Determinations of Solar Rotation</span>”</span> 12 (1): 23–51. <a href="https://doi.org/10.1007/BF02276562">https://doi.org/10.1007/BF02276562</a>.
+</div>
+<div id="ref-Howe2009" class="csl-entry" role="listitem">
+Howe, Rachel. 2009. <span>“<span class="nocase">Solar Interior Rotation and its Variation</span>.”</span> <em>Living Reviews in Solar Physics</em> 6 (1): 1. <a href="https://doi.org/10.12942/lrsp-2009-1">https://doi.org/10.12942/lrsp-2009-1</a>.
+</div>
+<div id="ref-Howe2005" class="csl-entry" role="listitem">
+Howe, R., J. Christensen-Dalsgaard, F. Hill, R. Komm, J. Schou, and M. J. Thompson. 2005. <span>“<span>Solar Convection-Zone Dynamics, 1995-2004</span>”</span> 634 (2): 1405–15. <a href="https://doi.org/10.1086/497107">https://doi.org/10.1086/497107</a>.
+</div>
+<div id="ref-Karak2010" class="csl-entry" role="listitem">
+Karak, B. B. 2010. <span>“<span class="nocase">Importance of Meridional Circulation in Flux Transport Dynamo: The Possibility of a Maunder-like Grand Minimum</span>”</span> 724 (December): 1021–29. <a href="https://doi.org/10.1088/0004-637X/724/2/1021">https://doi.org/10.1088/0004-637X/724/2/1021</a>.
+</div>
+<div id="ref-Karak2011" class="csl-entry" role="listitem">
+Karak, B. B., and A. R. Choudhuri. 2011. <span>“<span class="nocase">The Waldmeier effect and the flux transport solar dynamo</span>”</span> 410 (January): 1503–12. <a href="https://doi.org/10.1111/j.1365-2966.2010.17531.x">https://doi.org/10.1111/j.1365-2966.2010.17531.x</a>.
+</div>
+<div id="ref-Karak2014" class="csl-entry" role="listitem">
+Karak, B. B., J. Jiang, M. S. Miesch, P. Charbonneau, and A. R. Choudhuri. 2014. <span>“<span class="nocase">Flux Transport Dynamos: From Kinematics to Dynamics</span>”</span> 186 (December): 561–602. <a href="https://doi.org/10.1007/s11214-014-0099-6">https://doi.org/10.1007/s11214-014-0099-6</a>.
+</div>
+<div id="ref-Karak2014a" class="csl-entry" role="listitem">
+Karak, B. B., L. L. Kitchatinov, and A. R. Choudhuri. 2014. <span>“<span class="nocase">A Dynamo Model of Magnetic Activity in Solar-like Stars with Different Rotational Velocities</span>”</span> 791 (August): 59. <a href="https://doi.org/10.1088/0004-637X/791/1/59">https://doi.org/10.1088/0004-637X/791/1/59</a>.
+</div>
+<div id="ref-Kippenhahn1990" class="csl-entry" role="listitem">
+Kippenhahn, Rudolf, and Alfred Weigert. 1990. <em><span class="nocase">Stellar Structure and Evolution</span></em>.
+</div>
+<div id="ref-Kitchatinov1995" class="csl-entry" role="listitem">
+Kitchatinov, L. L., and G. Ruediger. 1995. <span>“<span class="nocase">Differential rotation in solar-type stars: revisiting the Taylor-number puzzle.</span>”</span> 299 (July): 446.
+</div>
+<div id="ref-Kitchatinov2013" class="csl-entry" role="listitem">
+Kitchatinov, Leonid L. 2013. <span>“<span class="nocase">Theory of differential rotation and meridional circulation</span>.”</span> In <em>Solar and Astrophysical Dynamos and Magnetic Activity</em>, edited by Alexander G. Kosovichev, Elisabete de Gouveia Dal Pino, and Yihua Yan, 294:399–410. IAU Symposium. <a href="https://doi.org/10.1017/S1743921313002834">https://doi.org/10.1017/S1743921313002834</a>.
+</div>
+<div id="ref-Kuhn1988" class="csl-entry" role="listitem">
+Kuhn, J. R., K. G. Libbrecht, and R. H. Dicke. 1988. <span>“<span class="nocase">The Surface Temperature of the Sun and Changes in the Solar Constant</span>.”</span> <em>Science</em> 242 (4880): 908–11. <a href="https://doi.org/10.1126/science.242.4880.908">https://doi.org/10.1126/science.242.4880.908</a>.
+</div>
+<div id="ref-Longcope2002" class="csl-entry" role="listitem">
+Longcope, Dana, and Arnab Rai Choudhuri. 2002. <span>“<span class="nocase">The Orientational Relaxation of Bipolar Active Regions</span>”</span> 205 (1): 63–92. <a href="https://doi.org/10.1023/A:1013896013842">https://doi.org/10.1023/A:1013896013842</a>.
+</div>
+<div id="ref-Matilsky2019" class="csl-entry" role="listitem">
+Matilsky, Loren I., Bradley W. Hindman, and Juri Toomre. 2019. <span>“<span class="nocase">The Role of Downflows in Establishing Solar Near-surface Shear</span>”</span> 871 (2): 217. <a href="https://doi.org/10.3847/1538-4357/aaf647">https://doi.org/10.3847/1538-4357/aaf647</a>.
+</div>
+<div id="ref-Matilsky2020" class="csl-entry" role="listitem">
+———. 2020. <span>“<span class="nocase">Revisiting the Sun’s Strong Differential Rotation along Radial Lines</span>”</span> 898 (2): 111. <a href="https://doi.org/10.3847/1538-4357/ab9ca0">https://doi.org/10.3847/1538-4357/ab9ca0</a>.
+</div>
+<div id="ref-Moreno1983" class="csl-entry" role="listitem">
+Moreno-Insertis, F. 1983. <span>“<span class="nocase">Rise times of horizontal magnetic flux tubes in the convection zone of the sun</span>”</span> 122 (1-2): 241–50.
+</div>
+<div id="ref-Rast2008" class="csl-entry" role="listitem">
+Rast, Mark P., Ada Ortiz, and Randle W. Meisner. 2008. <span>“<span class="nocase">Latitudinal Variation of the Solar Photospheric Intensity</span>”</span> 673 (2): 1209–17. <a href="https://doi.org/10.1086/524655">https://doi.org/10.1086/524655</a>.
+</div>
+<div id="ref-Schou1998" class="csl-entry" role="listitem">
+Schou, J., H. M. Antia, S. Basu, R. S. Bogart, R. I. Bush, S. M. Chitre, J. Christensen-Dalsgaard, et al. 1998. <span>“<span class="nocase">Helioseismic Studies of Differential Rotation in the Solar Envelope by the Solar Oscillations Investigation Using the Michelson Doppler Imager</span>”</span> 505 (September): 390–417. <a href="https://doi.org/10.1086/306146">https://doi.org/10.1086/306146</a>.
+</div>
+<div id="ref-Spruit1974" class="csl-entry" role="listitem">
+Spruit, H. C. 1974. <span>“<span class="nocase">A model of the solar convection zone</span>”</span> 34 (2): 277–90. <a href="https://doi.org/10.1007/BF00153665">https://doi.org/10.1007/BF00153665</a>.
+</div>
+<div id="ref-Vasil2020" class="csl-entry" role="listitem">
+Vasil, Geoffrey M., Keith Julien, and Nicholas A. Featherstone. 2020. <span>“<span class="nocase">The rotational influence on solar convection</span>.”</span> <em>arXiv e-Prints</em>, October, arXiv:2010.15383. <a href="https://arxiv.org/abs/2010.15383">https://arxiv.org/abs/2010.15383</a>.
+</div>
+<div id="ref-Wang1991" class="csl-entry" role="listitem">
+Wang, Y.-M., N. R. Sheeley Jr., and A. G. Nash. 1991. <span>“<span class="nocase">A new solar cycle model including meridional circulation</span>”</span> 383 (December): 431–42. <a href="https://doi.org/10.1086/170800">https://doi.org/10.1086/170800</a>.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./chapter4.html" class="pagination-link" aria-label="Measurements of Solar Differential Rotation Using the Century Long Kodaikanal Sunspot Data">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Measurements of Solar Differential Rotation Using the Century Long Kodaikanal Sunspot Data</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./chapter6.html" class="pagination-link" aria-label="Magnetic field dependence of bipolar magnetic region tilts on the Sun: Indication of tilt quenching">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Magnetic field dependence of bipolar magnetic region tilts on the Sun: Indication of tilt quenching</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

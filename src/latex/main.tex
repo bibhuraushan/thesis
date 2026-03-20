@@ -1,0 +1,310 @@
+%Preambles
+%================================================================= 
+%Thesis for Bibhuti Kumar Jha
+%Submitted to University of Pondicherry
+
+%Load Pcakages and class files
+\documentclass[a4paper, 12pt, twoside]{styles/Thesis}
+\usepackage{graphicx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{epsfig}
+\usepackage[justification=justified,singlelinecheck=false]{caption}
+\usepackage{pdflscape}
+\usepackage{enumerate}
+\usepackage{rotating}
+\usepackage{mathrsfs}
+\usepackage{addfont}
+\usepackage{wasysym}
+\usepackage{natbib}
+\bibpunct{(}{)}{;}{a}{}{,}
+\usepackage{threeparttable}
+\usepackage{etoolbox}
+\usepackage{lipsum}
+\usepackage{styles/journalsname}
+\usepackage[unicode]{hyperref}
+% \usepackage{fontenc}
+\usepackage{epigraph}
+\usepackage{multicol}
+\usepackage{physics}
+\usepackage{bm}
+\usepackage{bibentry}
+% \usepackage{enumitem}
+% \usepackage{gensymb}
+% \usepackage[symbol]{footmisc}
+% \usepackage{gensymb}
+\usepackage{color, soul}
+\setstcolor{red}
+\setulcolor{red}
+\usepackage{pdfpages}
+
+% \includeonly{Chapters/chapter1}%, Chapters/chapter2, Chapters/chapter7}
+
+
+\setlength\epigraphwidth{.8\textwidth}
+\setlength\epigraphrule{0pt}
+
+\addfont[1.25]{OT1}{hge}{\hge}
+\graphicspath{{Figures/}}
+\appto\TPTnoteSettings{\footnotesize}  %% reduces the table foot note font size
+
+%new commands
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\def\myfnt{\ifx\protect\@typeset@protect\expandafter\footnote\else\expandafter\@gobble\fi}
+\def\nswe#1#2#3{#1\,$#2^\circ\,#3'$}
+\def\hyp{--}
+\newcommand{\lt}{long--term}
+\newcommand{\tobs}{${\rm T}_{\rm OBS}$}
+\newcommand{\q}{\mathit q}
+\renewcommand{\degree}{^\circ}
+\newcommand{\pa}{\partial}
+\newcommand{\Rsun}{${\rm R}_\odot$}
+\newcommand{\Bmax}{$B_{\rm max}$}
+\newcommand{\angles}[1]{\ensuremath{\left\langle #1 \right\rangle}}
+\def\bl{Babcock--Leighton}
+\newcommand{\aname}[1]{\textcolor{RoyalBlue}{\textbf{#1}}}
+
+\newcommand{\rp}[1]{\textcolor{red}{\textbf{#1}}}
+\def\ndash{\,--\,}
+
+%Main documents
+\begin{document}
+
+%Front Page
+\frontmatter                            % Begin Roman style (i, ii, iii, iv...) page numbering
+\pagenumbering{alph}
+\input{Preambles/cover.tex}
+\pagestyle{empty}
+\clearpage\null\newpage
+\setboolean{@twoside}{true}              %to switch from two side to one side.
+
+
+%Second Title Page
+\input{Preambles/cover2.tex} 
+\pagestyle{empty}                        % No headers or footers for the following pages
+\thispagestyle{plain}
+\onehalfspacing
+
+%Third details page
+\thispagestyle{plain}
+\onehalfspacing
+\input{Preambles/cover3.tex}
+
+\cleardoublepage
+\phantomsection
+\normalfont
+\setstretch{1.3} 
+% It is better to have smaller font and larger line spacing than the other way round
+
+% Define the page headers using the FancyHdr package and set up for one-sided printing
+% Clears all page headers and footers
+\fancyhead{}  
+\rhead{\thepage}
+% Sets the right side header to show the page number
+\lhead{}
+% Clears the left side page header
+
+\pagestyle{fancy}
+% Finally, use the "fancy" page style to implement the FancyHdr headers
+
+\setboolean{@twoside}{false}
+%to switch from two side to one side.
+%% ----------------------------------------------------------------
+% Declaration Page required for the Thesis, your institution may give you a different text to place here
+% \thispagestyle{empty}
+\input{Preambles/declaration.tex}
+% \includepdf[pages={1}]{declaration_student.pdf}
+\input{Preambles/certificate.tex}
+
+%Empty page
+\clearpage
+\thispagestyle{empty}
+\noindent
+\vspace{2.5cm}
+\newpage 
+\pagestyle{empty}
+
+%List of Publications
+\input{Preambles/publication_list.tex}
+
+\input{Preambles/publication_conference}
+
+%Empty page
+\clearpage
+\thispagestyle{empty}
+\noindent
+\vspace{2.5cm}
+\newpage 
+\pagestyle{empty}
+
+%Presentation
+\input{Preambles/oral_presentation.tex}
+
+% %Empty page
+% \clearpage
+% \thispagestyle{empty}
+% \noindent
+% \vspace{2.5cm}
+% \newpage 
+% \pagestyle{empty}
+
+
+%==========
+\setboolean{@twoside}{true} 
+% \setstretch{1.5} 
+\setstretch{1} 
+\pagestyle{empty}
+\addtocontents{toc}{\protect\setcounter{tocdepth}{-1}}
+
+
+%Acknowladgement
+\acknowledgements{
+
+\input{Preambles/acknowladgment.tex}
+\vspace{4 cm}
+\hspace{12 cm}  \large{\textbf{--Bibhu}}}
+
+%Empty page
+% \clearpage
+% \thispagestyle{empty}
+% \noindent
+% \vspace{2.5cm}
+% \newpage 
+% \pagestyle{empty}
+
+
+
+% Data Uses
+\newpage
+\input{Preambles/data_uses.tex}
+
+
+%Blanck Page
+\newpage
+\thispagestyle{empty}
+\noindent
+\vspace{2.5cm}
+
+
+%Dedicated to
+\input{Preambles/dedication.tex}
+
+
+\addtocontents{toc}{\protect\setcounter{tocdepth}{2}}
+\clearpage
+
+\pagenumbering{roman}
+\frontmatter
+
+
+%Abstract
+\Abstract{
+\addtocontents{toc}{}
+\input{Chapters/abstract.tex}}
+\clearpage
+\pagestyle{fancy}
+
+
+%Table of contents
+\lhead{\emph{Contents}}
+% \setcounter{tocdepth}{5}
+\tableofcontents
+
+%List of Figures
+\lhead{\emph{List of Figures}}
+\listoffigures 
+
+%List of Tables
+\lhead{\emph{List of Tables}}
+\listoftables 
+
+
+%Abbreviations
+\input{Preambles/abbreviations.tex}
+
+
+%Main part
+\addtocontents{toc}{\vspace{2em}}
+\setboolean{@twoside}{true}
+\mainmatter	
+\pagestyle{fancy}
+
+
+%Chapter~1
+\include{Chapters/chapter1}
+
+%Chapter~2
+\include{Chapters/chapter2}
+
+% %Chapter~3
+\include{Chapters/chapter3}
+
+% %Chapter~4
+\include{Chapters/chapter4}
+
+% %Chapter~5
+\include{Chapters/chapter5}
+
+% % Chapter~6
+\include{Chapters/chapter6}
+
+% Chapter~7
+\include{Chapters/chapter7}
+
+%% ----------------------------------------------------------------
+% Now begin the Appendices, including them as separate files
+
+\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
+
+\appendix % Cue to tell LaTeX that the following 'chapters' are Appendices
+% \input{Chapters/appendix_ch4}
+\input{Chapters/appendix_ch5}
+\addtocontents{toc}{\vspace{2em}}  % Add a gap in the Contents, for aesthetics
+
+\backmatter
+
+%==========
+\newpage
+
+
+\lhead{\emph{Bibliography}}
+
+\setstretch{0}
+% \fontsize{10pt}{12pt}
+% \bibliographystyle{aasjournal} 
+\bibliographystyle{spr-mp-sola} 
+% \bibliographystyle{mnras}
+% \begin{multicols}{2}
+\bibliography{all_citation} 
+% \nobibliography{all_citation} 
+% \end{multicols}
+
+%comments from referees
+\newpage
+\thispagestyle{plain}
+\setstretch{1}
+\section*{Comments}
+{\large {\bf $\bullet$ Referee-I}}\\
+\headrule
+\vspace{-0.5cm}
+The data analyzed in this thesis builds upon the commendable efforts in digitizing and using the long term data from the Kodaikanal solar observatory. The thesis makes original contributions by way of automated methods of measuring sunspot features. The results from these automated methods are contrasted with earlier results regarding differential rotation that used limited data. The thesis also includes detailed theoretical work on the near-surface shear layer and the tilt quenching mechanism for sunspots. Taken together, the work in this thesis makes a number of important contributions to our understanding of the solar dynamo.
+
+Excellent chapter layout and arrangement. I would like to especially commend the organization and readability of the introduction chapter.\\[0.5cm]
+% {\large {\bf $\bullet$ Referee-II}}\\
+% \headrule
+% \vspace{-0.5cm}
+
+% % The novel methods are utilized to analyze the long term solar observational data. The results are derived and partially published in form of the scientific papers in peer reviewed journal. In the first two chapter, the present thesis deals with the the introduction, observational data and its analysis. In Chapter 2 
+% The content of the thesis is novel and outstanding original scientific results. The thesis can be accepted in the present form without any correction.
+
+% \vspace{1cm}
+{\large {\bf $\bullet$ Referee-II}}\\
+\headrule
+\vspace{-0.5cm}
+This thesis presents four substantial results, each Of which mieht have been worthy Of expansion into a Ph.D.Most impressive, it does not read like a disjoint "staple" thesis, but rather comes together as a whole, greater than the sum Of its
+parts. The thesis isstrong in both theory and observation. I was alsoys im-pressed by the careful and systematic approach to the research throughout the thesis. For example, the preprocessing methed set up to eliminated iiogue pixels (3.2), or the efforts taken to double-check/crossvalidate the method for q evaluation (3.3) or differential rotation (4.4) via other datasets (SOHO/MDI, SDO/HMI).
+
+The opening review chapter was well organized, motivated, and informative, providing the background required for the reader to fully appreciate the rest of the
+thesis. It also had an excellent narrative flow, making it a pleasure to read. The following chapters on data analysis, penumbra to umbra area ratio, differential rotation, NSSL, and tilt quenching make their points clearly and are well-supported with figures and tables. The final chapter does a nice job of summarizing the results and novelty of the work and describing future plans.
+
+\end{document}
+

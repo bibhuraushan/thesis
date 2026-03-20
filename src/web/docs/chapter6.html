@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>6&nbsp; Magnetic field dependence of bipolar magnetic region tilts on the Sun: Indication of tilt quenching – Long-term solar observations: probing the solar interior and magnetic fields</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./chapter7.html" rel="next">
+<link href="./chapter5.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-27c261d06b905028a18691de25d09dde.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-234501a227967ac462f24af7be37efa8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-27c261d06b905028a18691de25d09dde.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter6.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Magnetic field dependence of bipolar magnetic region tilts on the Sun: Indication of tilt quenching</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Long-term solar observations: probing the solar interior and magnetic fields</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Study of Sunspot Penumbra to Umbra Area Ratio using Kodaikanal White-light Digitized Data</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Measurements of Solar Differential Rotation Using the Century Long Kodaikanal Sunspot Data</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">A Theoretical Model of the Near–Surface Shear Layer of the Sun</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter6.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Magnetic field dependence of bipolar magnetic region tilts on the Sun: Indication of tilt quenching</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">The Conclusion</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#ch6:intro" id="toc-ch6:intro" class="nav-link active" data-scroll-target="#ch6\:intro"><span class="header-section-number">6.1</span> Introduction</a></li>
+  <li><a href="#ch6:method" id="toc-ch6:method" class="nav-link" data-scroll-target="#ch6\:method"><span class="header-section-number">6.2</span> Data and Method</a></li>
+  <li><a href="#ch6:res" id="toc-ch6:res" class="nav-link" data-scroll-target="#ch6\:res"><span class="header-section-number">6.3</span> Results and Discussions</a>
+  <ul class="collapse">
+  <li><a href="#ch6:quenching" id="toc-ch6:quenching" class="nav-link" data-scroll-target="#ch6\:quenching"><span class="header-section-number">6.3.1</span> Magnetic quenching of tilt angle</a></li>
+  </ul></li>
+  <li><a href="#ch6:conclusion" id="toc-ch6:conclusion" class="nav-link" data-scroll-target="#ch6\:conclusion"><span class="header-section-number">6.4</span> Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="Chap6" class="quarto-section-identifier"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Magnetic field dependence of bipolar magnetic region tilts on the Sun: Indication of tilt quenching</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="ch6:intro" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="ch6:intro"><span class="header-section-number">6.1</span> Introduction</h2>
+<p>Sunspots are the regions of concentrated magnetic field observed as dark spots in white-light images. In the magnetograms, we find two regions of opposite polarities appearing close to each other. Thus the sunspots that we see in white light image are essentially two poles of a more general feature called the Bipolar Magnetic Regions (BMR). However, the weaker BMRs produce negligible intensity contrast and hence go undetected in white light images. In general, BMRs are tilted with respect to the equator and statistically, this tilt increases with latitude—popularly known as Joy’s law <span class="citation" data-cites="Hale1908">(<a href="#ref-Hale1908" role="doc-biblioref">Hale 1908</a>)</span>.</p>
+<p>The tilt is crucial for the generation of the poloidal magnetic field through the decay and dispersal of the BMRs near the solar surface, which is popularly known as the &nbsp;process. While this was proposed in the 60s by <span class="citation" data-cites="Babcock1961">Babcock (<a href="#ref-Babcock1961" role="doc-biblioref">1961</a>)</span> and <span class="citation" data-cites="Leighton1964">R. B. Leighton (<a href="#ref-Leighton1964" role="doc-biblioref">1964</a>)</span>, in recent years, this process has received significant attention due to its support from observational studies <span class="citation" data-cites="DasiEspuig2010 Kitchatinov2010 MunozJaramillo2013 Priyal2014">(<a href="#ref-DasiEspuig2010" role="doc-biblioref">Dasi-Espuig et al. 2010</a>; <a href="#ref-Kitchatinov2010" role="doc-biblioref">Kitchatinov and Olemskoy 2010</a>; <a href="#ref-MunozJaramillo2013" role="doc-biblioref">Muñoz-Jaramillo et al. 2013</a>; <a href="#ref-Priyal2014" role="doc-biblioref">Priyal et al. 2014</a>)</span>. Based on this &nbsp;process, several surface flux transport models have been constructed, which are successful in reproducing many features of the solar surface <span class="citation" data-cites="Jiang2014a">(<a href="#ref-Jiang2014a" role="doc-biblioref">Jiang et al. 2014</a>)</span>. Many dynamo models, including the popular flux transport dynamo models, have also been constructed based on this &nbsp;process <span class="citation" data-cites="Leighton1969 Wang1991a Wang1991">(<a href="#ref-Leighton1969" role="doc-biblioref">Robert B. Leighton 1969</a>; <a href="#ref-Wang1991a" role="doc-biblioref">Y.-M. Wang and Sheeley 1991</a>; <a href="#ref-Wang1991" role="doc-biblioref">Y.-M. Wang, Sheeley, and Nash 1991</a>)</span>; see reviews <span class="citation" data-cites="Charbonneau2010 Karak2014 Choudhuri2018">(<a href="#ref-Charbonneau2010" role="doc-biblioref">Charbonneau 2010</a>; <a href="#ref-Karak2014" role="doc-biblioref">B. B. Karak et al. 2014</a>; <a href="#ref-Choudhuri2018" role="doc-biblioref">Choudhuri 2018</a>)</span>.</p>
+<p>A serious concern in these &nbsp;models is the saturation of magnetic field. There must be a nonlinear quenching to suppress the growth of magnetic field in any kinematic dynamo model such as the &nbsp;ones. In the latter models, large-scale velocities, namely, meridional flow and differential rotation are specified (broadly through observations), while the small-scale velocity is parametrized such as in the form of turbulent diffusivity. Therefore, the most obvious choice in these models is to include a nonlinearity in the &nbsp;process. In all the previous &nbsp;dynamo models, a magnetic field dependent quenching is included such that the poloidal field production is reduced when the toroidal magnetic field exceeds the so-called saturation field <span class="math inline">\(B_0\)</span> <span class="citation" data-cites="Charbonneau2010">(<a href="#ref-Charbonneau2010" role="doc-biblioref">Charbonneau 2010</a>)</span>. For the &nbsp;process, this requires that the tilt must be reduced when the BMR field strength exceeds a certain value; see <span class="citation" data-cites="Lemerle2017 Karak2017 Karak2018">Lemerle and Charbonneau (<a href="#ref-Lemerle2017" role="doc-biblioref">2017</a>; <a href="#ref-Karak2017" role="doc-biblioref">B. B. Karak and Miesch 2017</a>, <a href="#ref-Karak2018" role="doc-biblioref">2018</a>)</span> for specific requirement of this idea.</p>
+<p>We believe that the BMRs are produced due to buoyant rise of the strong toroidal magnetic flux tubes from the base of the convection zone (CZ) <span class="citation" data-cites="Parker1955a">(<a href="#ref-Parker1955a" role="doc-biblioref">Parker 1955</a>)</span>. From the thin flux tube model, we know that during the rise of toroidal flux in the CZ, the Coriolis force induced by the diverging east-west velocity near the loop apex causes a tilt <span class="citation" data-cites="DSilva1993 Fan1994">(<a href="#ref-DSilva1993" role="doc-biblioref">D’Silva and Choudhuri 1993</a>; <a href="#ref-Fan1994" role="doc-biblioref">Fan, Fisher, and McClymont 1994</a>)</span>. Therefore, we expect the rise time of toroidal flux tube and thus the tilt to decrease with increase of magnetic field in the tube. This idea can potentially lead to a quenching in the &nbsp;process.</p>
+<p>Although the thin flux tube model explains some observed features of BMRs, it does not capture the detailed dynamics of solar CZ. Indeed, including the convection, <span class="citation" data-cites="Weber2011">Maria A. Weber, Fan, and Miesch (<a href="#ref-Weber2011" role="doc-biblioref">2011</a>)</span> find a significant change in the behaviour of BMR tilt. They find the tilt to increase with the magnetic field first and then decrease in accordance with the thin flux tube model.</p>
+<p>Using magnetogram data corresponding to 1988–2001, <span class="citation" data-cites="Tian2003">Tian, Liu, and Wang (<a href="#ref-Tian2003" role="doc-biblioref">2003</a>)</span> found a systematic variation of the BMR tilt with the magnetic flux content. Surprisingly, using <em>Michelson Doppler Imager</em>(MDI) magnetograms during 1996 – 2011, <span class="citation" data-cites="Stenflo2012a">Stenflo and Kosovichev (<a href="#ref-Stenflo2012a" role="doc-biblioref">2012</a>)</span> did not find any systematic variation of the BMR tilt with the magnetic flux and they claim that their result rules out the thin flux-tube model. However, we should not forget that the magnetic field of BMR also vary with the magnetic flux <span class="citation" data-cites="Tlatov2014">(<a href="#ref-Tlatov2014" role="doc-biblioref">A. G. Tlatov and Pevtsov 2014</a>)</span>, and in the analysis of <span class="citation" data-cites="Stenflo2012a">Stenflo and Kosovichev (<a href="#ref-Stenflo2012a" role="doc-biblioref">2012</a>)</span>, the variation of magnetic field is ignored. Therefore, the motivation of the present Letter is first to analyse the BMRs based on their magnetic field strength. Then we shall check how the tilt changes with the magnetic field strength and whether there is any quenching in the tilt to support the theoretical models of BMR formation and the &nbsp;dynamo saturation.</p>
+</section>
+<section id="ch6:method" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="ch6:method"><span class="header-section-number">6.2</span> Data and Method</h2>
+<p>In this work, we have used the full disk Line of Sight (LOS) magnetogram with cadence of 6 hours and Intensity Continuum (IC) with caence of 24 hours from <em>Michelson Doppler Imager</em> [MDI: 1996–2011; <span class="citation" data-cites="Scherrer1995">Scherrer et al. (<a href="#ref-Scherrer1995" role="doc-biblioref">1995</a>)</span>] and <em>Helioseismic and Magnetic Imager</em> [HMI: 2010–2018; <span class="citation" data-cites="Schou2012">Schou et al. (<a href="#ref-Schou2012" role="doc-biblioref">2012</a>)</span>] for identification of BMRs.</p>
+<p>The magnetograms taken from these two instruments, give only the LOS component of magnetic field. To get the magnetic field in the direction normal to the solar surface we have corrected for the projection effect. The projection effect becomes more and more critical as we go towards the limb of the solar disk.Therefore, in the first step, we have restricted ourselves up to 0.9 . Later on, to avoid the uncertainty in the magnetic field measurement we have also excluded the BMRs which have absolute mean heliographic longitude greater than 50<span class="math inline">\(^\circ\)</span> from our analysis.</p>
+<p>To identify BMRs, we have followed the method given in <span class="citation" data-cites="Stenflo2012a">Stenflo and Kosovichev (<a href="#ref-Stenflo2012a" role="doc-biblioref">2012</a>)</span>. So we have first applied a threshold on magnetic field strength and then a moderate flux balance condition to avoid the false detection of unipolar spot or BMR with large flux difference (see <a href="#ch6:fig1" data-reference-type="ref+label" data-reference="ch6:fig1">1.1</a>(c–d)). Unlike <span class="citation" data-cites="Stenflo2012a">Stenflo and Kosovichev (<a href="#ref-Stenflo2012a" role="doc-biblioref">2012</a>)</span>, we have applied a 2D Gaussian smoothing with FWHM of 3 pixels <span class="citation" data-cites="Hagenaar1999">(<a href="#ref-Hagenaar1999" role="doc-biblioref">Hagenaar et al. 1999</a>)</span> to reduce the spatial noise, before calculating (I) heliographic coordinate, (II) magnetic flux and (III) maximum field density from detected BMRs. Since maximum magnetic field density mimics the maximum field strength, we call it as the maximum field strength <span class="math inline">\(B_\mathrm{max}\)</span>. While calculating <span class="math inline">\(B_\mathrm{max}\)</span> for HMI data, we have multiplied it by a factor of 1.4 to bring two data sets on the same scale <span class="citation" data-cites="Liu2012">(<a href="#ref-Liu2012" role="doc-biblioref">Liu et al. 2012</a>)</span>. Tilts of BMRs have been calculated with respect to solar E–W direction considering the spherical geometry of the Sun.</p>
+<figure id="ch6:fig1" data-latex-placement="!ht" class="figure">
+<embed src="Figures/Chapter6/image_6_1.png">
+<figcaption>
+Representatives magnetograms of (c) MDI and (d) HMI (saturated to <span class="math inline">±</span>1.5 kG) with BMR<span class="math inline"><span class="math inline">\(_{\rm{WS}}\)</span></span> (red box) and BMR<span class="math inline"><span class="math inline">\(_{\rm{NS}}\)</span></span> (blue). (a, b, e, and f): show IC counterparts.
+</figcaption>
+</figure>
+</section>
+<section id="ch6:res" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="ch6:res"><span class="header-section-number">6.3</span> Results and Discussions</h2>
+<p>Before we explore the magnetic field dependence of BMR tilt, we first present the distribution of the maximum magnetic field &nbsp;of BMRs in <a href="#ch6:fig2" data-reference-type="ref+label" data-reference="ch6:fig2">1.2</a>(a-b). For the time being, we ignore the solid and dashed lines in these figures. We observe two well-separated peaks at around 600&nbsp;G and 2100&nbsp;G. These peaks are seen both in MDI and HMI data. HMI data includes the solar cycle 24, which is a relatively weak cycle and contains less number of strong field BMRs compare to weak field BMRs. Despite the data obtained from two different instruments and two different solar cycles, we find the presence of two distinct peaks in both data sets. These two distinct peaks remain even when we do not smooth the data or smooth with different windows. However, as we smooth the data with a wider averaging window, these peaks tend to flatten out as well as shift slightly towards lower values. In the extreme limit, when we take the average magnetic field (i.e., window size equals to the BMR area), the two observed peaks disappear. This is expected because the magnetic field falls rapidly as we move away from the BMR center.</p>
+<figure id="ch6:fig2" data-latex-placement="!ht" class="figure">
+<embed src="Figures/Chapter6/image_6_2.png">
+<figcaption>
+(a-b): Distributions of <span class="math inline"><span class="math inline">\(B_{\rm
+max}\)</span></span> in the BMRs from MDI (left panel) and HMI (right). Red and blue respectively show <span class="math inline"><span class="math inline">\(B_{\rm max}\)</span></span> distributions of BMR<span class="math inline"><span class="math inline">\(_{\rm WS}\)</span></span> (having counterpart in IC) and BMR<span class="math inline"><span class="math inline">\(_{\rm NS}\)</span></span> (no counterpart in IC). The vertical axes of two panes are divided by 315 and 388, respectively to bring the maxima of distributions to unity. Bottom: Time-latitude distribution of BMR<span class="math inline"><span class="math inline">\(_{\rm WS}\)</span></span> (red) and BMR<span class="math inline"><span class="math inline">\(_{\rm NS}\)</span></span> (blue).
+</figcaption>
+</figure>
+<p>It appears that the whole HMI distribution is slightly shifted to the left side and therefore the peaks appear at slightly smaller &nbsp;than in MDI data. This could be due to different solar cycle, or it could be that the factor 1.4 used to scale the HMI magnetic field is not appropriate for the entire range of <span class="citation" data-cites="Liu2012 Pietarila2013">(<a href="#ref-Liu2012" role="doc-biblioref">Liu et al. 2012</a>; <a href="#ref-Pietarila2013" role="doc-biblioref">Pietarila et al. 2013</a>)</span>. Nevertheless, these results suggest that the magnetic field distribution of BMRs is bimodal and possibly there are two types of BMRs having significantly different field strength.</p>
+<p>To understand these two peaks in our data, we analyse their IC for the same periods. The IC images may not necessarily be simultaneous but they are near-simultaneous with a maximum time difference being 3 hours. We find that not all BMRs have their counterparts in IC (i.e., sunspots) (<a href="#ch6:fig1" data-reference-type="ref+label" data-reference="ch6:fig1">1.1</a>(a) and <a href="#ch6:fig1" data-reference-type="ref+label" data-reference="ch6:fig1">1.1</a>(f)). When we say counterpart in IC, we mean whether there is any spot present in the IC on the BMR region (as identified in the magnetogram), independent of their size. It turns out that the BMRs which have their counterparts in IC (<a href="#ch6:fig1" data-reference-type="ref+label" data-reference="ch6:fig1">1.1</a>(b) and <a href="#ch6:fig1" data-reference-type="ref+label" data-reference="ch6:fig1">1.1</a>(f)) are having higher magnetic field. When we overplot these two distributions in <a href="#ch6:fig2" data-reference-type="ref+label" data-reference="ch6:fig2">1.2</a>, we find that the BMRs having counterparts in IC (red/dashed line) beautifully represents the second peak at high <span class="math inline">\(B_{\rm max}\)</span> and the rest, i.e., BMRs without having a counterpart in IC (blue line), overlap with the first peak at the low <span class="math inline">\(B_{\rm max}\)</span>. Again we notice that in both the data sets this feature distinctly appears. We define BMR<span class="math inline">\(_{\rm WS}\)</span> as the BMRs which have counterpart in IC, i.e., no sunspots and <span class="math inline">\(B_{\rm max}\)</span> distribution peaks at around 2&nbsp;kG, while BMR<span class="math inline">\(_{\rm NS}\)</span> as the BMRs which do not have sunspots (no counterpart in IC) and <span class="math inline">\(B_{\rm max}\)</span> distribution peaks at around 600&nbsp;G. Similar bi-modality in the maximum field distribution, have been reported in the past by <span class="citation" data-cites="Cho2015">Cho et al. (<a href="#ref-Cho2015" role="doc-biblioref">2015</a>)</span> and <span class="citation" data-cites="Tlatov2019">A. Tlatov, Riehokainen, and Tlatova (<a href="#ref-Tlatov2019" role="doc-biblioref">2019</a>)</span> using sunspots and pores from SDO/HMI data. However in this work we look into the more general features, BMRs, of which sunspots and pores are part of.</p>
+<p>Seeing the peak of BMR<span class="math inline">\(_{\rm NS}\)</span> at smaller field strength, one may conjecture that these BMRs are produced from the small-scale magnetic field possibly originating from the small-scale dynamo <span class="citation" data-cites="Petrovay1993">(<a href="#ref-Petrovay1993" role="doc-biblioref">Petrovay and Szakaly 1993</a>)</span>. If this is the case, then we expect no preferred latitude distribution and no solar cycle variation. However, in <a href="#ch6:fig2" data-reference-type="ref+label" data-reference="ch6:fig2">1.2</a>(c), we find no such evidence. Both classes of BMRs follow similar temporal and latitudinal variations in the usual butterfly diagram. Thus, this result do not suggest that the origin of BMR<span class="math inline">\(_{\rm NS}\)</span> are linked to the small-scale dynamo.</p>
+<p>Now we explore the magnetic field dependence of BMR tilt. As we have found two distributions of BMRs, we shall first present the basic features of tilt of these two BMR classes separately. <a href="#ch6:fig3" data-reference-type="ref+label" data-reference="ch6:fig3">1.3</a> shows the tilt distributions of these two classes of BMRs namely, BMR<span class="math inline">\(_{\rm WS}\)</span> (red) and BMR<span class="math inline">\(_{\rm NS}\)</span> (blue) in the latitude range <span class="math inline">\(10^\circ\)</span>–<span class="math inline">\(~30^\circ\)</span> including both the hemisphere. Distributions peak at non-zero tilt and show Gaussian-like behaviour, which is of course not new <span class="citation" data-cites="Wang1989 Stenflo2012a">(<a href="#ref-Wang1989" role="doc-biblioref">Y.-M. Wang and Sheeley 1989</a>; <a href="#ref-Stenflo2012a" role="doc-biblioref">Stenflo and Kosovichev 2012</a>)</span>. Although both distributions peak almost at the same tilt value, the distribution spreads are not identical and they are consistently different in two data sets. After fitting histograms with Gaussian profiles with mean <span class="math inline">\(\mu\)</span> and standard deviation <span class="math inline">\(\sigma\)</span>, we find <span class="math inline">\(\mu\)</span> is around <span class="math inline">\(9^{\circ}\)</span> for both classes of BMRs and from both data sets. However, <span class="math inline">\(\sigma\)</span> for BMR<span class="math inline">\(_{\rm WS}\)</span> is smaller by a few degrees in both the data sets. These results indicate that the tilt has some magnetic field dependence.</p>
+<p>As shown in <a href="#ch6:fig3" data-reference-type="ref+label" data-reference="ch6:fig3">1.3</a>(c-d), Joy’s law slope <span class="math inline">\(\gamma_0\)</span> are consistently different in two classes of BMRs. BMR<span class="math inline">\(_{\rm WS}\)</span> has a slightly larger <span class="math inline">\(\gamma_0\)</span> in HMI data, while in MDI data it is opposite. As MDI and HMI include data from two different times, we do not expect Joy’s law trend to be identical in two data sets. Nonetheless, evidence of Joy’s law in BMR<span class="math inline">\(_{\rm NS}\)</span> further suggests that the BMR<span class="math inline">\(_{\rm NS}\)</span> class may not be originating from the small-scale magnetic field, rather they must be originating from the same large-scale magnetic field which produces BMR<span class="math inline">\(_{\rm WS}\)</span>.</p>
+<figure id="ch6:fig3" data-latex-placement="!ht" class="figure">
+<embed src="Figures/Chapter6/image_6_3.png">
+<figcaption>
+(a-b): Red and blue show tilt distributions of BMR<span class="math inline"><span class="math inline">\(_{\rm WS}\)</span></span> and BMR<span class="math inline"><span class="math inline">\(_{\rm NS}\)</span></span>, respectively. Points represent the data and lines show the fitted Gaussians with parameters printed on the panels. (c-d): Mean tilt in each latitude bin as a function of the latitude. Solid and dashed lines are Joy’s law (<span class="math inline"><em>γ</em> = <em>γ</em><sub>0</sub>sin <em>λ</em></span>) fits for BMR<span class="math inline"><span class="math inline">\(_{\rm WS}\)</span></span> and BMR<span class="math inline"><span class="math inline">\(_{\rm NS}\)</span></span>.
+</figcaption>
+</figure>
+<section id="ch6:quenching" class="level3" data-number="6.3.1">
+<h3 data-number="6.3.1" class="anchored" data-anchor-id="ch6:quenching"><span class="header-section-number">6.3.1</span> Magnetic quenching of tilt angle</h3>
+<p>To quantify the magnetic field dependence of BMR tilt, we now compute Joy’s law slope <span class="math inline">\(\gamma_0\)</span> and the scatter around the mean tilt (<span class="math inline">\(\sigma\)</span>), separately in each <span class="math inline">\(B_{\rm max}\)</span> bin with bin size of 500&nbsp;G. In <a href="#ch6:fig4" data-reference-type="ref+label" data-reference="ch6:fig4">1.4</a>(a), we observe that for MDI data, <span class="math inline">\(\gamma_0\)</span> is only slightly increased in the small &nbsp;range and then dropped at least by about <span class="math inline">\(15^\circ\)</span> in the high field values above 2&nbsp;kG. While HMI data follow a general trend, there is a significant increase in the low-field range. A prominent reduction of <span class="math inline">\(\gamma_0\)</span> (by about <span class="math inline">\(15^\circ\)</span>) with the magnetic field strength clearly establishes the existence of BMR tilt quenching. We emphasize that the tilt quenching is seen when <span class="math inline">\(&gt; 2\)</span>&nbsp;kG. That is why in <a href="#ch6:fig3" data-reference-type="ref+label" data-reference="ch6:fig3">1.3</a>, the mean Joy’s law trend of BMR<span class="math inline">\(_{\rm WS}\)</span> is not smaller than BMR<span class="math inline">\(_{\rm NS}\)</span>. It is only the strong BMRs<span class="math inline">\(_{\rm WS}\)</span> having <span class="math inline">\(&gt; 2\)</span>&nbsp;kG show the quenching in tilt.</p>
+<figure id="ch6:fig4" data-latex-placement="!ht" class="figure">
+<embed src="Figures/Chapter6/image_6_4.png">
+<figcaption>
+Magnetic field () dependences of: (a) Joy’s law slope <span class="math inline"><em>γ</em><sub>0</sub></span> and (c) the tilt scatter <span class="math inline"><em>σ</em></span>. (b) and (d) are the same as left panels but as functions of flux.
+</figcaption>
+</figure>
+<p>We note that although the general trend of tilt quenching is seen, the results are slightly sensitive to the analysis, particularly, to the number of data. We have checked that our results do not change when (i) taking different &nbsp;bin, (ii) excluding data point if Joy’s law fit is not significant, and (iii) removing the data in the Joy’s fitting if the BMR number is less than 50 in each latitude bin. Further, the different beahviour of MDI and HMI always persists. As seen in <a href="#ch6:fig4" data-reference-type="ref+label" data-reference="ch6:fig4">1.4</a>(b), the variation with the BMR flux is monotonous for MDI data but not for HMI.</p>
+<p>The indication of tilt quenching as seen in <a href="#ch6:fig4" data-reference-type="ref+label" data-reference="ch6:fig4">1.4</a>(a) gives an observation support of the following nonlinear quenching in the &nbsp;<span class="math inline">\(\alpha\)</span> or in <span class="math inline">\(\gamma_0\)</span> routinely used to saturate the magnetic field growth in kinematic dynamo models <span class="citation" data-cites="Choudhuri1995 Dikpati1999 Chatterjee2004 Karak2019">(e.g., <a href="#ref-Choudhuri1995" role="doc-biblioref">Choudhuri, Schüssler, and Dikpati 1995</a>; <a href="#ref-Dikpati1999" role="doc-biblioref">Dikpati and Charbonneau 1999</a>; <a href="#ref-Chatterjee2004" role="doc-biblioref">Chatterjee, Nandy, and Choudhuri 2004</a>; <a href="#ref-Karak2019" role="doc-biblioref">Bidya Binay Karak, Tomar, and Vashishth 2019</a>)</span> <span class="math display">\[\begin{equation}
+f_q \propto \frac{1}{\left[1 + (\frac{B_{\rm max} }{ B_0})^n \right]}
+\end{equation}\]</span> with <span class="math inline">\(n=2\)</span> <span class="citation" data-cites="Karak2017">(see for example, Equation 10 of <a href="#ref-Karak2017" role="doc-biblioref">B. B. Karak and Miesch 2017</a>)</span>. However, our data fits best when <span class="math inline">\(n = 5.8 \pm 0.8\)</span> (and <span class="math inline">\(B_0 = 2.9 \pm 0.1\)</span>&nbsp;kG with reduced-<span class="math inline">\(\chi^2 = 30.9\)</span>).</p>
+<p>Now we discuss whether our results can be connected to the theory of thin flux tube model for the BMR formation. Based on this theory, we expect, the intense toroidal flux rises fast, and thus, the Coriolis force gets less time to induce a tilt. Hence, the BMR tilt is expected to decrease with the increase of the magnetic field. The thin flux tube simulations of <span class="citation" data-cites="Fan1994">Fan, Fisher, and McClymont (<a href="#ref-Fan1994" role="doc-biblioref">1994</a>)</span> predicted: <span class="math display">\[\begin{equation}
+\gamma \propto \sin\lambda B_0^{-5/4}\Phi^{1/4},
+\label{ch6:eq1}
+\end{equation}\]</span> where <span class="math inline">\(B_0\)</span> is the initial magnetic field of the toroidal flux tube and <span class="math inline">\(\Phi\)</span> is the flux content. The theoretical study suggests that due to combined effects of rapid expansion, radiative cooling, and pressure buildup, the magnetic fields of BMRs forming loops become sufficiently low as they rise towards the surface, and within a few Mm depth BMRs tends to get disconnected from their roots <span class="citation" data-cites="Schuessler2005">(<a href="#ref-Schuessler2005" role="doc-biblioref">Schüssler and Rempel 2005</a>)</span>. The current understanding of the whole process is very limited; however see <span class="citation" data-cites="Rempel2014a Fan2014 Nelson2014">Rempel and Cheung (<a href="#ref-Rempel2014a" role="doc-biblioref">2014</a>; <a href="#ref-Fan2014" role="doc-biblioref">Fan and Fang 2014</a>; <a href="#ref-Nelson2014" role="doc-biblioref">Nelson et al. 2014</a>)</span>. Therefore, we do not know whether the initial magnetic field <span class="math inline">\(B_0\)</span> is related to the &nbsp;that we observe inside the BMR. However, if we assume that <span class="math inline">\(B_0 \propto\)</span> , then we can make some comment on the thin flux tube model.</p>
+<p>The BMR flux <span class="math inline">\(\Phi\)</span> is observed to vary with the magnetic field strength <span class="citation" data-cites="Tlatov2014">(<a href="#ref-Tlatov2014" role="doc-biblioref">A. G. Tlatov and Pevtsov 2014</a>)</span>. In our data, we find the following relation hold resonably well. <span class="math display">\[\begin{equation}
+\frac{\Phi} {\angles{\Phi}} = a + b \frac{B_{\rm max}} {\angles{B_{\rm max}}} + c \left( \frac{B_{\rm max}} {\angles{B_{\rm max}}} \right) ^2+ d \left( \frac{B_{\rm max}} {\angles{B_{\rm max}}} \right) ^3,
+\label{eq:eq3}
+\end{equation}\]</span> where <span class="math inline">\(a=-0.08 \pm 0.01\)</span>, <span class="math inline">\(b=0.84 \pm 0.12\)</span>, <span class="math inline">\(c=-0.57 \pm 0.19\)</span> and <span class="math inline">\(d= 0.52 \pm 0.08\)</span> for MDI data and <span class="math inline">\(a=-0.09\pm 0.02\)</span>, <span class="math inline">\(b=0.81 \pm 0.15\)</span>, <span class="math inline">\(c=-0.27 \pm 0.23\)</span> and <span class="math inline">\(d= 0.32 \pm 0.10\)</span> for HMI. Putting this relation in <a href="#ch6:eq1" data-reference-type="ref+label" data-reference="ch6:eq1">[ch6:eq1]</a>, we find that the slope of Joy’s law <span class="math inline">\(\gamma_0\)</span> decreases as shown by the dashed line. We observe that in the high-field regime, our result qualilatively supports the thin flux tube model.</p>
+<p>In the low-field regime with <span class="math inline">\(B_{\rm max} &lt; 2\)</span>&nbsp;kG <span class="math inline">\(\gamma_0\)</span> increases with &nbsp;which does not fit with the thin flux tube model. However, we should not forget that this model does not include the convection, which can affect the dynamics of the flux tube to change the tilt through the helical convection. By considering convection, in the thin flux tube model, <span class="citation" data-cites="Weber2011">Maria A. Weber, Fan, and Miesch (<a href="#ref-Weber2011" role="doc-biblioref">2011</a>)</span> showed that while the general Joy’s law trend is recovered, the tilt increases with the increase of magnetic field strength first in the low field regime, and then it reduces; see their Figure&nbsp;8 and 12 <span class="citation" data-cites="Weber2013">(also see <a href="#ref-Weber2013" role="doc-biblioref">M. A. Weber, Fan, and Miesch 2013</a>)</span>. Similar behaviour is found in our data; see <a href="#ch6:fig4" data-reference-type="ref+label" data-reference="ch6:fig4">1.4</a>(a).</p>
+<p>Thin-flux tube rise model also predicted that the rising-flux loops could be buffeted by the turbulent convection during their rise in the CZ and this could cause a scatter around the systematic tilt variations — Joy’s law <span class="citation" data-cites="Longcope1996 Longcope2002">(<a href="#ref-Longcope1996" role="doc-biblioref">D. W. Longcope and Fisher 1996</a>; <a href="#ref-Longcope2002" role="doc-biblioref">D. Longcope and Choudhuri 2002</a>)</span>. When the magnetic field is strong, we expect the magnetic tension to oppose this buffeting of flux tubes and the scatter to be less. Further, strong flux tubes rise faster (due to strong magnetic buoyancy) and thus they get less time to be buffeted by convection <span class="citation" data-cites="Weber2011">(<a href="#ref-Weber2011" role="doc-biblioref">Maria A. Weber, Fan, and Miesch 2011</a>)</span>. The tilt scatter computed from our data supports this idea. In <a href="#ch6:fig4" data-reference-type="ref+label" data-reference="ch6:fig4">1.4</a>(c-d), we see that it systematically decreases with the increase of &nbsp;or flux.</p>
+</section>
+</section>
+<section id="ch6:conclusion" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="ch6:conclusion"><span class="header-section-number">6.4</span> Conclusion</h2>
+<p>In this chapter, we have studied BMRs detected from the magnetograms of MDI (1996–2011) and HMI (2010–2018). In both the data sets, we find that the BMR number distribution shows a bimodal distribution when measured with respect to their maximum magnetic field . The first peak at low field (<span class="math inline">\(\approx600\)</span>&nbsp;G) corresponds to BMRs which do not have counterparts in IC (i.e., no sunspots), while the second peak at high field (<span class="math inline">\(\approx 2100\)</span>&nbsp;G) corresponds to BMRs which have counterparts in IC. BMR<span class="math inline">\(_{\rm NS}\)</span> also shows a similar butterfly diagram, tilt distribution and Joy’s law as that of BMR<span class="math inline">\(_{\rm WS}\)</span>. This suggests that BMR<span class="math inline">\(_{\rm NS}\)</span> are not produced from the small-scale magnetic field, rather they must be produced from the same large-scale global field which produces sunspots. One difference between these two classes of BMRs is that the tilt scatter and the slope of Joy’s law <span class="math inline">\(\gamma_0\)</span> are smaller in BMR<span class="math inline">\(_{\rm WS}\)</span>. However, our study does not explain why BMR show two distinct peaks in the <span class="math inline">\(B_{\rm max}\)</span> distribution, which requires further studies.</p>
+<p>On computing the tilt in each &nbsp;bin, we find a significant change in the BMR tilt for MDI and HMI data. In the low &nbsp;range, <span class="math inline">\(\gamma_0\)</span> increases with the increase of . However, for <span class="math inline">\(B_{\rm max} &gt; 2\)</span>&nbsp;kG (which corresponds to strong sunspots), <span class="math inline">\(\gamma_0\)</span> decreases with . These results are in qualitative agreement with the predictions of the thin flux-tube rise model <span class="citation" data-cites="DSilva1993 Fan1994 Caligari1995 Fan2009">(<a href="#ref-DSilva1993" role="doc-biblioref">D’Silva and Choudhuri 1993</a>; <a href="#ref-Fan1994" role="doc-biblioref">Fan, Fisher, and McClymont 1994</a>; <a href="#ref-Caligari1995" role="doc-biblioref">Caligari, Moreno-Insertis, and Schussler 1995</a>; <a href="#ref-Fan2009" role="doc-biblioref">Fan 2009</a>)</span>and in particular the simulations with the convection <span class="citation" data-cites="Weber2011 Weber2013">(<a href="#ref-Weber2011" role="doc-biblioref">Maria A. Weber, Fan, and Miesch 2011</a>; <a href="#ref-Weber2013" role="doc-biblioref">M. A. Weber, Fan, and Miesch 2013</a>)</span>. The reduction of tilt with the increase of the magnetic field in the high field regime gives a hint for the nonlinear quenching routinely used in the &nbsp;type kinematic dynamo models.</p>
+<p>We understand that the variations of BMR properties, particularly the tilt quenching with magnetic field are demonstrated in a relatively narrow range. This, however, is due to the fact that the availability of data are limited and Joy’s law is a statistical relation. Furthermore, the last two cycles, during which our analyses are performed, are relatively weak, having weak BMR field strength. The highest magnetic field in our BMRs data is about 3&nbsp;kG, and the magnetic quenching is expected to be more in the super-kilogauss magnetic field. Therefore, we believe that our results need to be investigated further with larger data sets, especially from stronger cycles having high-field BMRs.</p>
+
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Babcock1961" class="csl-entry" role="listitem">
+Babcock, H. W. 1961. <span>“<span class="nocase">The Topology of the Sun’s Magnetic Field and the 22-YEAR Cycle.</span>”</span> 133 (March): 572. <a href="https://doi.org/10.1086/147060">https://doi.org/10.1086/147060</a>.
+</div>
+<div id="ref-Caligari1995" class="csl-entry" role="listitem">
+Caligari, P., F. Moreno-Insertis, and M. Schussler. 1995. <span>“<span class="nocase">Emerging flux tubes in the solar convection zone. 1: Asymmetry, tilt, and emergence latitude</span>”</span> 441 (March): 886–902. <a href="https://doi.org/10.1086/175410">https://doi.org/10.1086/175410</a>.
+</div>
+<div id="ref-Charbonneau2010" class="csl-entry" role="listitem">
+Charbonneau, P. 2010. <span>“<span class="nocase">Dynamo Models of the Solar Cycle</span>.”</span> <em>Liv. Rev. Sol. Phys.</em> 7 (September): 3. <a href="https://doi.org/10.12942/lrsp-2010-3">https://doi.org/10.12942/lrsp-2010-3</a>.
+</div>
+<div id="ref-Chatterjee2004" class="csl-entry" role="listitem">
+Chatterjee, P., D. Nandy, and A. R. Choudhuri. 2004. <span>“<span class="nocase">Full-sphere simulations of a circulation-dominated solar dynamo: Exploring the parity issue</span>”</span> 427 (December): 1019–30. <a href="https://doi.org/10.1051/0004-6361:20041199">https://doi.org/10.1051/0004-6361:20041199</a>.
+</div>
+<div id="ref-Cho2015" class="csl-entry" role="listitem">
+Cho, I.-H., K.-S. Cho, S.-C. Bong, E.-K. Lim, R.-S. Kim, S. Choi, Y.-H. Kim, and V. Yurchyshyn. 2015. <span>“<span class="nocase">Statistical Comparison Between Pores and Sunspots by Using SDO/HMI</span>”</span> 811 (September): 49. <a href="https://doi.org/10.1088/0004-637X/811/1/49">https://doi.org/10.1088/0004-637X/811/1/49</a>.
+</div>
+<div id="ref-Choudhuri2018" class="csl-entry" role="listitem">
+Choudhuri, A. R. 2018. <span>“<span class="nocase">Flux transport dynamo: From modelling irregularities to making predictions</span>.”</span> <em>Journal of Atmospheric and Solar-Terrestrial Physics</em> 176 (September): 5–9. <a href="https://doi.org/10.1016/j.jastp.2017.08.002">https://doi.org/10.1016/j.jastp.2017.08.002</a>.
+</div>
+<div id="ref-Choudhuri1995" class="csl-entry" role="listitem">
+Choudhuri, A. R., M. Schüssler, and M. Dikpati. 1995. <span>“<span class="nocase">The solar dynamo with meridional circulation.</span>”</span> 303 (November): L29.
+</div>
+<div id="ref-DSilva1993" class="csl-entry" role="listitem">
+D’Silva, S., and A. R. Choudhuri. 1993. <span>“<span class="nocase">A theoretical model for tilts of bipolar magnetic regions</span>”</span> 272 (May): 621.
+</div>
+<div id="ref-DasiEspuig2010" class="csl-entry" role="listitem">
+Dasi-Espuig, M., S. K. Solanki, N. A. Krivova, R. Cameron, and T. Peñuela. 2010. <span>“<span class="nocase">Sunspot group tilt angles and the strength of the solar cycle</span>”</span> 518 (July): A7. <a href="https://doi.org/10.1051/0004-6361/201014301">https://doi.org/10.1051/0004-6361/201014301</a>.
+</div>
+<div id="ref-Dikpati1999" class="csl-entry" role="listitem">
+Dikpati, M., and P. Charbonneau. 1999. <span>“<span class="nocase">A Babcock-Leighton Flux Transport Dynamo with Solar-like Differential Rotation</span>”</span> 518 (June): 508–20. <a href="https://doi.org/10.1086/307269">https://doi.org/10.1086/307269</a>.
+</div>
+<div id="ref-Fan2009" class="csl-entry" role="listitem">
+Fan, Y. 2009. <span>“<span class="nocase">Magnetic Fields in the Solar Convection Zone</span>”</span> 6 (December): 4. <a href="https://doi.org/10.12942/lrsp-2009-4">https://doi.org/10.12942/lrsp-2009-4</a>.
+</div>
+<div id="ref-Fan2014" class="csl-entry" role="listitem">
+Fan, Y., and F. Fang. 2014. <span>“<span class="nocase">A Simulation of Convective Dynamo in the Solar Convective Envelope: Maintenance of the Solar-like Differential Rotation and Emerging Flux</span>”</span> 789 (July): 35. <a href="https://doi.org/10.1088/0004-637X/789/1/35">https://doi.org/10.1088/0004-637X/789/1/35</a>.
+</div>
+<div id="ref-Fan1994" class="csl-entry" role="listitem">
+Fan, Y., G. H. Fisher, and A. N. McClymont. 1994. <span>“<span class="nocase">Dynamics of emerging active region flux loops</span>”</span> 436 (December): 907–28. <a href="https://doi.org/10.1086/174967">https://doi.org/10.1086/174967</a>.
+</div>
+<div id="ref-Hagenaar1999" class="csl-entry" role="listitem">
+Hagenaar, H. J., C. J. Schrijver, A. M. Title, and R. A. Shine. 1999. <span>“<span class="nocase">Dispersal of Magnetic Flux in the Quiet Solar Photosphere</span>”</span> 511 (February): 932–44. <a href="https://doi.org/10.1086/306691">https://doi.org/10.1086/306691</a>.
+</div>
+<div id="ref-Hale1908" class="csl-entry" role="listitem">
+Hale, G. E. 1908. <span>“<span class="nocase">On the Probable Existence of a Magnetic Field in Sun-Spots</span>”</span> 28 (November): 315. <a href="https://doi.org/10.1086/141602">https://doi.org/10.1086/141602</a>.
+</div>
+<div id="ref-Jiang2014a" class="csl-entry" role="listitem">
+Jiang, J., D. H. Hathaway, R. H. Cameron, S. K. Solanki, L. Gizon, and L. Upton. 2014. <span>“<span class="nocase">Magnetic Flux Transport at the Solar Surface</span>”</span> 186 (December): 491–523. <a href="https://doi.org/10.1007/s11214-014-0083-1">https://doi.org/10.1007/s11214-014-0083-1</a>.
+</div>
+<div id="ref-Karak2014" class="csl-entry" role="listitem">
+Karak, B. B., J. Jiang, M. S. Miesch, P. Charbonneau, and A. R. Choudhuri. 2014. <span>“<span class="nocase">Flux Transport Dynamos: From Kinematics to Dynamics</span>”</span> 186 (December): 561–602. <a href="https://doi.org/10.1007/s11214-014-0099-6">https://doi.org/10.1007/s11214-014-0099-6</a>.
+</div>
+<div id="ref-Karak2017" class="csl-entry" role="listitem">
+Karak, B. B., and M. Miesch. 2017. <span>“<span class="nocase">Solar Cycle Variability Induced by Tilt Angle Scatter in a Babcock-Leighton Solar Dynamo Model</span>”</span> 847 (September): 69. <a href="https://doi.org/10.3847/1538-4357/aa8636">https://doi.org/10.3847/1538-4357/aa8636</a>.
+</div>
+<div id="ref-Karak2018" class="csl-entry" role="listitem">
+———. 2018. <span>“<span class="nocase">Recovery from Maunder-like Grand Minima in a Babcock – Leighton Solar Dynamo Model</span>”</span> 860 (June): L26. <a href="https://doi.org/10.3847/2041-8213/aaca97">https://doi.org/10.3847/2041-8213/aaca97</a>.
+</div>
+<div id="ref-Karak2019" class="csl-entry" role="listitem">
+Karak, Bidya Binay, Aparna Tomar, and Vindya Vashishth. 2019. <span>“<span class="nocase">Stellar Dynamos with Solar and Anti-solar Differential Rotations: Implications to Magnetic Cycles of Slowly Rotating Stars</span>,”</span> November, 2813. <a href="https://doi.org/10.1093/mnras/stz3220">https://doi.org/10.1093/mnras/stz3220</a>.
+</div>
+<div id="ref-Kitchatinov2010" class="csl-entry" role="listitem">
+Kitchatinov, L. L., and S. V. Olemskoy. 2010. <span>“<span class="nocase">Dynamo hysteresis and grand minima of solar activity</span>.”</span> <em>Astron. Lett.</em> 36: 292–96.
+</div>
+<div id="ref-Leighton1964" class="csl-entry" role="listitem">
+Leighton, R. B. 1964. <span>“<span class="nocase">Transport of Magnetic Fields on the Sun.</span>”</span> 140 (November): 1547. <a href="https://doi.org/10.1086/148058">https://doi.org/10.1086/148058</a>.
+</div>
+<div id="ref-Leighton1969" class="csl-entry" role="listitem">
+Leighton, Robert B. 1969. <span>“<span class="nocase">A Magneto-Kinematic Model of the Solar Cycle</span>”</span> 156 (April): 1. <a href="https://doi.org/10.1086/149943">https://doi.org/10.1086/149943</a>.
+</div>
+<div id="ref-Lemerle2017" class="csl-entry" role="listitem">
+Lemerle, A., and P. Charbonneau. 2017. <span>“<span>A Coupled 2 <span class="math inline">\(\times\)</span> 2D Babcock-Leighton Solar Dynamo Model. II. Reference Dynamo Solutions</span>”</span> 834 (January): 133. <a href="https://doi.org/10.3847/1538-4357/834/2/133">https://doi.org/10.3847/1538-4357/834/2/133</a>.
+</div>
+<div id="ref-Liu2012" class="csl-entry" role="listitem">
+Liu, Y., J. T. Hoeksema, P. H. Scherrer, J. Schou, S. Couvidat, R. I. Bush, T. L. Duvall, K. Hayashi, X. Sun, and X. Zhao. 2012. <span>“<span class="nocase">Comparison of Line-of-Sight Magnetograms Taken by the Solar Dynamics Observatory/Helioseismic and Magnetic Imager and Solar and Heliospheric Observatory/Michelson Doppler Imager</span>”</span> 279 (July): 295–316. <a href="https://doi.org/10.1007/s11207-012-9976-x">https://doi.org/10.1007/s11207-012-9976-x</a>.
+</div>
+<div id="ref-Longcope1996" class="csl-entry" role="listitem">
+Longcope, D. W., and G. H. Fisher. 1996. <span>“<span class="nocase">The Effects of Convection Zone Turbulence on the Tilt Angles of Magnetic Bipoles</span>”</span> 458 (February): 380. <a href="https://doi.org/10.1086/176821">https://doi.org/10.1086/176821</a>.
+</div>
+<div id="ref-Longcope2002" class="csl-entry" role="listitem">
+Longcope, Dana, and Arnab Rai Choudhuri. 2002. <span>“<span class="nocase">The Orientational Relaxation of Bipolar Active Regions</span>”</span> 205 (1): 63–92. <a href="https://doi.org/10.1023/A:1013896013842">https://doi.org/10.1023/A:1013896013842</a>.
+</div>
+<div id="ref-MunozJaramillo2013" class="csl-entry" role="listitem">
+Muñoz-Jaramillo, A., M. Dasi-Espuig, L. A. Balmaceda, and E. E. DeLuca. 2013. <span>“<span class="nocase">Solar Cycle Propagation, Memory, and Prediction: Insights from a Century of Magnetic Proxies</span>”</span> 767 (April): L25. <a href="https://doi.org/10.1088/2041-8205/767/2/L25">https://doi.org/10.1088/2041-8205/767/2/L25</a>.
+</div>
+<div id="ref-Nelson2014" class="csl-entry" role="listitem">
+Nelson, Nicholas J., Benjamin P. Brown, Allan S. Brun, Mark S. Miesch, and Juri Toomre. 2014. <span>“<span class="nocase">Buoyant Magnetic Loops Generated by Global Convective Dynamo Action</span>”</span> 289 (2): 441–58. <a href="https://doi.org/10.1007/s11207-012-0221-4">https://doi.org/10.1007/s11207-012-0221-4</a>.
+</div>
+<div id="ref-Parker1955a" class="csl-entry" role="listitem">
+Parker, E. N. 1955. <span>“<span class="nocase">The Formation of Sunspots from the Solar Toroidal Field.</span>”</span> 121 (March): 491. <a href="https://doi.org/10.1086/146010">https://doi.org/10.1086/146010</a>.
+</div>
+<div id="ref-Petrovay1993" class="csl-entry" role="listitem">
+Petrovay, K., and G. Szakaly. 1993. <span>“<span class="nocase">The origin of intranetwork fields: a small-scale solar dynamo</span>”</span> 274 (July): 543.
+</div>
+<div id="ref-Pietarila2013" class="csl-entry" role="listitem">
+Pietarila, A., L. Bertello, J. W. Harvey, and A. A. Pevtsov. 2013. <span>“<span class="nocase">Comparison of Ground-Based and Space-Based Longitudinal Magnetograms</span>”</span> 282 (1): 91–106. <a href="https://doi.org/10.1007/s11207-012-0138-y">https://doi.org/10.1007/s11207-012-0138-y</a>.
+</div>
+<div id="ref-Priyal2014" class="csl-entry" role="listitem">
+Priyal, M., D. Banerjee, B. B. Karak, A. Muñoz-Jaramillo, B. Ravindra, A. R. Choudhuri, and J. Singh. 2014. <span>“<span class="nocase">Polar Network Index as a Magnetic Proxy for the Solar Cycle Studies</span>”</span> 793 (September): L4. <a href="https://doi.org/10.1088/2041-8205/793/1/L4">https://doi.org/10.1088/2041-8205/793/1/L4</a>.
+</div>
+<div id="ref-Rempel2014a" class="csl-entry" role="listitem">
+Rempel, M., and M. C. M. Cheung. 2014. <span>“<span class="nocase">Numerical Simulations of Active Region Scale Flux Emergence: From Spot Formation to Decay</span>”</span> 785 (2): 90. <a href="https://doi.org/10.1088/0004-637X/785/2/90">https://doi.org/10.1088/0004-637X/785/2/90</a>.
+</div>
+<div id="ref-Scherrer1995" class="csl-entry" role="listitem">
+Scherrer, P. H., R. S. Bogart, R. I. Bush, J. T. Hoeksema, A. G. Kosovichev, J. Schou, W. Rosenberg, et al. 1995. <span>“<span>The Solar Oscillations Investigation - Michelson Doppler Imager</span>”</span> 162 (December): 129–88. <a href="https://doi.org/10.1007/BF00733429">https://doi.org/10.1007/BF00733429</a>.
+</div>
+<div id="ref-Schou2012" class="csl-entry" role="listitem">
+Schou, J., P. H. Scherrer, R. I. Bush, R. Wachter, S. Couvidat, M. C. Rabello-Soares, R. S. Bogart, et al. 2012. <span>“<span class="nocase">Design and Ground Calibration of the Helioseismic and Magnetic Imager (HMI) Instrument on the Solar Dynamics Observatory (SDO)</span>”</span> 275 (January): 229–59. <a href="https://doi.org/10.1007/s11207-011-9842-2">https://doi.org/10.1007/s11207-011-9842-2</a>.
+</div>
+<div id="ref-Schuessler2005" class="csl-entry" role="listitem">
+Schüssler, M., and M. Rempel. 2005. <span>“<span class="nocase">The dynamical disconnection of sunspots from their magnetic roots</span>”</span> 441 (1): 337–46. <a href="https://doi.org/10.1051/0004-6361:20052962">https://doi.org/10.1051/0004-6361:20052962</a>.
+</div>
+<div id="ref-Stenflo2012a" class="csl-entry" role="listitem">
+Stenflo, J. O., and A. G. Kosovichev. 2012. <span>“<span class="nocase">Bipolar Magnetic Regions on the Sun: Global Analysis of the SOHO/MDI Data Set</span>”</span> 745 (February): 129. <a href="https://doi.org/10.1088/0004-637X/745/2/129">https://doi.org/10.1088/0004-637X/745/2/129</a>.
+</div>
+<div id="ref-Tian2003" class="csl-entry" role="listitem">
+Tian, Lirong, Yang Liu, and Huaning Wang. 2003. <span>“<span class="nocase">Latitude and Magnetic Flux Dependence of the Tilt Angle of Bipolar Regions</span>”</span> 215 (2): 281–93. <a href="https://doi.org/10.1023/A:1025686305225">https://doi.org/10.1023/A:1025686305225</a>.
+</div>
+<div id="ref-Tlatov2014" class="csl-entry" role="listitem">
+Tlatov, A. G., and A. A. Pevtsov. 2014. <span>“<span class="nocase">Bimodal Distribution of Magnetic Fields and Areas of Sunspots</span>”</span> 289 (April): 1143–52. <a href="https://doi.org/10.1007/s11207-013-0382-9">https://doi.org/10.1007/s11207-013-0382-9</a>.
+</div>
+<div id="ref-Tlatov2019" class="csl-entry" role="listitem">
+Tlatov, Andrey, Alexandr Riehokainen, and Kseniya Tlatova. 2019. <span>“<span class="nocase">The Characteristic Sizes of the Sunspots and Pores in Solar Cycle 24</span>”</span> 294 (4): 45. <a href="https://doi.org/10.1007/s11207-019-1439-1">https://doi.org/10.1007/s11207-019-1439-1</a>.
+</div>
+<div id="ref-Wang1991a" class="csl-entry" role="listitem">
+Wang, Y. -M., and Jr. Sheeley N. R. 1991. <span>“<span class="nocase">Magnetic Flux Transport and the Sun’s Dipole Moment: New Twists to the Babcock-Leighton Model</span>”</span> 375 (July): 761. <a href="https://doi.org/10.1086/170240">https://doi.org/10.1086/170240</a>.
+</div>
+<div id="ref-Wang1989" class="csl-entry" role="listitem">
+Wang, Y.-M., and N. R. Sheeley Jr. 1989. <span>“<span class="nocase">Average properties of bipolar magnetic regions during sunspot cycle 21</span>”</span> 124 (March): 81–100. <a href="https://doi.org/10.1007/BF00146521">https://doi.org/10.1007/BF00146521</a>.
+</div>
+<div id="ref-Wang1991" class="csl-entry" role="listitem">
+Wang, Y.-M., N. R. Sheeley Jr., and A. G. Nash. 1991. <span>“<span class="nocase">A new solar cycle model including meridional circulation</span>”</span> 383 (December): 431–42. <a href="https://doi.org/10.1086/170800">https://doi.org/10.1086/170800</a>.
+</div>
+<div id="ref-Weber2013" class="csl-entry" role="listitem">
+Weber, M. A., Y. Fan, and M. S. Miesch. 2013. <span>“<span class="nocase">Comparing Simulations of Rising Flux Tubes Through the Solar Convection Zone with Observations of Solar Active Regions: Constraining the Dynamo Field Strength</span>”</span> 287 (1-2): 239–63. <a href="https://doi.org/10.1007/s11207-012-0093-7">https://doi.org/10.1007/s11207-012-0093-7</a>.
+</div>
+<div id="ref-Weber2011" class="csl-entry" role="listitem">
+Weber, Maria A., Yuhong Fan, and Mark S. Miesch. 2011. <span>“<span class="nocase">The Rise of Active Region Flux Tubes in the Turbulent Solar Convective Envelope</span>”</span> 741 (1): 11. <a href="https://doi.org/10.1088/0004-637X/741/1/11">https://doi.org/10.1088/0004-637X/741/1/11</a>.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./chapter5.html" class="pagination-link" aria-label="A Theoretical Model of the Near--Surface Shear Layer of the Sun">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">A Theoretical Model of the Near–Surface Shear Layer of the Sun</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./chapter7.html" class="pagination-link" aria-label="The Conclusion">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">The Conclusion</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

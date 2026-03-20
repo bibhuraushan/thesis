@@ -1,0 +1,5 @@
+# Preface {.unnumbered}
+
+Welcome to the online version of my PhD thesis. Use the sidebar to navigate through the chapters.
+
+> **Note:** This web-book was automatically generated from the original LaTeX source, ensuring responsive design and interactive navigation while maintaining academic rigor.
